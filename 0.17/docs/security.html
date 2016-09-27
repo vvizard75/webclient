@@ -1,0 +1,3660 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Security | WebClient documentation</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="../../assets/css/root.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body style="background: white;" data-spy="scroll" data-target=".bs-sidebar">
+
+    <div class="root">
+    
+<div class="navbar navbar-inverse" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../../index.html">WebClient documentation</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Docs</a></li>
+          <li><a href="../api-client/index.html">API Client</a></li>
+        </ul>
+      
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">CROC R&D<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://track.rnd.croc.ru">Bug tracker (YouTrack)</a></li>
+            <li><a href="https://code.croc.ru">Source code (Git Server)</a></li>
+            <li><a href="https://wiki.rnd.croc.ru">Wiki</a></li>
+            <li><a href="https://build.rnd.croc.ru">Build server (TeamCity)</a></li>
+            <li><a href="https://qa.rnd.croc.ru">Q&A</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-header">Other</li>
+            <li><a href="https://github.com/CrocInc">CROC on Github</a></li>
+            
+          </ul>
+        </li>
+      </ul>
+
+    </nav>
+  </div>
+</div>
+
+    
+<div class="container" role="main">
+  <div class="row">
+
+    
+    <div class="col col-lg-3">
+      <div class="sidebar">
+        <ul class="nav nav-pills nav-stacked">
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+          <li><a href="structure.html">Structure</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+          <li><a href="browser-support.html">Browser support</a></li>
+    
+  
+    
+  
+    
+  
+    
+          <li><a href="distribution.html">Distribution</a></li>
+    
+  
+    
+  
+    
+  
+    
+          <li><a href="setup-developer-environment.html">Setup Developer Environment</a></li>
+    
+  
+    
+  
+    
+  
+    
+          <li><a href="project-structure.html">Project Structure</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+          <li><a href="key-features.html">Key Features</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+</ul>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="getting-started-tutorial.html">Getting Started Tutorial</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="getting-started-tutorial-0_12.html">Getting Started Tutorial 0.12</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="base.html">Base</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="ecmascript-5-emulation.html">EcmaScript 5 emulation</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="module-system.html">Module System</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="core.html">Core</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="class-system.html">Class System</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="presentation-model.html">Presentation Model</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="composition-&amp;-navigation.html">Composition &amp; Navigation</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="переопределение-компонентов.html">Переопределение компонентов</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="templating.html">Templating</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="data-binding.html">Data-binding</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="eventpublisher.html">EventPublisher</a></li>
+        
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="application.html">Application</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+         
+
+          <li><a href="app-module.html">App-module</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="datasource.html">DataSource</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="domain-model.html">Domain Model</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="domain-objects.html">Domain Objects</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="validation.html">Validation</a></li>
+        
+        
+       
+        
+       
+        
+         
+
+          <li><a href="formatters.html">Formatters</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="interop.html">Interop</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="main_js.html">main.js</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="ui-ux.html">UI-UX</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="app-starting-ux.html">App starting UX</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="appnavbar.html">AppNavBar</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="css-styles-and-less.html">CSS Styles and LESS</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="tree.html">Tree</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="icons.html">Icons</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="menu.html">Menu</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="objecteditor.html">ObjectEditor</a></li>
+        
+        
+       
+        
+       
+        
+         
+
+          <li><a href="objectlist.html">ObjectList</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="objectviewer.html">ObjectViewer</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="objectwizard.html">ObjectWizard</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="onlinebeacon.html">OnlineBeacon</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="property-editors.html">Property Editors</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="objectfilter.html">ObjectFilter</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="appservices.html">AppServices</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+         
+
+          <li><a href="affix.html">Affix</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="app-navigation.html">App Navigation</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="breadcrumbs.html">Breadcrumbs</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="client-update-notification.html">Client update notification</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="debug-module.html">Debug module</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="drafts.html">Drafts</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="i18n.html">i18n</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="notifications.html">Notifications</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li class="active"><a href="security.html">Security</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="scroll-accelerators.html">Scroll accelerators</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="reporting.html">Reporting</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="server.html">Server</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="server-architecture.html">Server Architecture</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="page-layout.html">Page Layout</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="filecontroller.html">FileController</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="bootloader.html">Bootloader</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="main_config_json.html">main.config.json</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="hosting.html">Hosting</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="knowledge-base.html">Knowledge Base</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="client-debugging.html">Client Debugging</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="кеширование-контента.html">Кеширование контента</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="webstorm-live-templates.html">WebStorm Live Templates</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="efficient-css.html">Efficient CSS</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="elmah.html">Elmah</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="devtools.html">DevTools</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="archived-build-0_10.html">Archived-Build 0.10</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="настройка-teamcity-билд-конфигурации-для-работы-с-bower-и-grunt.html">Настройка TeamCity билд конфигурации для работы с bower и grunt</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="yeoman-generator.html">Yeoman Generator</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="grunt-croc-qunit.html">grunt-croc-qunit</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="grunt-croc-requirejs.html">grunt-croc-requirejs</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="resxtojson.html">ResxToJson</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+      </ul>
+
+    
+  
+
+
+      </div>
+    </div>
+
+
+    
+    <div class="col col-lg-9">
+      <div class="panel panel-docs">
+        <ol class='breadcrumb'><li><a href='index.html'>Docs</a></li><li><a href='appservices.html'>AppServices</a></li><li class='active'>Security</li></ol>
+        <h1>Security</h1>
+          
+
+<h2 id="-toc-">{toc}</h2>
+<h3 id="overview">Overview</h3>
+<p>Сервер идентифицирует пользователя на основании http-запроса. Т.е. каждый запрос должен содержать нечно, что серверу позволяет надежно идентифицировать клиента. 
+При невозможности идентификации пользователя он должен быть аутентифицирован. Необходимость аутентификации возникает, если сервер возвращает http-ошибку 401 (Unauthorized). Произойти это может по нескольким причинам:</p>
+<ul>
+<li>для сайта/приложения в веб-сервере выключена анонимная аутентификация (и включена любая другая)</li>
+<li>контроллер, к которому обращается клиент (MVC-контроллер или WebApi-контроллер), помечен атрибутом XAuthorize/Authorize</li>
+</ul>
+<p>Т.о. сервер может требовать аутентификации для всего сайта, включая статический контент, для страниц и для Api-сервисов.
+Все Api-контроллеры WebClient наследуют (и это также рекомендуется для прикладных реализаций) от <code>XApiController</code>, который помечен атрибутом <code>XAuthorize</code>. Следовательно при вызове Api-контроллеров (т.е. при получении данных) <strong>всегда</strong> будет выполнена аутентификация. Подробней см. <a href='#Авторизация' title='null'>#Авторизация</a>.
+Требование аутентификации для страниц и тем более всего веб-приложения является опциональным. И должно включаться явно и осознанно, т.к. является не лучшим решением с точки зрения user experience.
+Аутентификация для всего веб-приложения включается в веб-сервере (в IIS Manager: в разделе Authentication отключить Anonymous Authentication и включить любую другую).</p>
+<blockquote>
+<p>Аутентификация для страниц (т.е. MVC-контроллеров) на текущий момент не поддерживается. См. <a href='http://track.rnd.croc.ru/issue/WC-85' title='null'>issue</a></p>
+</blockquote>
+<p>Если аутентификация включена для всего сайта, то на стороне клиента ей всегда занимается браузер. В этом случае поддерживаются только аутентификации Windows-аккаунтов. Хотя протокол может быть разным (Basic, Digest, NTML/Negotiation). При первом обращении браузер запрашивает логин/пароль и запоминает их. При последующих обращениях аутентификация происходит автоматически. Управление учетными записями всегда внешнее для приложения (т.к. аутентификацией занимается веб сервер).</p>
+<p>Если аутентификацией занимается веб-приложение, то на стороне клиента ей может заниматься браузер (если используется стандартная http-аутентификация Basic/Digest), либо прикладное приложение. Но в обоих случаях типы аккаунтов могут быть как Windows, так и аккаунты приложения.
+Если на стороне сервера используется прикладная аутентификация и не используется протоколы http-аутентификаци, т.е. на стороне клиента так используется кастомная аутентификация, то для идентификации пользователя используется cookies (&quot;куки&quot;). Данный вариант называется Forms-аутентификация. После аутентификации с каждым запром передается cookie (&quot;кука&quot;), содержащая зашифрованный токен. Для управления кукой используется инфраструктура Forms-аутентификации ASP.NET (класс <code>System.Web.Security.FormsAuthentication</code>). Важно отменить, что использование куки не исключает аутентификации с помощью LDAP/AD или другого способа (OAuth). Это лишь способ которым клиент идентифицирует себя.</p>
+<p>В приложении могут одновременно использоваться несколько типов аутентификации. В этом случае будет разный процесс аутентификации, итогом которого будет формирование куки.</p>
+<p>Термины &quot;интегрированная аутентификация &quot; и &quot;forms аутентификация&quot; получаются немного перегружены и их значение зависит от контекста. Поэтому рассмотрим все возможные способы и используемые протоколы для аутентификации и идентификации.
+Аутентификацией на сервере может заниматься либо веб-сервер, либо приложение. Для простоты под веб-сервером будем понимать IIS. На клиенте аутентификацией может заниматься либо браузер (user agent, UA), либо клиентский javascript-код, им исполняемый.</p>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Сервер</th>
+<th>Клиент</th>
+<th>Механизм аутентификации</th>
+<th>Обработка в ASP.NET</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>В IIS включена Windows-аутентификация для сайта/приложения</td>
+<td>Аутентификацией занимается браузер по протоколам NTLM или Kerberos</td>
+<td>Браузер запрашивает у пользователя логин/пароль Windows-аккаунта, либо автоматически использует закешированные. Полученные логин/пароль используются браузером для установления сессии между ним и сервером с помощью нескольких &quot;challenge-response&quot; взаимодействий (<a href='https://www.owasp.org/index.php/Authentication_In_IIS' title='null'>подробней</a>)</td>
+<td>Если в web.config включена windows-аутнетификация, то http-модуль WindowsAuthenticationModule устанавливает в  Thread.CurrentPrincipal и HttpContent.Current.User экземпляр WindowsPrincipal аутентифицированного пользователя</td>
+</tr>
+<tr>
+<td>В IIS включена Basic-аутентификация для сайта/приложения</td>
+<td>Аутентификацией занимается браузер по протоколу <a href='http://tools.ietf.org/html/rfc2617#section-2' title='null'>Basic Authentication Scheme</a></td>
+<td>Браузер точно также запрашивает пароль Windows-аккаунта, конвертирует пару в base64 и добавляет в каждый запопрос в http-заголовок Authorization. Т.о. логин/пароль передаются в открытом виде, поэтому использовать механзим можно только с транспортной безопастностью (SSL)</td>
+<td>Точно так же как и при Windows-аутентификации, http-модуль создает WindowsPrincipal, т.к. логин/пароль принадлежат Windows-аккаунту</td>
+</tr>
+<tr>
+<td>В IIS включена Digest-аутентификация</td>
+<td>Аутентификацией занимается браузер по протоколу <a href='http://tools.ietf.org/html/rfc2617#section-3' title='null'>Digest Access Authentication Scheme</a></td>
+<td>В отличии от Basic пароль никогда не передается по сети. Но точно также логин/пароль должны принадлежать Windows-аккаунту, причем сервер должен входит в домен AD. К особенностям Digest следует отнести то, что сервер должен иметь доступ к значениям паролей</td>
+<td>Все полностью аналогично предыдущим случаям</td>
+</tr>
+<tr>
+<td>В IIS включена Forms-аутентификация (фактически она включена в web.config) и выключена анонимная аутентификация</td>
+<td>Аутентификацией должен заниматься прикладной код</td>
+<td>При обращении к любому url приложения ожидается кука с зашифрованным тикетом. Данная конфигурация возможна только в IIS7 и выше в режиме integrated pipeline для pool&#39;a.</td>
+<td>Авторизация происходит при запросе всех ресурсов, включая статику. Модуль FormAuthenticationModule при отсутствии куки выполняет редирект на страницу, заданную в web.config (в атрибуте loginUrl элемента &quot;authentication/forms&quot;). </td>
+</tr>
+</tbody>
+</table>
+<p>К сожалению при обращении клиента по этому url&#39;у (куда его редиректит сервер, если при исходном обращени нет куки), не вызывается MVC-контроллер, а возвращается 401 ошибка. Возможно проблема с совместимости MVC-стека с url authorization asp.net, либо в чем-то еще. | | 
+| Включена Forms-аутентификация и анонимная аутентификация | аналогично | При обращении к любому url&#39;у требующему авторизации ожидается кука с зашифрованным тикетом | Модуль FormAuthenticationModule аналогично обрабатывает куку и выполняет редирект для всех 401 ошибок. Но в отличии от предыдущего варианта, 401 не генериурется сразу для всех анонимных запросов. Аутентификация требуется явно в прикладном код с помощью атрибутов Authorize на классах/методах контроллеров. |
+| В IIS включена анонимная аутентификация | Аутентификацией должен заниматься прикладной код | Для аутентификации необходимо вызвать специальный &quot;login&quot; url. В дальнейшем Identity пользователя восстанавливается из куки | По умолчанию все вызовы происходят под анонимным пользователем. |</p>
+<h3 id="client-side">Client side</h3>
+<p>Результат получения разметки приложения (т.е. обращения к корню сайта, либо к любому url под &quot;/display/&quot;) возвращает помимо представления глобальный Json-объект xconfig.  В нем содержатся параметры безопасности - объект в поле security:</p>
+<pre><code class="lang-js">xconfig = {
+         root: &#39;/ajax/&#39;,
+         security: {
+             windowsAuth: {
+                 loginUrl: &#39;/ajax/auth/login&#39;
+             },
+             formsAuth: {
+                 loginUrl: &#39;/ajax/api/_security/login&#39;,
+                 allowSignUp: true
+             },
+             logoutUrl: &#39;/ajax/api/_security/logout&#39;
+         }
+     };
+</code></pre>
+<p>Объект xconfig формируется и включается в разметку страницы с помощью импорта файла _ImportJavascriptInline.cshtml, подробней см. <a href='page-layout.html' title='null'>Page Layout</a> и <a href='#Server side' title='null'>#Server side</a>.</p>
+<p>Объект security содержит следующие поля:</p>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Поле</th>
+<th>Значение</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>windowsAuth</td>
+<td>объект настроек Windows-аутентификации</td>
+</tr>
+<tr>
+<td>formsAuth</td>
+<td>объект настроек Forms-аутентификации</td>
+</tr>
+<tr>
+<td>logoutUrl</td>
+<td>Url с endpoint&#39;ом сервиса, GET-вызов которого делает текущего пользователя анонимным, сбрасывая куку (cookie) с тикетом аутентификации</td>
+</tr>
+</tbody>
+</table>
+<p>Если объекта security нет, то приложение поддерживает только анонимный доступ. В этом случае обработки ошибок 401 (Unauthorize) выполняться не будет.</p>
+<p>Компоненты, участвующие в аутентификации:</p>
+<ul>
+<li><a href='#AuthMenu' title='null'>#AuthMenu</a></li>
+<li><a href='#security-module' title='null'>#security-module</a></li>
+<li><a href='#DataFacade' title='null'>#DataFacade</a></li>
+<li><a href='#LoginDialog' title='null'>#LoginDialog</a></li>
+</ul>
+<p><a id='AuthMenu'></a></p>
+<h6 id="authmenu">AuthMenu</h6>
+<p>AuthMenu - меню (наследник Menu) с набором пунктов login, logout и отображением имени текущего пользователя в корневом пункте меню. Компонент явно использует презентер меню в виде DropDown-меню (DropDownMenuPresenter). 
+Для подключения компонента достаточно импортировать модуль modules/module-security.
+Создание компонента подразумевается в main.js файле, во время инициализации приложения:</p>
+<pre><code class="lang-js">app.initialize = function () {
+        var that = this;
+
+        // authentication menu (login/logout)
+        that.authMenu = new core.ui.AuthMenu(that.dataFacade, that.eventPublisher);
+        that.authMenu.render($(&quot;#account-menu&quot;));
+    };
+</code></pre>
+<p>В render передается селектор/DOMElement элемента, под которым будет создано меню - это любой пустой элемент (div/li).
+Пункты меню login и logout взаимоисключающие, поэтому AuthMenu фактически имеет два состояния: меню для неаутентифицированного пользователя и меню для аутентифицированного пользователя. 
+Для реализации операции login/logout AuthMenu обращается к DataFacade, экземпляр которого передается в конструкторе при создании экземпляра AuthMenu. Помимо явного входа (с помощью выбора пользователем операции AuthMenu) может произойти еще неявный логин (авто-логин, см. далее в разделе DataFacade). Поэтому меню AuthMenu должно реагировать на изменение состояния аутентифицированности текущего пользователя. Для этого компонент подписывается на pub/sub события &quot;security.login&quot; и &quot;security.logout&quot; (их публикует DataFacade). При обработке этих событий компонент переключает свое состояние с помощью методов <code>activateAuthorizedMenu</code> и <code>activateUnauthorizedMenu</code>.</p>
+<p>При создании экземпляра AuthMenu происходит обращение к DataFacade для получения текущего пользователя - вызывает метод getCurrentUser.</p>
+<p><a id='security-module'></a></p>
+<h6 id="security-module">security-module</h6>
+<blockquote>
+<p>Модуль security-module появился в версии 0.7</p>
+<p>В версии 0.9 модуль был перенесен из папки /client/lib/modules/ в папку /client/lib/modules/security. Туда же были перенесены из /client/lib/ui компоненты AuthMenu и LoginDialog.</p>
+</blockquote>
+<p>Модуль security-module существует для того, чтобы функциональность, связанная с security, не была внедрена в стандартные компоненты. Фактически использование клиентских компонентов для аутентификации/авторизации является опциональным. AuthMenu ожидает наличие нескольких методов в DataFacade, однако изначально они отсутствуют. Добавлением этих методов (client security API) и занимается модуль security-module. Также модуль добавляет метод getCurrentUser в прототип UnitOfWork - см. <a href='#Получение доменного объекта текущего пользователя' title='null'>#Получение доменного объекта текущего пользователя</a>. </p>
+<p><a id='DataFacade'></a></p>
+<h6 id="datafacade">DataFacade</h6>
+<p>DataFacade - это API сервера для всех клиентских компонентов. Сами вызовы сервера (ajax) реализуются другим компонентом - BackendInterop, экземпляр которого принимает DataFacade в конструкторе и хранит. Подробней см. <a href='interop.html' title='null'>Interop</a></p>
+<p>Для целей аутентификации модуль security добавляет в DataFacade следующий API:</p>
+<ul>
+<li>login - выполнение входа (логина)</li>
+<li>logout - выполнение выхода (сброс текущего пользователя и уведомление сервера для сброса cookie)</li>
+<li>getCurrentUser - получение (или запрос на сервере) данных текущего пользователя, фактически возвращает dto-объект (json) с данными доменного объекта, представляющего текущего пользователя приложения</li>
+</ul>
+<p>Помимо явного API, DataFacade обрабатывает ошибки 401 (Unauthorized), возникшие при вызове сервера. Для этого он подписывается на событие &quot;authentication_required&quot; своего экземпляра BackendInterop:</p>
+<pre><code class="lang-js">interop.bind(&quot;authentication_required&quot;, function(jqXhr, defer) {
+    that.login(defer);
+});
+</code></pre>
+<p>Таким образом реализуется автоматический логин. Если при любом вызове сервера возникла ошибка 401 (Unauthorized), то DataFacade не возвращает результат клиенту (т.е. коду, вызвавшего методы load/save/etc экземпляра DataFacade), а выполняет логин.</p>
+<p>Для выполнения логина DataFacade открывает диалог <code>LoginDialog</code>, в котором пользователь либо вводит имя/пароль, либо выбирает Windows-аутентификацию. Для выполнения логина, в зависимости от выбранного типа аутентификации, берется соответствующий url из настроек xconfig.security и делается ajax-вызов (опять таки через BackendInterop, но в этом случае уже без обработки 401 для исключения рекурсии).
+В случае успешного ответа сервера, DataFacade публикует событие &quot;security.login&quot; (на которое подписывается компонент AuthMenu) и запоминает текущего пользователя.</p>
+<blockquote>
+<p>Параметр pub/sub события &quot;security.login&quot; - это json-объект пользователя (dto), а не доменный объект</p>
+</blockquote>
+<p>Если логин произошел как авто-логин, в рамках другого запроса, завершившегося ошибкой 401, то после успешного логина, исходный запрос повторяется. Если опять возникает 401, то повторного логина не происходит. Если произошла ошибка во время логина, то исходный вызов завершается ошибкой.</p>
+<p>Для реализации logout DataFacade вызывает сервер (отправляет GET-запрос по Url&#39;у, заданному в поле security.logoutUrl настроек). Это дает возможно серверу очистить cookie. </p>
+<blockquote>
+<p>Очистить cookie на клиенте невозможно, т.к. обычной практикой является использование HttpOnly-куки в качестве аутентифицирующего тикета, подробней см. <a href='http://en.wikipedia.org/wiki/HTTP_cookie' title='null'>http://en.wikipedia.org/wiki/HTTP_cookie</a></p>
+</blockquote>
+<p>После завершения выхода DataFacade публикует событие &quot;security.logout&quot; (на него подписывается AuthMenu).</p>
+<p>Метод <code>getCurrentUser</code> возвращает json-объект текущего пользователя, если он закеширован. Закеширован он может быть в случае, если <code>getCurrentUser</code> уже вызывался, либо вызывался метод login и не вызывался logout. Т.о. после вызова login, если не вызывался logout, <code>getCurrentUser</code> будет возвращать один и тот же json-объект. После вызова logout <code>getCurrentUser</code> будет возвращать пустое значение (без обращения к серверу).
+Если не вызывались методы login/logout, то при первом вызове <code>getCurrentUser</code> обратится на сервер (отправит GET-запрос /_security/currentUser). Это необходимо для выяснения статуса аутентифицированности пользователя. Если пользователь не аутентифицированности, то сервер вернет пустотой ответ. Если же, пользователь может быть аутентифицирован (включена Windows-аутентификация для всего сайта, либо сохранилась кука), то сервер вернет json-объект пользователя (аналогично тому, как он делает при вызове login-эндпоинта). Метод getCurrentUser в случае обращения на сервер возвращает Deferred-объект, который будет сигнализирован после завершения вызова. В случае получения json объекта пользователя (в результате обращения на сервер) DataFacade опубликует событие &quot;security.login&quot;.</p>
+<p><a id='LoginDialog'></a></p>
+<h6 id="logindialog">LoginDialog</h6>
+<p>LoginDialog - компонент, реализующий диалог (наследник Dialog) выполнения аутентификации. Экземпляр LoginDialog создается DataFacade&#39;ом в методе login. В конструктор передается объект настроек security, в зависимости от содержимого которого формируется UI. UI диалога формируется с помощью шаблона lib/ui/templates/authDialog.html. ViewModel для шаблона является сам LoginDialog. LoginDialog поддерживает следующие режимы:</p>
+<ul>
+<li>аутентификация не задана (поля windowsAuth и formsAuth в security пустые)</li>
+<li>задана только Windows-аутентификация</li>
+<li>задана только Forms-аутентификация</li>
+<li>заданы обе</li>
+</ul>
+<p>Если объект security присутствует, то должно быть задано одно из полей windowsAuth или formsAuth, либо оба сразу. В последнем случае, пользователю будет предоставлена возможность выбора типа учетной записи:
+<img src="attachments/auth_dialog.png" alt="auth_dialog.png"></p>
+<p>При наличии только Windows-аутентификации, при открытии диалога автоматически выполнится вызов endpoint&#39;a из <code>security.windowsAuth.loginUrl</code>. </p>
+<h6 id="-">Получение доменного объекта текущего пользователя</h6>
+<p>Прикладному коду приложения может потребоваться получить экземпляр текущего пользователя как доменный объект. Модуль security-module.js добавляет в прототип UnitOfWork метод getCurrentUser, который запрашивает у DataFacade json-объект пользователя (вызывая getCurrentUser) и восстанавливает из него доменный объект. Но, надо учесть то, что написано выше - DataFacade.getCurrentUser может вернуть undefined в случае, если был выполнен logout. Создать доменный объект из undefined не получится, поэтому  метод должен выполнить login.
+Реализация метода следующая (при необходимости она может быть заменена):</p>
+<pre><code class="lang-js">model.UnitOfWork.prototype.getCurrentUser = function () {
+            var that = this,
+                jsonOrDefer = app.dataFacade.getCurrentUser(),
+                user;
+            if (core.lang.isPromise(jsonOrDefer)) {
+                return jsonOrDefer.pipe(function (userDto) {
+                    if (userDto) {
+                        return that.fromJson(userDto);
+                    } else {
+                        var defer = core.lang.Deferred();
+                        var ret = defer.pipe(function(userDto) {
+                            return that.fromJson(userDto);
+                        }, function() {
+                            return &quot;Authentication was cancelled by user&quot;;
+                        });
+                        app.dataFacade.login(defer);
+                        return ret;
+                    }
+                });
+            }
+            user = jsonOrDefer ? that.fromJson(jsonOrDefer) : null;
+            return core.lang.resolved(user);
+        };
+</code></pre>
+<p>Для того, чтобы использовать на клиенте UnitOfWork.getCurrentUser необходимо, чтобы методы сервера LoginWindowsAuth/LoginFormsAuth/GetCurrentUser возвращали доменный объект. Для этого должен быть реализован метод <code>GetUserDomainObject</code> (см. далее).</p>
+<p><a id='Server side'></a></p>
+<h3 id="server-side">Server side</h3>
+<p>Сервер сообщает клиенту о поддерживаемых режимах аутентификации с помощью объекта настроек <code>xconfig</code>, который вставляется как inline js-код на страницу. Подробней см. <a href='page-layout.html' title='null'>Page Layout</a>.
+Объект <code>xconfig</code> формируется серверным кодом автоматически на основании CLR-объекта <code>XConfig</code>.
+По умолчанию в <code>XConfig</code> не задано ни одного режима аутентификации. В прикладном приложении необходимо принять решение о поддерживаемых режимах аутентификации и на основании этого формировать объект в свойстве <code>XConfig.Security</code>.
+Для заполнения <code>XConfig.Security</code> необходимо расширить модуль <code>XConfigModule</code> и в BootstrapperConfig.cs зарегистрировать в Ninject-контейнере свой модуль вместо стандартного <code>XConfigModule</code>:</p>
+<pre><code class="lang-c#">public static class BootstrapperConfig 
+    {
+        private static IKernel CreateKernel()
+        {
+            var kernel = new StandardKernel(
+                new XApplicationFactoryModule(),
+                new MyConfigModule(), //В оригинале было: XConfigModule(),
+                new XCancellableOperationsMobule(),
+                new JsonSerializationSettingsModule()
+                );
+            ...
+        }
+    }
+</code></pre>
+<p>где MyConfigModule:</p>
+<pre><code class="lang-c#">public class MyConfigModule: XConfigModule
+{
+    protected override XConfig CreateClientConfig()
+    {
+        var config = base.CreateClientConfig();
+        config.Security.FormsAuth = new XFormsAuthConfig()
+                                {
+                                    LoginUrl = new Uri(&quot;api/_security/login&quot;, UriKind.Relative)
+                                };
+        config.Security.WindowsAuth = new XWindowsAuthConfig
+                                  {
+                                      LoginUrl = new Uri(&quot;auth/login&quot;, UriKind.Relative)
+                                  };
+        ...
+        return config;
+    }
+}
+</code></pre>
+<p>В качестве значений Url&#39;ов следует указать объекты System.Url с относительными путями (аналогично тому, как они указываются при описании маршрутов/routes). При первом запросе к Http-приложению пути будут доинициализированы т.о., чтобы при необходимости добавить в них префикс из имени виртуального каталога.</p>
+<p>Данные Url&#39;ы используются также при определении маршрутов в <code>RoutesConfig</code> </p>
+<blockquote>
+<p>маршруты создаются автоматически, на основании конфигурации <code>XConfig.Security</code>, специально их описывать нет необходимости
+:</p>
+</blockquote>
+<pre><code class="lang-c#">protected void registerSecurityApiRoutes(RouteCollection routes)
+        {
+            if (Config.Security != null)
+            {
+                if (Config.Security.FormsAuth != null)
+                {
+                    routes.MapHttpRoute(
+                        name: &quot;Security.Login.Forms&quot;,
+                        routeTemplate: Config.Security.FormsAuth.LoginUrl.OriginalString, //&quot;api/_security/login&quot;,
+                        defaults: new
+                            {
+                                controller = &quot;Security&quot;,
+                                action = &quot;LoginFormsAuth&quot;
+                            }
+                        );
+                }
+
+                if (Config.Security.WindowsAuth != null)
+                {
+                    routes.MapHttpRoute(
+                        name: &quot;Security.Login.Windows&quot;,
+                        routeTemplate: Config.Security.WindowsAuth.LoginUrl.OriginalString, // &quot;auth/login&quot;
+                        defaults: new
+                            {
+                                controller = &quot;Security&quot;,
+                                action = &quot;LoginWindowsAuth&quot;,
+                            }
+                        );
+                }
+
+                routes.MapHttpRoute(
+                    name: &quot;Security.Logout&quot;,
+                    routeTemplate: Config.Security.LogoutUrl.OriginalString, //&quot;api/_security/logout&quot;,
+                    defaults: new
+                        {
+                            controller = &quot;Security&quot;,
+                            action = &quot;Logout&quot;
+                        }
+                    );
+            }
+
+            routes.MapHttpRoute(
+                name: &quot;Security.GetCurrentUser&quot;,
+                routeTemplate: &quot;api/_security/currentUser&quot;,
+                defaults: new
+                    {
+                        controller = &quot;Security&quot;,
+                        action = &quot;GetCurrentUser&quot;
+                    }
+                );
+        }
+</code></pre>
+<p>Данные маршруты ведут в Security-контроллер.</p>
+<p><a id='Security-контроллер'></a></p>
+<h6 id="security-">Security-контроллер</h6>
+<p>Security-контроллер необходимо реализовать в прикладном приложении. Рекомендуется унаследовать его от класса <code>XSecurityControllerBase</code>, содержащей базовую реализацию. Подразумевается следующее использование:</p>
+<ul>
+<li>маршрут XClientConfig.Security.FormsAuth (&quot;api/_security/login&quot;) ведет в метод LoginFormsAuth контроллера </li>
+<li>маршрут XClientConfig.Security.WindowsAuth (&quot;auth/login&quot;) ведет в метод LoginWindowsAuth контроллера </li>
+<li>маршрут XClientConfig.Security.LogoutUrl (&quot;api/_security/logout&quot;) ведет в метод Logout</li>
+<li>маршрут &quot;api/_security/currentUser&quot; ведет в метод GetCurrentUser</li>
+</ul>
+<p>Метод <code>LoginWindowsAuth</code> подразумевает, что вызов уже прошел проверку подлинности в IIS/ASP.NET, т.е. для папки &quot;auth&quot; мы задали Windows Authentication (см. ниже), и попал в стандартный модуль System.Web.Security.WindowsAuthenticationModule, который подставил WindowsIdentity в запрос. Далее метод запрашивает у подсистемы IXSecurityServerSubsystem текущего пользователя (для создания экземпляра пользователя подсистема будет использовать UserProvider, заданный в конфигурации).</p>
+<p>Метод <code>LoginFormsAuth</code> подразумевает, что его вызвали с парой логин/пароль. Проверив заданность параметров и установив временно в качестве текущего специального пользователя с неограниченным доступов, метод LoginFormsAuth вызывает виртуальный метод <code>Authenticate</code>.
+Если в <code>XConfig</code> задан объект в свойстве <code>Security.FormsAuth</code>, то для UserProvider подсистемы <code>IXSecuritySubsystem</code> проверяется поддержка интерфейса <code>IXAuthenticatingUserProvider</code> и, если он поддерживается, то вызывается его метод <code>Authenticate</code>. Если метод <code>Authenticate</code> вернет null, то генерируется XSecurityException.</p>
+<p>Оба метода <code>LoginWindowsAuth</code> и <code>LoginFormsAuth</code> сводятся к вызову <code>loginUser</code> с объектом <code>XUser</code>. В методе <code>loginUser</code> подразумевается, что переданный экземпляр <code>XUser</code> - это текущий аутентифицированный пользователь приложения. Далее метод получает экземпляр доменного объекта, описывающего пользователя. Для этого он вызывает метод <code>GetUserDomainObject</code> - он должен быть реализован в прикладной реализации XSecurityController:</p>
+<pre><code class="lang-c#">protected abstract DomainObject GetUserDomainObject(XUser user);
+</code></pre>
+<p>Далее метод <code>loginUser</code> устанавливает cookie (подробней про куки и Forms-аутентификацию см. <a href='#Forms-аутентификация' title='null'>ниже</a>).
+Если метод <code>GetUserDomainObject</code> вернул null, то считается, что приложение не поддерживает связку <em>пользователя приложения</em> с доменным объектом (т.е. в доменной модели нет сущности пользователь и учет пользователей не ведется в самом приложении). Такое возможно при использовании Windows-аутентификации (т.е. мы считаем, что аутентифицированный инфраструктурой пользователь автоматически является пользователем приложения), либо каком-то другом внешнем учете пользователей.
+В случае, если <code>GetUserDomainObject</code> вернул null, на клиент возвращает простейший json-объект с полем &quot;login&quot;. Этот минимум необходим для работы клиентского кода - отображении текущего пользователя в <a href='#AuthMenu' title='null'>#AuthMenu</a>. Но, очевидно, этого недостаточно для работы метода <code>UnitOfWork.getCurrentUser</code>.</p>
+<p>Данная схема позволяет поддерживать как Windows, так и Forms-аутентификации, а также их комбинацию. </p>
+<p>Другие два маршрута Security-контроллера - это &quot;Logout&quot; и &quot;GetCurrentUser&quot;:</p>
+<ul>
+<li>маршрут &quot;Security.Logout&quot;, Url &quot;api/_security/logout&quot;, ведет в метод <code>Logout</code>, реализованный в <code>XSecurityControllerBase</code>. Метод очищает текущую куку, т.о. что следующий вызов GetCurrentUser вернет null. </li>
+<li>маршрут &quot;Security.GetCurrentUser&quot;, Url &quot;api/_security/currentUser&quot;, ведет в метод <code>GetCurrentUser</code>, реализованный в <code>XSecurityControllerBase</code>. Метод проверяет признак аутентифицированности текущего пользователя (свойство <code>Identity.IsAuthenticated</code> Principal-объекта). Если пользователь аутентифицирован, то метод вызывает метод <code>GetUserDomainObject</code> и возвращает экземпляр доменного объекта текущего пользователя (или примитивный json-объект, если GetUserDomainObject вернул null). Если пользователь не аутентифицирован, то метод возвращает null. Данный метод вызывается клиентским кодом при первом обращении к DataFacade.getCurrentUser, чтобы выяснить статус пользователя (аутентифицирован он или нет).</li>
+</ul>
+<p>Дальнейшая настройка инфраструктуры (IIS + HttpApplication) и реализация SecurityController зависят от поддерживаемых типов аутентификации.</p>
+<p><a id='Windows-only аутентификация'></a></p>
+<h6 id="windows-only-">Windows-only аутентификация</h6>
+<p>При использовании только Windows-аутентификации можно включить ее для всего сайта/виртуального каталога. В этом случае отдельного вызова Login как такового не нужно, пользователь аутентифицирован всегда, т.к. аутентификация происходит автоматически между браузером и веб-вервером. Клиент, вызвав <code>GetCurrentUser</code> (DataFacade.getCurrentUser), получит объект пользователя, т.к. в XSecurityControllerBase.GetCurrentUser вызов уже будет аутентифицирован (сделать Logout по понятным причинам будет невозможно).
+Однако, включение Windows-аутентификации на уровне всего сайте имеет следующие недостатки:</p>
+<ul>
+<li>неполная совместимость со всеми браузерами: основные десктопные браузеры (IE,FF,Chrome) поддерживают NTLM, однако FF открывает окно запроса логина/пароля при каждом посещении; кроме того, мобильные браузеры могут не поддерживать NTLM</li>
+<li>невозможно войти под другим аккаунтом в приложение в IE, если компьютер в домене и в IE включена интегрированная аутентификация</li>
+<li>невозможность разлогиниться - если браузером разрешено запоминать пароли, то при открытии приложения, для которого браузер запомнил логин/пароль, аутентификация будет происходит автоматически между сервером и клиентом, </li>
+<li>администрирование пользователей переносится в корпоративный LDAP-каталог, что может быть неудобно</li>
+<li>использование сервисов (например, для интеграции) затруднено, т.к. клиент должен поддерживать ntlm-аутентификацию</li>
+</ul>
+<p>Поэтому, даже при использовании только Windows-аутентификации рекомендуется использовать &quot;Windows + Forms&quot; подход.</p>
+<p><a id='Forms-аутентификация'></a></p>
+<h6 id="forms-">Forms-аутентификация</h6>
+<p>Для Forms-аутентификации нельзя использовать ее стандартную реализацию в IIS + ASP.NET. Все из-за того, что стандартный http-модуль ее реализующий, FormsAuthenticationModule, перехватывает все ответы с ошибкой 401 и делает редирект на страницу логина. Т.о. данный модуль несовместим с Web API.
+Для обхода этой проблемы предлагается использовать другой модуль - <code>XFormsAuthenticationModule</code>, фактически являющийся подмножеством FormsAuthenticationModule, но с исключенной логикой редиректа.
+Модуль XFormsAuthenticationModule автоматически регистрируется в Http-приложении, если в <code>XConfig.Security</code> включена Forms-аутентификация. Регистрация модуля содержится в BootstrapperConfig.cs:</p>
+<pre><code class="lang-c#">public static void Start() 
+{
+    s_bootstrapper.Initialize(CreateKernel());
+    if (s_bootstrapper.Kernel.Get&lt;XConfig&gt;().Security.FormsAuth != null)
+        DynamicModuleUtility.RegisterModule(typeof(XFormsAuthenticationModule));
+}
+</code></pre>
+<p>Для использования Forms-аутентификации для сайта/вирт.каталога в IIS необходимо оставить только анонимную аутентификацию.</p>
+<p><code>XSecurityControllerBase</code> в случае успешной аутентификации устанавливает куку с authentication ticket, которая распознается модулем XFormsAuthenticationModule. Обнаружив куку, модуль (поведение полностью аналогичное стандартному модулю FormsAuthenticationModule) расшифровывает ticket и устанавливает Principal-объект в HttpContext&#39;e.
+Кука создается с помощью виртуального метода <code>XSecurityControllerBase.setAuthTicket</code>. Метод создает HttpOnly-куку, т.е. недоступную для клиентского кода. Поэтому, для очистки куки (т.е. logout&#39;а) необходимо вызывать сервер (метод <code>Logout</code> контроллера).</p>
+<p>Использование Forms-аутентификации само по себе не говорит о том, где хранятся пользователи и их пароли. Решение об этом принимается в прикладном проекте. Фактически это является особенностью реализации метода <code>Authenticate</code>.
+Обычно под Forms-аутентификация понимается хранинение пользователей в БД приложения. Однако, ни что не мешает поддерживать аутентификацию через LDAP-каталог и при необходимости создавать пользователей в локальной БД. </p>
+<p><a id='Windows + Forms аутентификация'></a></p>
+<h6 id="windows-forms-">Windows + Forms аутентификация</h6>
+<p>В случае одновременного использования Windows и Forms аутентификации, включать Windows-аутентификацию для всего сайта, очевидно, нельзя. Поэтому для Windows-аутентификации создается отдельный каталог в IIS&#39;e (под основным сайтов/каталогом), для которого включается только Windows-аутентификация (для основного сайта остается только анонимная). Этот каталог должен называться &quot;auth&quot;. При регистрации маршрутов модуля добавляется маршрут, проходящий <strong>через</strong> этот каталог (но не заканчивается им!) и ведет к тому же Security-контроллеру, методу <code>Login</code>:</p>
+<pre><code class="lang-c#">routes.MapHttpRoute(
+        name: &quot;Security.Login.Windows&quot;,
+        routeTemplate: ClientConfig.Security.WindowsAuth.LoginUrl.OriginalString,
+        defaults: new
+            {
+                controller = &quot;Security&quot;,
+                action = &quot;LoginWindowsAuth&quot;
+            }
+        );
+</code></pre>
+<blockquote>
+<p>Маршрут не может вести непосредственно к каталогу &quot;auth&quot; (routeTemplate: &quot;auth&quot;), т.к. в этом случае он не попадет в Web Api, а будет считаться запросом статического ресурса - папки &quot;auth&quot;.
+.</p>
+</blockquote>
+<p>Чтобы Windows-аутентификация работала, она должна быть включена для приложения в web.config, лежащем в корне приложения (http-модулями можно управлять только на уровне приложения, поэтому нельзя включить Windows-аутентификацию только для папки &quot;auth&quot;). Если требуется задать какие-то настройки Forms-аутентификации (например, время жизни cookie), то это можно сделать стандартным способом - в элементе forms (не смотря на то, что режим указан как &quot;Windows&quot;!):</p>
+<pre><code class="lang-xml">&lt;system.web&gt;
+        &lt;authentication mode=&quot;Windows&quot;&gt;
+            &lt;forms timeout=&quot;525600&quot;&gt;
+            &lt;/forms&gt;
+        &lt;/authentication&gt;
+    &lt;/system.web&gt;
+</code></pre>
+<p><a id='OAuth-аутентификация'></a></p>
+<h6 id="oauth-">OAuth-аутентификация</h6>
+<p>Помимо Windows и Forms поддерживается OAuth аутентификация. Идея OAuth в том, что аутентификацией занимается другой сервис, которому наше приложение доверяет. Такими сервисами могут быть Google+, Facebook, Twitter, Microsoft Live, Yahoo, etc. Клиент при запросе аутентификации через OAuth перенаправляется на сайт сервиса. Там он аутентифицируется, получает тикет в куке и перенаправляется обратно. Приложение получив куку проверяет ее у сервиса и после этого считает, что перед ним аутентифицированный пользователей.<br>Пример конфигурации для XConfig:</p>
+<pre><code class="lang-js">config.Security.OpenAuth = new XOAuthConfig
+                {
+                    LoginUrl = new Uri(&quot;api/_security/login_oath&quot;, UriKind.Relative),
+                    Providers = new[]
+                        {
+                            new XOAuthProviderInfo
+                                {
+                                    Name = &quot;Facebook&quot;                                    
+                                }
+                        }
+                };
+</code></pre>
+<p><a id='Авторизация'></a></p>
+<h6 id="-">Авторизация</h6>
+<p>Все Api-контроллеры Фреймворка помечены CLR-атрибутом <code>XAuthorizeAttribute</code>. Это фильтр, аналогичный стандартному атрибуту-фильтру <code>AuthorizeAttribute</code> из WebApi. Стандартная реализация <code>AuthorizeAttribute</code> делает следующее:</p>
+<ul>
+<li>проверяет, что для вызываемого метода или класса контроллера не задан атрибут AllowAnonymous. Если задан, то ничего не делает;</li>
+<li>проверяет, что пользователь аутентифицирован (IPrincipal.Identity.IsAuthenticated), если нет, то возвращает http-ошибку 401 (Unauthorized);</li>
+<li>иначе (если пользователь аутентифицирован), при наличии заданных свойств Users и Groups атрибута AuthorizeAttribute, проверяет, что текущий пользователь входит в заданные перечни;</li>
+<li>иначе (если пользователь аутентифицирован, Users/Groups не заданы), ничего не делает
+&quot;ничего не делает&quot; - означает, что доступ разрешен.</li>
+</ul>
+<p><code>XAuthorizeAttribute</code>, в отличии от <code>AuthorizeAttribute</code>, использует подсистему безопасности xfw3-приложения. У нее он запрашивает объект текущего пользователя, для конструирования которого используется UserProvider, заданный в конфигурации подсистемы. Именно он решает разрешен ли анонимный доступ или нет. Если объект пользователя получен без исключений (в том числе это может быть объект анонимного пользователя, если UserProvider реализует метод <code>createAnonymousUser</code>), следовательно доступ разрешен. В противном случае, <code>XAuthorizeAttribute</code> перехватывает исключение и возвращает http-ошибку 401. </p>
+
+ 
+        
+        <hr>
+
+        
+<p>Tags: 
+  
+  <span class="label label-info">interop-layer</span>
+  
+  <span class="label label-info">security</span>
+  
+</p>  
+
+
+        <div class="well">
+  <p>Find an error? <a class="alert-link" href="https://track.rnd.croc.ru/newIssue?project=WC&clearDraft=true&c=Type+Bug&c=State+Open&c=Subsystem+documentation">Let us know →</a></p>
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+
+	<div class="site-footer">
+  <p>Built on 31.9.2014 at 21:39. Power by <a href="http://assemble.io">Assemble</a>, <a href="http://gruntjs.com">Grunt</a>, <a href="http://code.rnd.croc.ru/projects/RND/repos/jsdoc2markdown">jsdoc2markdown</a>.
+</p></div>
+
+    <script src="../../assets/js/jquery.js"></script>
+<script src="../../assets/js/bootstrap.min.js"></script>
+<script src="../../assets/js/highlight.js"></script>
+  </body>
+</html>

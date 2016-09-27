@@ -1,0 +1,3746 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Offline | WebClient documentation</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="../../assets/css/root.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body style="background: white;" data-spy="scroll" data-target=".bs-sidebar">
+
+    <div class="root">
+    
+<div class="navbar navbar-inverse" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../../index.html">WebClient documentation</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Docs</a></li>
+          <li><a href="../api-client/index.html">API Client</a></li>
+        </ul>
+      
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">CROC R&D<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://track.rnd.croc.ru">Bug tracker (YouTrack)</a></li>
+            <li><a href="https://code.croc.ru">Source code (Git Server)</a></li>
+            <li><a href="https://wiki.rnd.croc.ru">Wiki</a></li>
+            <li><a href="https://build.rnd.croc.ru">Build server (TeamCity)</a></li>
+            <li><a href="https://qa.rnd.croc.ru">Q&A</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-header">Other</li>
+            <li><a href="https://github.com/CrocInc">CROC on Github</a></li>
+            
+          </ul>
+        </li>
+      </ul>
+
+    </nav>
+  </div>
+</div>
+
+    
+<div class="container" role="main">
+  <div class="row">
+
+    
+    <div class="col col-lg-3">
+      <div class="sidebar">
+        <ul class="nav nav-pills nav-stacked">
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+          <li><a href="structure.html">Structure</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+          <li><a href="browser-support.html">Browser support</a></li>
+    
+  
+    
+  
+    
+  
+    
+          <li><a href="distribution.html">Distribution</a></li>
+    
+  
+    
+  
+    
+  
+    
+          <li><a href="setup-developer-environment.html">Setup Developer Environment</a></li>
+    
+  
+    
+  
+    
+  
+    
+          <li><a href="project-structure.html">Project Structure</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+          <li><a href="key-features.html">Key Features</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+</ul>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="getting-started-tutorial.html">Getting Started Tutorial</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="getting-started-tutorial-0_12.html">Getting Started Tutorial 0.12</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="base.html">Base</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="ecmascript-5-emulation.html">EcmaScript 5 emulation</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="module-system.html">Module System</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="core.html">Core</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="class-system.html">Class System</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="presentation-model.html">Presentation Model</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="composition-&amp;-navigation.html">Composition &amp; Navigation</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="переопределение-компонентов.html">Переопределение компонентов</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="templating.html">Templating</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="data-binding.html">Data-binding</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="eventpublisher.html">EventPublisher</a></li>
+        
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="application.html">Application</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+         
+
+          <li><a href="app-module.html">App-module</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="datasource.html">DataSource</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="domain-model.html">Domain Model</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="domain-objects.html">Domain Objects</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="validation.html">Validation</a></li>
+        
+        
+       
+        
+       
+        
+         
+
+          <li><a href="formatters.html">Formatters</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="interop.html">Interop</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="main_js.html">main.js</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="ui-ux.html">UI-UX</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="app-starting-ux.html">App starting UX</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="appnavbar.html">AppNavBar</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="css-styles-and-less.html">CSS Styles and LESS</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="tree.html">Tree</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="icons.html">Icons</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="menu.html">Menu</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="objecteditor.html">ObjectEditor</a></li>
+        
+        
+       
+        
+       
+        
+         
+
+          <li><a href="objectlist.html">ObjectList</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="objectviewer.html">ObjectViewer</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="objectwizard.html">ObjectWizard</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="onlinebeacon.html">OnlineBeacon</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="property-editors.html">Property Editors</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="objectfilter.html">ObjectFilter</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="appservices.html">AppServices</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+         
+
+          <li><a href="affix.html">Affix</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="app-navigation.html">App Navigation</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="breadcrumbs.html">Breadcrumbs</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="client-update-notification.html">Client update notification</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="debug-module.html">Debug module</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="drafts.html">Drafts</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="i18n.html">i18n</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="notifications.html">Notifications</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="security.html">Security</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="scroll-accelerators.html">Scroll accelerators</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="reporting.html">Reporting</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="server.html">Server</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="server-architecture.html">Server Architecture</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="page-layout.html">Page Layout</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="filecontroller.html">FileController</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="bootloader.html">Bootloader</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="main_config_json.html">main.config.json</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="hosting.html">Hosting</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="knowledge-base.html">Knowledge Base</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="client-debugging.html">Client Debugging</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="кеширование-контента.html">Кеширование контента</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="webstorm-live-templates.html">WebStorm Live Templates</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="efficient-css.html">Efficient CSS</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="elmah.html">Elmah</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="devtools.html">DevTools</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="archived-build-0_10.html">Archived-Build 0.10</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="настройка-teamcity-билд-конфигурации-для-работы-с-bower-и-grunt.html">Настройка TeamCity билд конфигурации для работы с bower и grunt</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="yeoman-generator.html">Yeoman Generator</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="grunt-croc-qunit.html">grunt-croc-qunit</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="grunt-croc-requirejs.html">grunt-croc-requirejs</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="resxtojson.html">ResxToJson</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+      </ul>
+
+    
+  
+
+
+      </div>
+    </div>
+
+
+    
+    <div class="col col-lg-9">
+      <div class="panel panel-docs">
+        <ol class='breadcrumb'><li><a href='index.html'>Docs</a></li><li><a href='application.html'>Application</a></li><li><a href='interop.html'>Interop</a></li><li class='active'>Offline</li></ol>
+        <h1>Offline</h1>
+          
+
+<blockquote>
+<p>Функциональность добавлена в версии <a href='http://wiki.rnd.croc.ru/display/xfwajax/Release+0.8' title='null'>0.8</a>.</p>
+</blockquote>
+<h2 id="-toc-">{toc}</h2>
+<p>WebClient поддерживает offline режим. Для реализации оффлайн режима используются следующие технологии HTML5:</p>
+<ul>
+<li><a href='https://developer.mozilla.org/en-US/docs/HTML/Using_the_application_cache' title='null'>Application Cache (AppCache)</a></li>
+<li><a href='https://developer.mozilla.org/en-US/docs/Online_and_offline_events' title='null'>online/offline события</a></li>
+<li><a href='https://developer.mozilla.org/en-US/docs/IndexedDB' title='null'>IndexedDB</a></li>
+<li><a href='https://developer.mozilla.org/en-US/docs/DOM/Storage' title='null'>localStorage</a></li>
+</ul>
+<p>Поддержка Offline режима включается в main.config.json:</p>
+<pre><code class="lang-js">{
+  &quot;supportOffline&quot;: true
+}
+</code></pre>
+<p>По умолчанию поддержка выключена (false). Аналогичное свойство доступно в сервером объекте <code>XConfig</code> - <code>SupportOffline</code>.</p>
+<h3 id="application-cache">Application Cache</h3>
+<p>Для добавления поддержки AppCache в приложении необходимо в разметке view &quot;Index&quot; (обычно файл _Layout.cshtml) вставить следующий код:</p>
+<pre><code class="lang-html">&lt;body&gt;
+    @Html.Raw(Model.GetAppCacheFrame(this))
+</code></pre>
+<p>Метод модели <code>GetAppCacheFrame</code> вставляет на страницу определение iframe с src указывающим на url <code>/display/_appcacheframe</code>, маршрут для которого определяется в <code>Croc.XFW3.Web.RoutesConfig</code>. Этот маршрут ведет в метод <code>XHomeController.AppCacheManifestFrame</code>, возвращающий html-страницу, с AppCache-манифестом. В качестве имени манифеста используется &quot;manifest.appcache&quot;.
+Манифест для AppCache можно создать вручную, но рекомендуется использовать для этого Api-контроллер &quot;Offline&quot;. Для этого надо создать новый контроллер <code>OfflineController</code>, унаследовав его от <code>Croc.XFW3.Web.Http.Controllers.OfflineControllerBase</code>. Реализацию можно оставить пустой. 
+В <code>Croc.XFW3.Web.RoutesConfig</code> автоматически (при заданном свойстве <code>XConfig.SupportOffline</code>) регистрируется маршрут для url&#39;a &quot;manifest.appcache&quot;:</p>
+<pre><code class="lang-c#">routes.MapHttpRoute(
+        name: &quot;appcache&quot;,
+        routeTemplate: &quot;manifest.appcache&quot;,
+        defaults: new
+            {
+                controller = &quot;Offline&quot;,
+                action = &quot;GetAppCacheManifect&quot;
+            }
+        );
+</code></pre>
+<p>По умолчанию метод <code>GetAppCacheManifect</code> формирует манифест, содержащий в секции CACHE все файлы из client и content. 
+Также в манифест добавляет текущая версия приложения <code>XConfig.Software.AppVersion</code>. Таким образом, в отладочном режиме при каждом рестарте приложения, манифест будет обновляться.
+Если признак <code>SupportOffline</code> снят, то метод <code>GetAppCacheManifect</code> возвращает 404 ошибку. Это приводит к удалению AppCache в браузере.</p>
+<blockquote>
+<p>Важной особенностью AppCache является то, что при загрузке приложения из кеша, даже если кеш на сервер обновился и успешно скачен, приложение продолжает использовать файлы из кеша. И только при следующем обновлении страницы (либо вызове applicationCache.swapCache) файлы будут обновлены</p>
+</blockquote>
+<p>При загрузке страницы, содержащей ссылку на AppCache-манифест, браузер скачивает все файлы из секции CACHE. Если хотя бы один файл скачать не удалось, то манифест игнорируется (в частности, если приложение уже использует кеш, то он не обновляется!). Поэтому важно, чтобы в папках client и content не было лишних файлов (не предназначенных для клиента).</p>
+<p>При каждом обновлении страницы (с любым url&#39;ом, начинающимся на /display), браузер будет запрашивать манифест. Если при получение манифеста возникнет ошибка 404 (Not Found), то текущий кеш будет отброшен. Таким образом, если при наличии сетевого соединения сервер приложения недоступен, то при открытии приложения из кеша кеш инвалидируется и при следующем открытии мы получим ошибку &quot;Страница не найдена&quot;. Если же сетевое соединение на компьютере недоступно, то браузер будет продолжать использовать AppCache. Таким образом, к сожалению, HTML5 AppCache полностью не гарантирует работу в оффлайн режиме в случае, если недоступен сервер приложения.</p>
+<p>AppCache-манифест задается для фрейма, а не для страницы из-за того, что во время клиентской навигации url меняется (скажем с сервера запрашивалась страница <a href='http://localhost/ajax' title='null'>http://localhost/ajax</a>, а потом на клиенте перешли на <a href='http://localhost/ajax/display/index/default' title='null'>http://localhost/ajax/display/index/default</a>) и при обновлении этого url&#39;a кеш для предыдущего будет не найден. Если же прописать FALLBACK секцию к манифесте чтобы все url&#39;ы начинающиеся на &quot;/myapp/display/&quot; шли на &quot;/myapp/&quot;, то кеш будет скачиваться два раза. Больше того, на клиенте кеш будет распухать, т.к. будет каждый создаваться кеш для каждого обновляемого url&#39;a (а url&#39;ы динамические). При использовании фрейма же url, для которого скачивается кеш, всегда один и тот же (это url, заданный в src iframe). При этом манифест, на который он ссылается содержит все статические ресурсы. Поэтому, при отсутствии сети/сервера приложение (с любым url&#39;ом) будет загружено из кеша. 
+У использовании frame&#39;a для AppCache-манифеста есть один побочный эффект - даже если приложение закешировано, любое обновление url&#39;а все равно обращается на сервер. И только при отсутствии связи ресурсы загружаются из кеша. Это отличается от обычного поведение, когда appcache-манифест задан для html элемента страницы, - в этом случае приложение сразу загружается из кеша, если он существует.</p>
+<p>Ресурсы по HTML5 Offline:</p>
+<ul>
+<li><a href='http://www.whatwg.org/specs/web-apps/current-work/multipage/offline.html' title='null'>http://www.whatwg.org/specs/web-apps/current-work/multipage/offline.html</a></li>
+<li><a href='https://developer.mozilla.org/en/docs/HTML/Using_the_application_cache' title='null'>https://developer.mozilla.org/en/docs/HTML/Using_the_application_cache</a></li>
+<li><a href='http://diveintohtml5.info/offline.html' title='null'>http://diveintohtml5.info/offline.html</a></li>
+<li><a href='http://www.html5rocks.com/en/tutorials/appcache/beginner/' title='null'>http://www.html5rocks.com/en/tutorials/appcache/beginner/</a></li>
+<li><a href='http://www.fuckyeahtml5.com/2011/06/debugging-html5s-offline-web-apps/' title='null'>http://www.fuckyeahtml5.com/2011/06/debugging-html5s-offline-web-apps/</a></li>
+</ul>
+<h3 id="datafacade">DataFacade</h3>
+<p>ApplicationCache реализует только возможность загрузки статических ресурсов (скриптов/css и т.п.) приложения из кеша. Однако, для полноценной работы приложения в оффлайне необходима специальная реализация DataFacade, которая будет обеспечивать сохранение/загрузку данных в оффлайне.
+Реализация DataFacade устанавливается в экземпляр приложения в скрипте <a href='main_js.html' title='null'>main.js</a>. Существует две реализации:</p>
+<ul>
+<li>DataFacade (lib/interop/DataFacade.js) - поддерживает только online-работу, при недоступности сервера возвращается ошибка (и публикуется pub/sub событие)</li>
+<li>DataFacadeSmart (lib/interop/DataFacadeSmart.js) (начиная с версии <a href='http://wiki.rnd.croc.ru/display/xfwajax/Release+0.8' title='null'>0.8</a>) - поддерживает оффлайн режим с разными режимами.</li>
+</ul>
+<p>Для создания экземпляра DataFacadeSmart необходимо передать</p>
+<ul>
+<li>экземпляр BackendInterop (так же как для DataFacade)</li>
+<li>экземпляр eventPublisher&#39;a приложения (<code>app.eventPublisher</code>) (так же как для DataFacade)</li>
+<li>экземпляр DataStore - компонент, который занимается хранением локальных данных (см. <a href='#DataStore' title='null'>далее</a>)</li>
+<li>опции - опциональный json объект:</li>
+</ul>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>наименование</th>
+<th>тип</th>
+<th>описание</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>saveMode</td>
+<td>перечисление <code>DataFacadeSmart.prototype.saveModes</code> (в версии 0.9 называлось просто <code>modes</code>)</td>
+<td>режим сохранения (см. далее)</td>
+</tr>
+</tbody>
+</table>
+<p>Пример создания:</p>
+<pre><code class="lang-js">var store = DataStore.create(app.config.appName, 1, model.meta);
+app.dataFacade = new DataFacade(new BackendInterop(), app.eventPublisher, store);
+</code></pre>
+<p>DataFacadeSmart имеет режим сохранения, который задается опцией saveMode. Это одно из значений (перечисление <code>DataFacadeSmart.prototype.saveModes</code>): smart, offline, remoteOnly. По умолчанию используется smart. Режим сохранения влияет на то, как будут сохраняться объекты. Непосредственно этим управляет свойство <code>saveTarget</code>. Оно может иметь следующие значения (перечисление <code>DataFacadeSmart.prototype.saveTargets</code>): remoteFirst, local, remoteOnly.
+Оно связано с <code>saveMode</code> следующим образом:</p>
+<ul>
+<li>если <code>saveMode</code> равно &quot;smart&quot;, то при наличии соединения и отсутствия локальных несинхронизированных данных, <code>saveTarget</code> равно &quot;remoteFirst&quot;, иначе &quot;local&quot;</li>
+<li>если <code>saveMode</code> равно &quot;offline&quot;, то <code>saveTarget</code> равно &quot;local&quot;</li>
+<li>если <code>saveMode</code> равно &quot;remoteOnly&quot;, то <code>saveTarget</code> равно &quot;removeOnly&quot;</li>
+</ul>
+<p>Помимо <code>saveMode</code> и <code>saveTarget</code> есть также свойства:</p>
+<ul>
+<li>networkOnline - сетевая доступность</li>
+<li>serverOnline - доступность сервера (по результату последнего обращения на сервер) </li>
+</ul>
+<p>При старте приложения без AppCache мы считаем, что сервер доступен (<code>serverOnline</code> равно <code>true</code>). При старте из AppCache, запускается проверка соединения - выполнение &quot;ping&quot;-a сервера.</p>
+<p>BackendInterop отслеживает HTML5 события online/offline, которые генерируются современными браузерами при пропадании и появлении сети. При получении события <code>offline</code>, DataFacadeSmart устанавливает networkOnline=false, serverOnline=false. Однако, при получении события <code>online</code> (т.е. появлении сети) DataFacade устанавливает только networkOnline=true. Для определения доступности сервера он делает вызов checkConnection. Изначальная доступность сети определяется по свойству <code>navigator.onLine</code>.</p>
+<h4 id="-save-">Сохранение (save)</h4>
+<p>При сохранении (DataFacade.save) анализируется текущее значение свойства <code>saveTarget</code>:</p>
+<ul>
+<li>если свойство равно <code>local</code>, то изменения сохраняются локально (в DataStore)</li>
+<li>если свойство равно <code>remoteFirst</code>, то изменения сохраняются на сервер, а в случае ошибки, сохраняются локально</li>
+<li>если свойство равно <code>remoteOnly</code>, то изменения сохраняются на сервер, в случае ошибки локального сохранения не происходит; т.о. а режиме <code>remoteOnly</code> данные никогда не сохраняются локально, DataStore используется только для кеширования</li>
+</ul>
+<p>Если данные сохраняются локально (в режиме <code>local</code> или в <code>removeFirst</code> в случае ошибки), то, если manuallyDisconnected=false, автоматически запускает фоновый процесс их синхронизации. Синхронизацию изменений выполняет компонент <code>DataSynchronizer</code> (его создает DataFacadeSmart). <code>DataSynchronizer</code> периодически выполняет &quot;ping&quot; сервера до тех пор, пока вызов не завершится успешно, после этого он выполняет вызов BackendInterop.save, передавая <strong>все</strong> локально накопленные изменения.</p>
+<p>Для выполнения пинга используется метод BackendInterop.checkConnection, который посылает POST-запрос по адресу &quot;api/ping&quot;. Для ответа на сервере регистрируется маршрут:</p>
+<pre><code class="lang-c#">routes.MapHttpRoute(
+        name: &quot;Ping&quot;,
+        routeTemplate: &quot;api/ping&quot;,
+        defaults: new
+                      {
+                          controller = &quot;System&quot;,
+                          action = &quot;Ping&quot;
+                      }
+        );
+</code></pre>
+<p>Метод контроллера, в который ведет в этот маршрут, должен вернуть <strong>что-нибудь</strong> со статусом 200. При получении успешного ответа BackendInterop.checkConnection считает, что сервер (и сеть) доступны.</p>
+<p>Рассмотрим процесс синхронизации изменений:</p>
+<ul>
+<li><code>DataSynchronizer</code> после определения доступности сервера и выполнения save генерирует одно из двух событий: &quot;sync.success&quot; и &quot;sync.error&quot;, на которые подписан DataFacadeSmart</li>
+<li>при успешной синхронизации (&quot;sync.success&quot;) DataFacadeSmart делает следующее:<ul>
+<li>уведомляет DataStore о том, что его изменения должны быть приняты (вызывает <code>acceptChanges</code>)</li>
+<li>увеличивает ts синхронизированным объектам </li>
+<li>генерирует событие <code>update</code>, на которое подписаны все экземпляры <code>UnitOfWork</code>, и в которое передает данные о увеличенных ts (в будущем могут быть другие изменения, например, изменения идентификаторов объектов после сохранения)</li>
+<li>устанавливает свойства <code>networkOnline=true</code>; <code>servreOnline=true</code>; если <code>saveMode</code> равно &quot;smart&quot;, то <code>saveTarget</code> устанавливается в &quot;remoteFirst&quot;</li>
+<li>публикует pub/sub событие &quot;interop.sync.success&quot; (которое по умолчанию отображается как нотификация)</li>
+</ul>
+</li>
+<li>при неуспешной синхронизации (&quot;sync.error&quot;) DataFacadeSmart делает следующее:<ul>
+<li>если ошибка &quot;unrecoverable&quot; (получена как ответ со статусом 400 Bad Request или 403 Forbidden), то выполняется &quot;обработка критической ошибки&quot; (см. далее)</li>
+<li>если ошибка &quot;recoverable&quot;, т.е. вызвана ошибками в инфраструктуре, то синхронизация повторяется. &quot;recoverable&quot;-ошибка определяется обработчиком ajax-ошибок <code>BackendInterop.handleError</code>. На текущий момент такими ошибками являются 404 и 503 при условии заданного заголовка ответа &quot;Connection: close&quot;.</li>
+<li>для всех других ошибок выполняется checkConnection и при доступности сервера выполняется &quot;обработка критической ошибки&quot;, а при недоступности синхронизация повторяется</li>
+</ul>
+</li>
+<li>&quot;обработка критической ошибки&quot; синхронизации заключается в публикации pub/sub &quot;interop.sync.error&quot; события, которое по умолчанию содержит следующие операции:<ul>
+<li>Повторить: выполняется повтор синхронизации</li>
+<li>Отменить: выполняется отмена накопленных изменений в DataStore (вызывается метод discardChanges)</li>
+</ul>
+</li>
+</ul>
+<p>В дополнении к этому, если подключен модуль module-offline, то к списку операций добавляется операция &quot;Разрешить&quot; (Resolve), которая активирует area &quot;Offline&quot; с UI разрешения ошибок синхронизации. Area и все необходимые парты добавляются модулем module-offline автоматически.</p>
+<p>Возвращаемся в начало. Если в момент вызова <code>DataFacade.save</code> свойство <code>saveTarget</code> было &quot;remoteFirst&quot; или &quot;remoteOnly&quot;, то выполняется сохранение на сервер.</p>
+<ul>
+<li>в случае успешного сохранения на сервер объектам увеличивается ts, генерируется событие &quot;update&quot;, генерируется pub/sub событие &quot;interop.save.success&quot;</li>
+<li>в случае ошибки при сохранении на сервер:<ul>
+<li>если <code>saveTarget</code> было &quot;remoteOnly&quot;, то возвращается ошибка и публикуется pub/sub событие &quot;interop.save.error&quot;, а сохранения в DataStore не происходит</li>
+<li>если ошибка &quot;unrecoverable&quot;, то возвращается ошибка и публикуется pub/sub событие &quot;interop.save.error&quot;, а сохранения в DataStore не происходит. Событие содержит операцию &quot;Сохранить локально&quot;, которая выполняет сохранение в DataStore</li>
+<li>код, запустивший сохранение обрабатывает ошибку сам, в частности при сохранении из редактора, нотификация содержит операцию &quot;Вернуться к редактирования&quot;, которая позволяет вернуться в редактор, запустивший сохранение</li>
+<li>во всех остальных случаях выполняется проверка доступности сервера (checkConnection):<ul>
+<li>если сервер доступен, то поведение аналогично &quot;unrecoverable&quot; ошибке (см. выше)</li>
+<li>если сервер недоступен, то изменения сохраняются локально (в DataStore) (прим: это эквивалентно тому как если бы свойство <code>saveTarget</code> было <code>local</code> на момент вызова save)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Обработка manuallyDisconnected:</p>
+<ul>
+<li>при установке manuallyDisconnected=true, если <code>saveMode</code> не равно &quot;remoteOnly&quot;<ul>
+<li>прерывается идущая синхронизация</li>
+<li><code>saveTarget</code> меняется на &quot;local&quot;</li>
+</ul>
+</li>
+<li>при установке manuallyDisconnected=false, запускается синхронизация, если есть локальные изменения</li>
+</ul>
+<h4 id="-load-">Загрузка (load)</h4>
+<p>Поведение при загрузке определяется компонентом <code>CacheManager</code>. Метод <code>DataFacadeSmart.load</code> запрашивает политику загрузки данных с помощью метода <code>getLoadPolicy</code> CacheManager&#39;a. 
+При использовании стандартной реализации CacheManager&#39;а, политика определяется правилом, заданным CacheManager&#39;у при его создании (см. ниже). </p>
+<p>Для <code>CacheManager</code> поддерживаются следующие правила (перечисление <code>CacheManager.prototype.rules</code>) (NOTE: данные привила используется не для всех объектов, а в каждом конкретном случае):</p>
+<ul>
+<li>если задано свойство <code>manuallyDisconnected</code>, то политика загрузки всегда будет одинаковая и не зависит от правила, возвращаемого CacheManager&#39;ом: загружать данные локально, на сервер не обращаться</li>
+<li>alwaysRemote - в версии 0.10 переименовано в remoreFirst</li>
+<li>remoreFirst - всегда сначала загружать данные с сервера, не используя DataStore, при получении ошибки данные загружаются локально, загруженные данные не кешируются (т.е. локально данные окажутся только в случае, если их кто-то закеширует явно)</li>
+<li>alwaysLocal - в версии 0.10 переименовано в LocalFirst</li>
+<li>localFirst - всегда сначала загружать данные локально (из DataStore), если на клиенте нет запрашиваемых данных, то загружать их с сервера, полученные данные кешируются - таким образом, однажды загруженные данные будут использоваться всегда локально, пока кто-то их не обновит или удалит из кеша</li>
+<li>localIfOffline - <blockquote>
+<p>В 0.8 поведение было: сначала загружать данные с сервера, при недоступности сервера, загружать данные локально, полученные данные кешировать</p>
+</blockquote>
+</li>
+</ul>
+<p>Если свойство <code>serverOnline</code> равно <code>true</code>, то загружать данные с сервера, полученные данные кешировать. В случае ошибки при загрузке, загружать данные локально. Если свойство <code>serverOnline</code> равно <code>false</code>, то загружать данные локально (не пытаясь обращаться на сервер!) и параллельно с этим (асинхронно) выполнять пинг сервера (checkConnection) (если сервер окажется доступен, то следующий load обратится на сервер</p>
+<ul>
+<li>cached - сначала загружать данные локально, если данных нет, либо с момент их обновления прошло более <code>cacheAge</code> секунд, то загружать данные с сервера при условии, что он доступен (свойство <code>serverOnline</code> равно <code>true</code>). При этом, если при загрузке данных с сервера возникнет ошибка, то продолжать использовать локальные данные. Также, если <code>serverOnline</code> равно <code>false</code>, то как в случае localIfOffline обращения на сервер не происходит, а асинхронно выполняется ping</li>
+<li>remoteOnly - всегда загружает данные с сервера, не кеширует их и не обогащает их локальными изменениями; при недоступности сервера сразу возвращается ошибка</li>
+<li>localOnly - всегда загружает локальные данные, при их отсутствии возвращает результат, не обращаясь на сервер (как в режиме <code>manuallyDisconnected</code>)</li>
+</ul>
+<p>Если при создании DataFacade ему не передан экземляр <code>CacheManager</code>, то он создается автоматически. При создании экземпляра <code>CacheManager</code> ему указывается правило по умолчанию. Оно может быть задано либо полем <code>loadRule</code> объекта опций <code>DataFacadeSmart</code>, либо определяется на основе свойства <code>saveMode</code>:
+&quot;smart&quot; -&gt; &quot;localIfOffline&quot;, &quot;offline&quot; -&gt; &quot;cached&quot;, &quot;onlineOnly&quot; -&gt; &quot;remoteFirst&quot;.
+Если требуется для разных запросов/объектов использовать разные стратегии кеширования, то следует создать собственную реализацию CacheManager и передать его экземпляр в опциях при создании <code>DataFacadeSmart</code>:</p>
+<pre><code class="lang-js">app.dataFacade = new DataFacade(
+    new BackendInterop(xconfig), app.eventPublisher, store, {
+        cacheManager: new MyCacheManager ()
+    });
+</code></pre>
+<p>Пример реализации :</p>
+<pre><code class="lang-js">var MyCacheManager = core.lang.Class({
+    constructor: function () {
+        this.cacheAge = this.options.cacheAge;
+    },
+
+    getLoadPolicy: function (query, options) {
+        var that = this,
+            policy = {
+                rule: that.rule,
+                maxAge: that.cacheAge
+            };
+        // для всех запросов на загрузку объектов типа Group, User:
+        if (query.type === &quot;Group&quot; || query.type === &quot;User&quot;) {
+            policy.rule = CacheManager.prototype.rules.cached;
+        // результат загрузки источника данных &quot;MyCustomDS&quot; кешировать на 10 минут
+        } else if (query.source === &quot;MyCustomDS&quot;) {
+            policy.rule = CacheManager.prototype.rules.cached;
+            policy.maxAge: 600000 // 10 minutes
+        } else {
+            policy = CacheManager.prototype.rules.localIfOffline;
+        } 
+
+        return policy;
+    }
+});
+</code></pre>
+<p>После загрузки данных с сервера, они кэшируются локально в DataStore (если политика CacheManager&#39;a это разрешает).
+Если в DataStore содержатся несохраненные изменения для объектов, загруженных с сервера, то <code>DataFadade.load</code> всегда возвращает данные с локальными изменениями (кроме правила <code>RemoteOnly</code>). 
+При загрузке объекта с сервера, если разрешена локальная загрузка, перед возвратом его клиенту, DataFacade дополняет объект свойствами, которые не были загружены, то существуют локально, но только если ts локального и загруженного объекта совпадают. Если же ts загруженного объекта и ts локального объекта не совпадают, то это потенциальный <em>конфликт при загрузке</em>. Если в этом случае локальный объект не имеет локальных изменений (т.е. еще не синхронизированных), то локальные данные заменяются на серверные. При этом, те свойства, которые существуют локально, но не были загружены, удаляются из кеша.</p>
+<p>Также DataFacade поддерживает опцию <code>forceLoadUnsync</code>, значение по умолчанию которой устанавливается в <code>true</code> модулем <code>offline</code> (см. раздел <a href='#Модуль Offline' title='null'>#Модуль Offline</a>). Если опция задана, то при локальной загрузке DataFacade к результату загрузки всегда добавляет все новые и измененные объекты запрашиваемого типа, кроме случаев загрузки свойства и загрузки объекта по ObjectId.</p>
+<h4 id="-cachemanager-">Влияние правила CacheManager и политик на алгоритм загрузки</h4>
+<p>При загрузке DataFacade запрашивает политику для текущего запроса у CacheManager. CacheManager может вернуть:</p>
+<ul>
+<li>строку - наименование правила из перечисления CacheManager.prototype.rules</li>
+<li>объект с полем rule - правило из перечисления CacheManager.prototype.rules</li>
+<li>объект политики</li>
+</ul>
+<p>Если CacheManager вернул правило, то оно трансформируется в политику (см. метод DataFacadeSmart.prototype._getLoadPolicy). 
+Объект политики состоит из следующих полей:</p>
+<ul>
+<li>loadFirst: &quot;local&quot; или &quot;remote&quot; - откуда грузить сначала</li>
+<li>allowRemote: false/true - можно ли грузить с сервера</li>
+<li>allowLocal: false/true  - можно ли грузить локально</li>
+<li>shouldCache: false/true - нужно ли кешировать загруженные с сервера</li>
+</ul>
+<p>Алгоритм загрузки с использованием политики выглядит так:</p>
+<ul>
+<li>откуда грузить сначала:<ul>
+<li>&quot;local&quot; - сначала ищем локально</li>
+<li>&quot;remove&quot; - сначала грузим с сервера</li>
+</ul>
+</li>
+<li><p>если грузили с сервера и получили результат, то надо:</p>
+<ul>
+<li>дополнить загруженные объекты локальными данными (если allowLocal=true)</li>
+<li>если нужно кешировать загруженные данные (shouldCache=true), то закешировать - т.е. поместить все загруженные объекты в DataStore</li>
+<li><p>если кешировать не надо, то надо обновить только уже существующие объекты в кеше, если они там есть (существовать они там могут например из-за того, что объекты создавались/редактировались в оффлайне) </p>
+<blockquote>
+<p>Возможно их стоит удалить оттуда, а не обновлять</p>
+</blockquote>
+</li>
+<li><p>если надо кешировать данные (shouldCache=true), то закешировать сам запрос (т.е. соответствие условий и списка объектов)</p>
+</li>
+<li>сгенерировать событие update с загруженными объектами</li>
+</ul>
+</li>
+<li>если грузили с сервера и получили ошибку, то:<ul>
+<li>если ошибка т.н. &quot;unrecoverable&quot;, т.е. http-статус равен 400 (Bad Request) или 403 (Forbidden), то это значит что-то не так с запросом - ошибка возвращается клиенту</li>
+<li>для других ошибок мы пытаемся деградировать до локального поиска, если политика позволяет (allowLocal), иначе возвращает ошибку</li>
+</ul>
+</li>
+<li>если грузили локально после неудачной загрузки с сервера, то либо возвращает найденный результат, либо (если ничего не найдено), возвращает исходную серверную ошибку</li>
+<li>если грузили локально и ничего не нашли, то<ul>
+<li>если политика разрешает удаленную загрузку (allowRemote=true), то грузим с сервера, </li>
+<li>иначе возвращаем пустой результат</li>
+</ul>
+</li>
+<li>грузили локально и получили результат<ul>
+<li>если в политике не задан максимальный возраст, то вернем результат</li>
+<li>если в политике задан максимальный возраст (maxAge) и разрешена загрузка с сервера, то сравним возраст результата (т.е. время между текущим моментом и моментом, когда данные были помещены в DataStore):<ul>
+<li>если возраст результата больше, чем разрешает политика, то грузим с сервера</li>
+<li>если загрузка с сервера завершится &quot;unrecoverable&quot; ошибкой (см. выше), то вернет клиенту ошибка</li>
+<li>если загрузка с сервера завершится любой другой ошибкой, то будем использовать локальный результат(хоть и формально устаревший)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Связь правил CacheManager и политики загрузки:</p>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Правило</th>
+<th>loadFirst: Откуда загружать вначале?</th>
+<th>allowRemote:  разрешена ли загрузка с сервера?</th>
+<th>allowLocal: разрешена ли загрузка из DataStore?</th>
+<th>shouldCache: надо ли кешировать загруженные данные?</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Любое правило при заданном свойстве manuallyDisconnected</td>
+<td>local</td>
+<td>нет</td>
+<td>да</td>
+<td>нет</td>
+<td>Всегда ищем локально, если нашли используем, иначе возвращаем ошибку</td>
+</tr>
+<tr>
+<td>remoteFirst</td>
+<td>remote</td>
+<td>да</td>
+<td>да</td>
+<td>нет</td>
+<td>Всегда сначала загружаем с сервера, локальный кеш не используется, но в случае ошибке ищем в нем</td>
+</tr>
+<tr>
+<td>localFirst</td>
+<td>local</td>
+<td>да</td>
+<td>да</td>
+<td>да</td>
+<td>Всегда сначала ищем локально, если нашли используем, иначе идем на сервер. В отличии от Cached время жизни не ограничено</td>
+</tr>
+<tr>
+<td>localIfOffline</td>
+<td>remote или local</td>
+<td>да</td>
+<td>да</td>
+<td>да</td>
+<td>Если свойство <code>serverOnline</code> равно <code>true</code> (т.е. мы думаем, что сервер доступен), то сначала пытаемся загрузить с сервера и только, если это не удалось, ищем локально; если <code>serverOnline</code> равно <code>false</code>, то сразу загружаем локально и асинхронно выполняем пинг (checkConnection) сервера</td>
+</tr>
+<tr>
+<td>cached</td>
+<td>local</td>
+<td>да</td>
+<td>да</td>
+<td>да</td>
+<td>Всегда сначала ищем локально, если нашли используем, но только если время жизни результата не превышает maxAge, иначе, если свойство <code>serverOnline</code> равно <code>true</code>, идем на сервер; если <code>serverOnline</code> равно <code>false</code>, то используем устаревшие локальные данные и асинхронно выполняем пинг</td>
+</tr>
+<tr>
+<td>remoteOnly</td>
+<td>remote</td>
+<td>да</td>
+<td>нет</td>
+<td>нет</td>
+<td>Ищем только на сервере, локальные данные не используем</td>
+</tr>
+<tr>
+<td>localOnly</td>
+<td>local</td>
+<td>нет</td>
+<td>да</td>
+<td>нет</td>
+<td>Ищем только локально, на сервер не обращаемся</td>
+</tr>
+</tbody>
+</table>
+<h4 id="-">Обработка конфликтов при загрузке</h4>
+<p>При кэшировании объекта, пришедшего с сервера, в DataStore уже может храниться локальная версия того же объекта. Если у этих объектов разный ts, то:</p>
+<ul>
+<li>если локальный объект не содержит &quot;недостоверных&quot; данных (т.е. не изменялся локально), то он замещается серверным объектом. При этом свойства, которые хранились локально, но не пришли с сервера, удаляются из DataStore, так как их уже нельзя считать достоверными.</li>
+<li>если у локального объекта есть &quot;недостоверные&quot; данные (локальные изменения еще не синхронизированы), то получаем конфликт. В этом случае:<ul>
+<li>серверные значения свойств помещаются в &quot;достоверные&quot; данные локального объекта. При этом если свойство менялось локально, то текущим значением свойства останется локальное (&quot;недостоверное&quot;), а серверное значения станет текущим только после отката локальных изменений (вызова rollback).</li>
+<li>ts серверного объекта сохраняется в качестве &quot;достоверного&quot;, но текущий ts по-прежнему остается локальным (заведомо недостоверным). Если будет выполнен откат локальных изменений объекта, то текущий ts будет заменен на сохраненное достоверное значение.</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>Это обеспечивает одинаковое поведение вне зависимости от того, какая была последовательность действий: сначала откат локальных изменений, потом загрузка, или сначала загрузка, а потом откат.</p>
+</blockquote>
+<p><a id='DataStore'></a></p>
+<h3 id="datastore">DataStore</h3>
+<p>При создании <code>DataFacadeSmart</code> ожидает получить в конструкторе экземпляр <code>DataStore</code>, компонента реализующего хранение локальных данных.
+DataStore должен уметь хранить два набора данных: &quot;достоверные&quot; (с сервера) и &quot;недостоверные&quot; (локальные). В offline режиме DataFacadeSmart сохраняет изменения в виде &quot;недостоверных&quot; данных (метод <code>save</code>). После перехода в online и успешного сохранения на сервер, данные становятся &quot;достоверными&quot; (DataFacade вызывает метод <code>commit</code>). Для удаления &quot;недостоверных&quot; данных используется метод <code>rollback</code>. Для получения всего набора накопленных локальных изменений используется метод <code>getChanges</code>.
+При загрузке данных, если текущая политика предписывает загружать данные локально, DataFacade вызывает метод <code>query</code>. После выполнения серверного запроса, если политика предписывает кешировать данные, то полученные данные кешируются с помощью методов cacheQuery и cache.</p>
+<p>Интерфейс компонента должен предоставлять следующее API:</p>
+<pre><code class="lang-js">save: function (objects)
+commit: function (objects)
+rollback: function (changes)
+
+hasChanges: function ()
+getChanges: function ()
+
+cache: function (objects, options)
+cacheQuery: function (query, response)
+query: function (query)
+
+overwrite: function (objects)
+remove: function (objects)
+clear: function (type)
+clearAll: function (options)
+</code></pre>
+<p>Прикладной код создает экземпляр DataStore, используя метод <code>DataStore.create</code>, где <code>DataStore</code> - это модуль &quot;lib/interop/DataStore&quot;.
+Данный метод выбирает подходящую реализацию DataStore на основе возможностей текущего браузера. На текущий момент существует две реализации:</p>
+<ul>
+<li>на основе <a href='https://developer.mozilla.org/en-US/docs/IndexedDB' title='null'>IndexedDB</a> (<code>DataStoreIndexedDB</code>)</li>
+<li>на основе <a href='https://developer.mozilla.org/en-US/docs/DOM/Storage' title='null'>localStorage</a> (<code>DataStoreLocalStorage</code>)</li>
+</ul>
+<p><code>DataStore</code> при возможности выбирает IndexedDB-based реализацию, в противном случае выбирает localStorage-based реализацию.</p>
+<blockquote>
+<p>См. поддержку в различных браузерах <a href='http://caniuse.com/#feat=indexeddb' title='null'>IndexedDB</a> и <a href='http://caniuse.com/#feat=namevalue-storage' title='null'>localStorage</a></p>
+</blockquote>
+<p>Пример main.js:</p>
+<pre><code class="lang-js">var xconfig = xconfig || { root: &#39;&#39;, require: {} };
+require.config(xconfig.require);
+
+require([
+    &quot;jquery&quot;,
+    &quot;core&quot;,
+    &quot;app/model-ext&quot;,
+    &quot;lib/interop/DataFacadeSmart&quot;,
+    &quot;lib/interop/BackendInterop&quot;,
+    &quot;lib/data/DataStore&quot;, 
+        ...
+], function ($, core, model, DataFacade, BackendInterop, DataStore) {
+    &quot;use strict&quot;;
+    $(document).ready(function () {
+        var app = new core.Application(xconfig);
+        app.model = model;
+        app.dataFacade = new DataFacade(
+            new BackendInterop(xconfig), 
+            app.eventPublisher, 
+            DataStore.create(xconfig.appName, /*версия*/1, model.meta),
+            {cacheManager: new MyCacheManager ()}
+        );
+    });
+});
+</code></pre>
+<p>DataStore.create принимает:</p>
+<ul>
+<li>имя приложения</li>
+<li>версию доменной модели</li>
+<li>метаданные доменной модели</li>
+<li>объект опций (опционально)</li>
+</ul>
+<p>Версия доменной модели используется для определения факта изменения модели. Версия модели хранится в базе данных. При несовпадении версии в БД и версии переданной в DataStore выполняется <em>миграция</em>. </p>
+<h4 id="-">Миграция</h4>
+<p>При изменении модели данные в локальном хранилище могут перестать удовлетворять ей. В этом случае необходимо выполнить <em>миграцию</em>. При создании экземпляра DataStore (любой из реализаций) данные в хранилище не проверяются на совместимость с моделью. Вместо этого, при создании экземпляра DataStore в его конструктор передается версия модели, которую должен задать прикладной разработчик. При несовпадении версии хранилища и переданной в конструктор, выполняется миграция.</p>
+<p>Миграция включает в себя следующие:</p>
+<ul>
+<li>обновление структуры хранилища (для IndexedDB); IndexedDB не имеет схемы как РСУБД, но имеет store&#39;ы - аналог таблиц; их необходимо создать, причем сделать это можно только в обработчике <code>onupgradeneeded</code>, который вызывается при открытии БД и несовпадении версий - именно поэтому версию надо задавать явно;</li>
+<li>миграция данных (для всех реализаций); логика миграции может зависеть от характера данных: достоверные (кеш) и недостоверные (не синхронизированные изменения); в первом случае может быть достаточно удалить данные (методы <code>clearAll</code>, <code>clear</code>, <code>removeObjects</code>), во втором может потребоваться вручную модифицировать объекты и поместить их обратно в хранилище (метод <code>overwrite</code>).</li>
+</ul>
+<p>Пример, кастомной миграции:</p>
+<pre><code class="lang-js">store = DataStore.create(xconfig.appName, 7, model.meta, {
+    onversionchange: function (store, oldVersion, newVersion) {
+
+        // в версии 2, в типе Group переименовали свойство name в title
+        if (oldVersion &lt; 2) { 
+            store.select(&quot;Group&quot;).then(function (objects) {
+                var migrated = [];
+                objects.forEach(function (obj) {
+                    if (obj.name) {
+                        obj.title = obj.name;
+                        delete obj.name;
+                        migrated.push(obj);
+                    }
+                });
+                store.overwrite(migrated);
+            });
+        }
+        // в версии 3, из типа User выделели тип SysUser, в которое перенести св-во Login
+        if (oldVersion &lt; 3) {
+            store.select(&quot;User&quot;).then(function (objects) {
+                var migrated = [];
+                objects.forEach(function (obj) {
+                    // если объект новый, либо измененный
+                    // TODO: Дополнить после написания тестов
+                });                
+                store.overwrite(migrated);
+            });
+        }
+</code></pre>
+<h3 id="-">Синхронизация и обработка ошибок</h3>
+<blockquote>
+<p>TODO!</p>
+</blockquote>
+<p>Если при синхронизации возникли ошибка и это не ошибка недоступности сервера, то публикуется событие &quot;interop.sync.error&quot;, отображающее модульную нотификацию с операциями:</p>
+<ul>
+<li>&quot;Повторить&quot;</li>
+<li>&quot;Отменить&quot; - все изменения, при синхронизации которых возникла ошибка, будет отменены.</li>
+<li>&quot;Перейти в оффлайн&quot; - будет установлено свойство manuallyDisconnected в true, что приведет к прекращению попыток синхронизации</li>
+<li>&quot;Разрешить&quot; - данная операция добавляется модулем <code>modules/module-offline.js</code> и активирует интерфейс разрешения ошибок синхронизации (см. ниже)</li>
+</ul>
+<h4 id="-offline">Модуль Offline</h4>
+<p>Модуль <code>modules/module-offline.js</code> при инициализации автоматически создает Area &quot;offline&quot; (если Area с таким наименование существует, то модуль использует ее). </p>
+<blockquote>
+<p>При автоматическом создании арии модуль также создает HTML-элемент для нее и добавляет его как подчиненный в Application.domElement. См. <a href='debug-module.html' title='null'>Debug module</a> об особенностях добавления элемента арии</p>
+</blockquote>
+<p>В единственном регионе арии располагается экземпляр парта <code>SyncResolutionPart</code>. При выборе операции &quot;Разрешить&quot; в нотификации об ошибке синхронизации в парт <code>SyncResolutionPart</code> устанавливается результат синхронизации (как viewModel), что также меняет свойство арии hidden на false. Т.о. ария &quot;offline&quot; видна только пока есть неразрешенные ошибки синхронизации.</p>
+<p>Также модуль offline добавляет расширяет классы DomainObject и SlickObjectListDataPresenter для отображения признака несинхронизированных объектов в списке:</p>
+<ul>
+<li>в DomainObject добавляется свойство hasUnsyncChanges, которое устанавливается в методе fromJson из объекта metadata. Признак в json-объекте устанавливается в DataFacadeSmart.loadLocally при загрузке объекта локально, если у него есть изменения (т.е. он не был синхронизирован)</li>
+<li>в SlickObjectListDataPresenter расширяется метод getItemMetadata, который добавляет css-класс &quot;x-unsync-row&quot; строке списка для объектов с признаком hasUnsyncChanges. Для данного css-класса в module-offline.css определен стиль , отображающий специальную иконку.</li>
+</ul>
+<p>Функциональность отображения статуса несинхронизированных объектов можно отключить с помощью опции <code>disableTrackUnsyncState</code> модуля (см. <a href='app-module.html' title='null'>App-module</a> подробней). </p>
+
+ 
+        
+        <hr>
+
+        
+
+        <div class="well">
+  <p>Find an error? <a class="alert-link" href="https://track.rnd.croc.ru/newIssue?project=WC&clearDraft=true&c=Type+Bug&c=State+Open&c=Subsystem+documentation">Let us know →</a></p>
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+
+	<div class="site-footer">
+  <p>Built on 31.9.2014 at 21:39. Power by <a href="http://assemble.io">Assemble</a>, <a href="http://gruntjs.com">Grunt</a>, <a href="http://code.rnd.croc.ru/projects/RND/repos/jsdoc2markdown">jsdoc2markdown</a>.
+</p></div>
+
+    <script src="../../assets/js/jquery.js"></script>
+<script src="../../assets/js/bootstrap.min.js"></script>
+<script src="../../assets/js/highlight.js"></script>
+  </body>
+</html>

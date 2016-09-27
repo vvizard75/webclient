@@ -1,0 +1,3511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ObjectTree | WebClient documentation</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="../../assets/css/root.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body style="background: white;" data-spy="scroll" data-target=".bs-sidebar">
+
+    <div class="root">
+    
+<div class="navbar navbar-inverse" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../../index.html">WebClient documentation</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Docs</a></li>
+          <li><a href="../api-client/index.html">API Client</a></li>
+        </ul>
+      
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">CROC R&D<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://track.rnd.croc.ru">Bug tracker (YouTrack)</a></li>
+            <li><a href="https://code.croc.ru">Source code (Git Server)</a></li>
+            <li><a href="https://wiki.rnd.croc.ru">Wiki</a></li>
+            <li><a href="https://build.rnd.croc.ru">Build server (TeamCity)</a></li>
+            <li><a href="https://qa.rnd.croc.ru">Q&A</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-header">Other</li>
+            <li><a href="https://github.com/CrocInc">CROC on Github</a></li>
+            
+          </ul>
+        </li>
+      </ul>
+
+    </nav>
+  </div>
+</div>
+
+    
+<div class="container" role="main">
+  <div class="row">
+
+    
+    <div class="col col-lg-3">
+      <div class="sidebar">
+        <ul class="nav nav-pills nav-stacked">
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+          <li><a href="structure.html">Structure</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+          <li><a href="browser-support.html">Browser support</a></li>
+    
+  
+    
+  
+    
+  
+    
+          <li><a href="distribution.html">Distribution</a></li>
+    
+  
+    
+  
+    
+  
+    
+          <li><a href="setup-developer-environment.html">Setup Developer Environment</a></li>
+    
+  
+    
+  
+    
+  
+    
+          <li><a href="project-structure.html">Project Structure</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+          <li><a href="key-features.html">Key Features</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+</ul>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="getting-started-tutorial.html">Getting Started Tutorial</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="getting-started-tutorial-0_12.html">Getting Started Tutorial 0.12</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="base.html">Base</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="ecmascript-5-emulation.html">EcmaScript 5 emulation</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="module-system.html">Module System</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="core.html">Core</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="class-system.html">Class System</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="presentation-model.html">Presentation Model</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="composition-&amp;-navigation.html">Composition &amp; Navigation</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="переопределение-компонентов.html">Переопределение компонентов</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="templating.html">Templating</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="data-binding.html">Data-binding</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="eventpublisher.html">EventPublisher</a></li>
+        
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="application.html">Application</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+         
+
+          <li><a href="app-module.html">App-module</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="datasource.html">DataSource</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="domain-model.html">Domain Model</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="domain-objects.html">Domain Objects</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="validation.html">Validation</a></li>
+        
+        
+       
+        
+       
+        
+         
+
+          <li><a href="formatters.html">Formatters</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="interop.html">Interop</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="main_js.html">main.js</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="ui-ux.html">UI-UX</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="app-starting-ux.html">App starting UX</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="appnavbar.html">AppNavBar</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="css-styles-and-less.html">CSS Styles and LESS</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="tree.html">Tree</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="icons.html">Icons</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="menu.html">Menu</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="objecteditor.html">ObjectEditor</a></li>
+        
+        
+       
+        
+       
+        
+         
+
+          <li><a href="objectlist.html">ObjectList</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="objectviewer.html">ObjectViewer</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="objectwizard.html">ObjectWizard</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="onlinebeacon.html">OnlineBeacon</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="property-editors.html">Property Editors</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="objectfilter.html">ObjectFilter</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="appservices.html">AppServices</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+         
+
+          <li><a href="affix.html">Affix</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="app-navigation.html">App Navigation</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="breadcrumbs.html">Breadcrumbs</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="client-update-notification.html">Client update notification</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="debug-module.html">Debug module</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="drafts.html">Drafts</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="i18n.html">i18n</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="notifications.html">Notifications</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="security.html">Security</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="scroll-accelerators.html">Scroll accelerators</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="reporting.html">Reporting</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="server.html">Server</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="server-architecture.html">Server Architecture</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="page-layout.html">Page Layout</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="filecontroller.html">FileController</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="bootloader.html">Bootloader</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="main_config_json.html">main.config.json</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="hosting.html">Hosting</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="knowledge-base.html">Knowledge Base</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="client-debugging.html">Client Debugging</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="кеширование-контента.html">Кеширование контента</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="webstorm-live-templates.html">WebStorm Live Templates</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="efficient-css.html">Efficient CSS</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="elmah.html">Elmah</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="devtools.html">DevTools</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="archived-build-0_10.html">Archived-Build 0.10</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="настройка-teamcity-билд-конфигурации-для-работы-с-bower-и-grunt.html">Настройка TeamCity билд конфигурации для работы с bower и grunt</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="yeoman-generator.html">Yeoman Generator</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="grunt-croc-qunit.html">grunt-croc-qunit</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="grunt-croc-requirejs.html">grunt-croc-requirejs</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="resxtojson.html">ResxToJson</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+      </ul>
+
+    
+  
+
+
+      </div>
+    </div>
+
+
+    
+    <div class="col col-lg-9">
+      <div class="panel panel-docs">
+        <ol class='breadcrumb'><li><a href='index.html'>Docs</a></li><li><a href='ui-ux.html'>UI-UX</a></li><li><a href='tree.html'>Tree</a></li><li class='active'>ObjectTree</li></ol>
+        <h1>ObjectTree</h1>
+          
+
+<h3 id="overview">Overview</h3>
+<p><code>ObjectTree</code> - компонент для представления иерархий доменных объектов. Является наследником <a href='tree.html' title='null'>Tree</a>.
+В качестве значения свойства <code>data</code> для узлов <code>ObjectTree</code> как правило выступает доменный объект. Однако, узлы могут содержать и произвольные данные (это может быть полезно, например, для группировки объектов). Для узлов, представляющих доменные объекты, в меню доступна команда <em>Редактировать</em>.
+<code>ObjectTree</code> работает в контексте своей <code>UnitOfWork</code>.</p>
+<h3 id="-">Получение дочерних узлов</h3>
+<p>Для более удобной работы с <code>ObjectTree</code> был введен компонент <code>TreeDataSource</code>, получающий данные дочерних узлов с сервера (через MVC контроллер <code>TreeApiController</code>). При конструировании <code>TreeDataSource</code> должна быть задана опция <code>name</code>, задающая наименование иерархии в серверной <a href='http://wiki.rnd.croc.ru/display/xfw3doc/Подсистема+деревьев' title='null'>подсистеме деревьев</a>. Уровни серверного дерева могут возвращать как &quot;плоские&quot; данные, так и данные доменных объектов (для этого должны использоваться доменные источники данных).
+Для <code>ObjectTree</code> введена опция <code>dataSource</code>, задающая источник данных. Значением опции должен быть экземпляр <code>TreeDataSource</code>. Чтобы эта опция была задействована, <code>ObjectTree</code> переопределяет статическое свойство <code>defaultLoader</code>. В качестве значение этого свойства устанавливается экземпляр класса <code>ObjectTreeLoader</code>, который использует опцию <code>dataSource</code> дерева.</p>
+<h5 id="-">Пример (загрузка с сервера)</h5>
+<p>Серверные метаданные дерева:</p>
+<pre><code class="lang-xml">&lt;a:Tree Name=&quot;OrganizationTree&quot;&gt;
+        &lt;a:Level NodeTypes=&quot;GroupsFolder&quot;&gt;
+            &lt;ds:DataSource&gt;
+                &lt;ds:CommandText&gt;
+                    SELECT 1 AS NodeID, &#39;Группы&#39; AS Title, 0 AS IsLeaf
+                &lt;/ds:CommandText&gt;
+            &lt;/ds:DataSource&gt;
+            &lt;a:Level NodeTypes=&quot;Group&quot;&gt;
+                &lt;ds:DataSource do:DefaultEntityType=&quot;Group&quot;&gt;
+                    &lt;ds:CommandText&gt;
+                        &lt;![CDATA[
+                        SELECT g.ObjectID, g.ts, g.Name
+                        FROM [Group] AS g
+                    ]] &gt;
+                    &lt;/ds:CommandText&gt;
+                &lt;/ds:DataSource&gt;
+            &lt;/a:Level&gt;
+        &lt;/a:Level&gt;
+        &lt;a:Level NodeTypes=&quot;UsersFolder&quot;&gt;
+            &lt;ds:DataSource&gt;
+                &lt;ds:CommandText&gt;
+                    SELECT 2 AS NodeID, &#39;Пользователи&#39; AS Title, 0 AS IsLeaf
+                &lt;/ds:CommandText&gt;
+            &lt;/ds:DataSource&gt;
+            &lt;a:Level NodeTypes=&quot;User&quot;&gt;
+                &lt;ds:DataSource do:DefaultEntityType=&quot;User&quot;&gt;
+                    &lt;ds:CommandText&gt;
+                        &lt;![CDATA[
+                        SELECT u.ObjectID, u.ts, u.FirstName, u.LastName, u.Login, u.Created, u.LastLogin, u.Password,
+                            u.[Address.Locality.Type], u.[Address.Locality.Name], u.[Address.Street], u.[Address.House], u.[Address.Block]
+                        FROM [User] AS u
+                    ]] &gt;
+                    &lt;/ds:CommandText&gt;
+                &lt;/ds:DataSource&gt;
+            &lt;/a:Level&gt;
+        &lt;/a:Level&gt;
+    &lt;/a:Tree&gt;
+</code></pre>
+<p>Клиентское дерево:</p>
+<pre><code class="lang-js">var tree = new core.ui.ObjectTree(app, {
+                dataSource: new core.data.TreeDataSource(app, { name: &quot;OrganizationTree&quot; })
+            });
+</code></pre>
+<p>Помимо <code>dataSource</code> можно также использовать опцию <code>loader</code>, позволяющую возвращать данные узлов на клиенте. Можно комбинировать обе эти опции.</p>
+<h6 id="-">Пример (комбинированная загрузка)</h6>
+<p>В примере выше используются узлы &quot;Группы&quot; и &quot;Пользователи&quot;. Это статические группирующие узлы, их данные можно получить непосредственно на клиенте. В этом случае клиентское дерево может быть переписано таким образом:</p>
+<pre><code class="lang-js">var loader = {
+                    loadChildren: function (tree, node) {
+                        var identity = tree.getNodeIdentity(node);
+                        switch (identity.type) {
+                            case tree.ROOT_NODE_NAME:
+                                return [
+                                    { data: { type: &quot;GroupsFolder&quot;, title: &quot;Группы&quot; } },
+                                    { data: { type: &quot;UsersFolder&quot;, title: &quot;Пользователи&quot; } }
+                                ];
+                        }
+
+                        return null;
+                    }
+                },
+                ds = new core.data.TreeDataSource(app, { name: &quot;OrganizationTree&quot; }),
+                tree = new core.ui.ObjectTree(app, {
+                    loader: loader,
+                    dataSource: ds
+                });
+</code></pre>
+<p>В серверных метаданных для соответствующих уровней можно оставить пустые теги <code>&lt;ds:DataSource/&gt;</code></p>
+<blockquote>
+<p>Если совсем удалить тег <code>&lt;ds:DataSource/&gt;</code>, то возникнет ошибка валидации.</p>
+</blockquote>
+<p>Можно пойти еще дальше: в <code>loader</code> для групп возвращать пользователей, содержащихся в группе, а для пользователей - группы, в которые входит пользователь.</p>
+<h6 id="-">Расширенный пример (комбинированная загрузка)</h6>
+<p>Клиентское дерево:</p>
+<pre><code class="lang-js">var loader = {
+                    loadChildren: function (tree, node, params) {
+                        var identity = tree.getNodeIdentity(node);
+                        switch (identity.type) {
+                            case tree.ROOT_NODE_NAME:
+                                return [
+                                    { data: { type: &quot;GroupsFolder&quot;, title: &quot;Группы&quot; } },
+                                    { data: { type: &quot;UsersFolder&quot;, title: &quot;Пользователи&quot; } }
+                                ];
+                            case &quot;Group&quot;:
+                                return node.data().users().all()
+                                    .map(function (o) {
+                                        return { data: o, children: [] };
+                                    });
+                            case &quot;User&quot;:
+                                return node.data().groups().all()
+                                    .map(function (o) {
+                                        return { data: o, children: [] };
+                                    });
+                        }
+
+                        return null;
+                    }
+                },
+                ds = new core.data.TreeDataSource(app, { name: &quot;OrganizationTreeShort&quot; }),
+                tree = new core.ui.ObjectTree(app, {
+                    loader: loader,
+                    dataSource: ds
+                });
+</code></pre>
+<p>Видно, что для получения данных используются навигируемые свойства доменных объектов. Если свойство или объекты-значения не загружены, они автоматически загрузятся. Кроме того, использование доменных свойств дает следующие бонусы:</p>
+<ul>
+<li>данные могут подгружаться из DataStore (локально) и кэшироваться там же</li>
+<li>при изменении навигируемого свойства состав подчиненных узлов автоматически обновится.</li>
+</ul>
+<blockquote>
+<p>В метаданных серверного дерева нужно добавить столбец <code>0 AS IsLeaf</code> к SQL запросам, иначе группы и пользователи будут рассматриваться как листовые узлы.</p>
+</blockquote>
+<p>В примере выше загрузка навигируемых свойств выполняется автоматически по требованию (при развороте соответствующего узла).  Если свойство уже загружено, то повторной загрузки не будет. Это позволяет избежать излишних обращений на сервер. Однако, этот же код вызывается также из команды перезагрузки узла (Reload). Таким образом, если навигируемое свойтво, которое соответствует узлу, уже загружено, то команда Reload ничего не делает. Для поддержки перезагрузки нужно модифицировать метод <code>loadChildren</code>. Чтобы отличить перезагрузку от первоначальной загрузки, команда Reload передает опцию <code>reason = &quot;reload&quot;</code>. Учитывая эту опцию, можно переписать пример выше следующим образом:</p>
+<h6 id="-">Расширенный пример (комбинированная загрузка + перезагрузка)</h6>
+<p>Клиентское дерево:</p>
+<pre><code class="lang-js">var loader = {
+                    loadChildren: function (tree, node, params) {
+                        var identity = tree.getNodeIdentity(node);
+                        switch (identity.type) {
+                            case tree.ROOT_NODE_NAME:
+                                return [
+                                    { data: { type: &quot;GroupsFolder&quot;, title: &quot;Группы&quot; } },
+                                    { data: { type: &quot;UsersFolder&quot;, title: &quot;Пользователи&quot; } }
+                                ];
+                            case &quot;Group&quot;:
+                                return node.data().users()
+                                    .load(options.reason === &quot;reload&quot; ? { reload: true } : {})
+                                    .then(function (loaded) {
+                                        return loaded.all().map(function (o) {
+                                            return { data: o, children: [] };
+                                        });
+                                    });
+                            case &quot;User&quot;:
+                                return node.data().groups()
+                                    .load(options.reason === &quot;reload&quot; ? { reload: true } : {})
+                                    .then(function (loaded) {
+                                        return loaded.all().map(function (o) {
+                                            return { data: o, children: [] };
+                                        });
+                                    });
+                                return node.data().groups().all()
+                                    .map(function (o) {
+                                        return { data: o, children: [] };
+                                    });
+                        }
+
+                        return null;
+                    }
+                },
+                ds = new core.data.TreeDataSource(app, { name: &quot;OrganizationTreeShort&quot; }),
+                tree = new core.ui.ObjectTree(app, {
+                    loader: loader,
+                    dataSource: ds
+                });
+</code></pre>
+<p>Как видно, метод <code>loadChildren</code> для типов User и Group теперь явно вызывает метод <code>load</code> у описателя навигируемого свойства. Если свойство уже загружено, то метод <code>load</code> ничего не делает. Если происходит перезагрузка узла (<code>options.reason === &quot;reload&quot;</code>), то форсируем повторную загрузку, указывая опцию <code>reload</code>.</p>
+<blockquote>
+<p>Если в приложении используется кэширование данных в <code>DataStore</code>, то при перезагрузке могут загружаться локальные данные (в зависимости от политики <code>CacheManager</code>). Если необходима перезагрузка с сервера, то на ряду с опцией <code>reload</code> нужно указать политику чтения <code>remoteFirst</code>:</p>
+</blockquote>
+<pre><code class="lang-js">load(options.reason === &quot;reload&quot; ? { reload: true, policy: &quot;remoteFirst&quot; } : {})
+</code></pre>
+<h3 id="-">Фильтр</h3>
+<p>Для <code>ObjectTree</code> можно задать опцию <code>filter</code> - экземпляр парта фильтра или его наименование. Значение, возвращаемое методом, <code>filter.getRestrictions()</code>, будет использоваться как дополнительные параметры при загрузке дочерних узлов. В частности метод <code>loader.loadChildren</code> получит их в качестве последнего аргумента. Если используется серверное дерево, то параметры фильтра будут переданы в источник данных соответствующего уровня на сервере.
+См. также <a href='objectfilter.html' title='null'>ObjectFilter</a></p>
+<h3 id="-">Редактируемое дерево</h3>
+<p>По умолчанию команды, которые могут изменять доменные объекты (например, &quot;Редактировать&quot;), работают в отдельных <code>UnitOfWork</code>. Изменения, сделанные внутри этих команд, сначала сохраняются на сервер и лишь затем попадают в дерево. Однако, если при создании <code>ObjectTree</code> задать опцию <code>editable: true</code>, то указанные команды будут использовать тот же экземпляр <code>UnitOfWork</code>, что и само дерево. Изменения, сделанные командами, в этом режиме не сохраняются на сервер, а попадают в дерево и накапливаются в нем. За сохранение или откат этих изменений становится ответственно само <code>ObjectTree</code>; по умолчанию в нем становятся доступны команды &quot;Сохранить&quot; и &quot;Отмена&quot;. Будем называть такое дерево <em>редактируемым</em> (<em>editable</em>).
+См. также <a href='objectlist.html#Редактируемый список' title='null'>Редактируемый список</a>.</p>
+<h3 id="-objecttree">Опции ObjectTree</h3>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Наименование</th>
+<th>Тип</th>
+<th>Значение по умолчанию</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>dataSource</td>
+<td>TreeDataSource</td>
+<td>undefined</td>
+<td>Источник данных\См. <a href='#Получение дочерних узлов' title='null'>#Получение дочерних узлов</a></td>
+</tr>
+<tr>
+<td>uow</td>
+<td>UnitOfWork</td>
+<td>undefined</td>
+<td>Экземпляр единицы работы. Если не задана, будет создана новая.</td>
+</tr>
+<tr>
+<td>editable</td>
+<td>Boolean</td>
+<td>false</td>
+<td>Признак редактируемого дерева\См. <a href='#Редактируемое дерево' title='null'>#Редактируемое дерево</a></td>
+</tr>
+<tr>
+<td>filter</td>
+<td>Part&#124;String</td>
+<td>undefined</td>
+<td>Экземпляр парта фильтра или его наименование\См. <a href='#Фильтр' title='null'>#Фильтр</a></td>
+</tr>
+<tr>
+<td>filterExpanded</td>
+<td>Boolean</td>
+<td>false</td>
+<td>Признак &quot;фильтр распахнут&quot;</td>
+</tr>
+<tr>
+<td>expandFilterTitle</td>
+<td>String</td>
+<td>resources[&quot;objectFilter.show&quot;](&quot;objectFilter.show&quot;.html)</td>
+<td>Заголовок &quot;Показать фильтр&quot;</td>
+</tr>
+<tr>
+<td>collapseFilterTitle</td>
+<td>String</td>
+<td>resources[&quot;objectFilter.hide&quot;](&quot;objectFilter.hide&quot;.html)</td>
+<td>Заголовок &quot;Свернуть фильтр&quot;</td>
+</tr>
+</tbody>
+</table>
+<p>Также для <code>ObjectTree</code> доступны все <a href='tree.html#Опции Tree' title='null'>опции</a> родительского класса <code>Tree</code>.</p>
+<h3 id="-objecttree">Команды ObjectTree</h3>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Наименование</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Edit</td>
+<td>Открывает редактор доменного объекта, содержащегося в активном узле</td>
+</tr>
+<tr>
+<td>Create</td>
+<td>Открывает редактор нового доменного объекта</td>
+</tr>
+<tr>
+<td>Delete</td>
+<td>Удаляет выделенные узлы (или активный узел, если нет выделенных). Узлы должны содержать валидные доменные объекты.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>По умолчанию команда Delete не подключается ни в меню дерева, ни в меню узла. Задайте опцию <code>menuTree</code> или <code>menuNode</code>, чтобы подключить эту команду.
+ | 
+| Reload | Обновляет дочерние узлы активного узла |
+| ReloalRoot | Обновляет дочерние узлы корня дерева |
+| Save | Сохраняет изменения, сделанные в <code>UnitOfWork</code>\Актуально только для <a href='#Редактируемое дерево' title='null'>редактируемого</a> дерева |
+| Cancel | Откатывает изменения, сделанные в <code>UnitOfWork</code>\Актуально только для <a href='#Редактируемое дерево' title='null'>редактируемого</a> дерева |</p>
+</blockquote>
+
+ 
+        
+        <hr>
+
+        
+
+        <div class="well">
+  <p>Find an error? <a class="alert-link" href="https://track.rnd.croc.ru/newIssue?project=WC&clearDraft=true&c=Type+Bug&c=State+Open&c=Subsystem+documentation">Let us know →</a></p>
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+
+	<div class="site-footer">
+  <p>Built on 31.9.2014 at 21:39. Power by <a href="http://assemble.io">Assemble</a>, <a href="http://gruntjs.com">Grunt</a>, <a href="http://code.rnd.croc.ru/projects/RND/repos/jsdoc2markdown">jsdoc2markdown</a>.
+</p></div>
+
+    <script src="../../assets/js/jquery.js"></script>
+<script src="../../assets/js/bootstrap.min.js"></script>
+<script src="../../assets/js/highlight.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Class SlickObjectListDataPresenter | WebClient documentation</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="../../assets/css/root.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body style="background: white;" data-spy="scroll" data-target=".bs-sidebar">
+
+    <div class="root">
+    
+<div class="navbar navbar-inverse" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../../index.html">WebClient documentation</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      
+        <ul class="nav navbar-nav">
+          <li><a href="../docs/index.html">Docs</a></li>
+          <li class="active"><a href="index.html">API Client</a></li>
+        </ul>
+      
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">CROC R&D<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://track.rnd.croc.ru">Bug tracker (YouTrack)</a></li>
+            <li><a href="https://code.croc.ru">Source code (Git Server)</a></li>
+            <li><a href="https://wiki.rnd.croc.ru">Wiki</a></li>
+            <li><a href="https://build.rnd.croc.ru">Build server (TeamCity)</a></li>
+            <li><a href="https://qa.rnd.croc.ru">Q&A</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-header">Other</li>
+            <li><a href="https://github.com/CrocInc">CROC on Github</a></li>
+            
+          </ul>
+        </li>
+      </ul>
+
+    </nav>
+  </div>
+</div>
+
+    
+<div class="container" role="main">
+  <div class="row">
+
+    
+    <div class="col col-lg-3">
+      <div class="sidebar">
+
+      </div>
+    </div>
+
+
+    
+    <div class="col col-lg-9">
+      <div class="panel panel-docs">
+        <ol class='breadcrumb'><li><a href='index.html'>API-Client</a></li><li><a href='classes.html'>Classes</a></li><li class='active'>Class SlickObjectListDataPresenter</li></ol>
+        <h1>Class SlickObjectListDataPresenter</h1>
+          <blockquote>
+<p>Source file: lib\ui\slick\SlickObjectListDataPresenter.js</p>
+</blockquote>
+<h2 id="constructor">Constructor</h2>
+<pre><code class="lang-js">constructor(options)
+</code></pre>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>options</td>
+<td>?</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="extends">Extends</h2>
+<ul>
+<li><a href='class-Part.html' title='null'>Part</a></li>
+<li><a href='class-Observable.html' title='null'>Observable</a></li>
+</ul>
+<h2 id="members-properties-fields-">Members (properties/fields)</h2>
+<ul>
+<li><a href='#defaultGroupOptions' title='null'>defaultGroupOptions</a> </li>
+<li><a href='#defaultOptions' title='null'>defaultOptions</a> </li>
+<li><a href='#renderStatuses' title='null'>renderStatuses</a> </li>
+<li><a href='#navigationService' title='null'>navigationService</a> (inherited from <a href='class-Part.html' title='null'>Part</a>)</li>
+<li><a href='#renderStatus' title='null'>renderStatus</a> (inherited from <a href='class-Part.html' title='null'>Part</a>)</li>
+<li><a href='#viewModel' title='null'>viewModel</a> (inherited from <a href='class-Part.html' title='null'>Part</a>)</li>
+</ul>
+<p><a id="defaultGroupOptions"></a></p>
+<h3 id="field-defaultgroupoptions">Field defaultGroupOptions</h3>
+<pre><code class="lang-js">defaultGroupOptions: ?
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p>Type: ?
+<a id="defaultOptions"></a></p>
+<h3 id="field-defaultoptions">Field defaultOptions</h3>
+<pre><code class="lang-js">defaultOptions: ?
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p>Type: ?
+<a id="renderStatuses"></a></p>
+<h3 id="enum-renderstatuses">Enum renderStatuses</h3>
+<pre><code class="lang-js">
+
+</code></pre>
+<p>Type: String</p>
+<h4 id="members-">Members:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>unloaded</td>
+<td>unloaded</td>
+</tr>
+<tr>
+<td>rendering</td>
+<td>rendering</td>
+</tr>
+<tr>
+<td>waiting</td>
+<td>waiting</td>
+</tr>
+<tr>
+<td>ready</td>
+<td>ready</td>
+</tr>
+</tbody>
+</table>
+<p><a id="navigationService"></a></p>
+<h3 id="field-navigationservice-inherited-from-part-class-part-html-">Field navigationService (inherited from <a href='class-Part.html' title='null'>Part</a>)</h3>
+<pre><code class="lang-js">navigationService: ?
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p>Type: ?
+<a id="renderStatus"></a></p>
+<h3 id="observableproperty-renderstatus-inherited-from-part-class-part-html-">ObservableProperty renderStatus (inherited from <a href='class-Part.html' title='null'>Part</a>)</h3>
+<pre><code class="lang-js">/* read: */ renderStatus(): Part#renderStatuses
+/* write: */ renderStatus(value: Part#renderStatuses)
+</code></pre>
+<p>Current state of part rendering.
+ lifecycle: unloaded -&gt; ready -&gt; unloaded
+ lifecycle: unloaded -&gt; waiting -&gt; unloaded -&gt; ready -&gt; unloaded</p>
+<p>Type: Part#renderStatuses
+<a id="viewModel"></a></p>
+<h3 id="field-viewmodel-inherited-from-part-class-part-html-">Field viewModel (inherited from <a href='class-Part.html' title='null'>Part</a>)</h3>
+<pre><code class="lang-js">viewModel: ?
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p>Type: ?</p>
+<h2 id="methods">Methods</h2>
+<ul>
+<li><a href='#activateGridRow' title='null'>activateGridRow</a> </li>
+<li><a href='#affixAdd' title='null'>affixAdd</a> </li>
+<li><a href='#affixRefresh' title='null'>affixRefresh</a> </li>
+<li><a href='#affixRemove' title='null'>affixRemove</a> </li>
+<li><a href='#afterRender' title='null'>afterRender</a> </li>
+<li><a href='#createGrid' title='null'>createGrid</a> </li>
+<li><a href='#createGridAsync' title='null'>createGridAsync</a> </li>
+<li><a href='#dataColumnFormatter' title='null'>dataColumnFormatter</a> </li>
+<li><a href='#dispose' title='null'>dispose</a> </li>
+<li><a href='#doRender' title='null'>doRender</a> </li>
+<li><a href='#enrichModelColumns' title='null'>enrichModelColumns</a> </li>
+<li><a href='#findDefaultMenuItem' title='null'>findDefaultMenuItem</a> </li>
+<li><a href='#getItemMetadata' title='null'>getItemMetadata</a> </li>
+<li><a href='#getItemMetadata' title='null'>getItemMetadata</a> </li>
+<li><a href='#isLayoutReady' title='null'>isLayoutReady</a> </li>
+<li><a href='#onGridActiveCellChanged' title='null'>onGridActiveCellChanged</a> </li>
+<li><a href='#onGridBeforeMoveRows' title='null'>onGridBeforeMoveRows</a> </li>
+<li><a href='#onGridClick' title='null'>onGridClick</a> </li>
+<li><a href='#onGridColumnsChanged' title='null'>onGridColumnsChanged</a> </li>
+<li><a href='#onGridDblClick' title='null'>onGridDblClick</a> </li>
+<li><a href='#onGridInitialized' title='null'>onGridInitialized</a> </li>
+<li><a href='#onGridInitializing' title='null'>onGridInitializing</a> </li>
+<li><a href='#onGridKeyDown' title='null'>onGridKeyDown</a> </li>
+<li><a href='#onGridMoveRows' title='null'>onGridMoveRows</a> </li>
+<li><a href='#onGridSelectedRowsChanged' title='null'>onGridSelectedRowsChanged</a> </li>
+<li><a href='#onGridSort' title='null'>onGridSort</a> </li>
+<li><a href='#onModelActiveItemChange' title='null'>onModelActiveItemChange</a> </li>
+<li><a href='#onModelColumnsChange' title='null'>onModelColumnsChange</a> </li>
+<li><a href='#onModelSelectionChange' title='null'>onModelSelectionChange</a> </li>
+<li><a href='#renderGrid' title='null'>renderGrid</a> </li>
+<li><a href='#renderGrid' title='null'>renderGrid</a> </li>
+<li><a href='#renderGridAsync' title='null'>renderGridAsync</a> </li>
+<li><a href='#scrollToSelf' title='null'>scrollToSelf</a> </li>
+<li><a href='#selectGridRows' title='null'>selectGridRows</a> </li>
+<li><a href='#setViewModel' title='null'>setViewModel</a> </li>
+<li><a href='#setupGridColumns' title='null'>setupGridColumns</a> </li>
+<li><a href='#unload' title='null'>unload</a> </li>
+<li><a href='#updateHScroller' title='null'>updateHScroller</a> </li>
+<li><a href='#afterRender' title='null'>afterRender</a> (inherited from <a href='class-Part.html' title='null'>Part</a>)</li>
+<li><a href='#beforeRender' title='null'>beforeRender</a> (inherited from <a href='class-Part.html' title='null'>Part</a>)</li>
+<li><a href='#dispose' title='null'>dispose</a> (inherited from <a href='class-Part.html' title='null'>Part</a>)</li>
+<li><a href='#doRender' title='null'>doRender</a> (inherited from <a href='class-Part.html' title='null'>Part</a>)</li>
+<li><a href='#getChild' title='null'>getChild</a> (inherited from <a href='class-Part.html' title='null'>Part</a>)</li>
+<li><a href='#getCommandOptions' title='null'>getCommandOptions</a> (inherited from <a href='class-Part.html' title='null'>Part</a>)</li>
+<li><a href='#mixOptions' title='null'>mixOptions</a> (inherited from <a href='class-Part.html' title='null'>Part</a>)</li>
+<li><a href='#notifyDOMChanged' title='null'>notifyDOMChanged</a> (inherited from <a href='class-Part.html' title='null'>Part</a>)</li>
+<li><a href='#onReady' title='null'>onReady</a> (inherited from <a href='class-Part.html' title='null'>Part</a>)</li>
+<li><a href='#onUnready' title='null'>onUnready</a> (inherited from <a href='class-Part.html' title='null'>Part</a>)</li>
+<li><a href='#openPart' title='null'>openPart</a> (inherited from <a href='class-Part.html' title='null'>Part</a>)</li>
+<li><a href='#registerChild' title='null'>registerChild</a> (inherited from <a href='class-Part.html' title='null'>Part</a>)</li>
+<li><a href='#render' title='null'>render</a> (inherited from <a href='class-Part.html' title='null'>Part</a>)</li>
+<li><a href='#rerender' title='null'>rerender</a> (inherited from <a href='class-Part.html' title='null'>Part</a>)</li>
+<li><a href='#setNavigationService' title='null'>setNavigationService</a> (inherited from <a href='class-Part.html' title='null'>Part</a>)</li>
+<li><a href='#setViewModel' title='null'>setViewModel</a> (inherited from <a href='class-Part.html' title='null'>Part</a>)</li>
+<li><a href='#unload' title='null'>unload</a> (inherited from <a href='class-Part.html' title='null'>Part</a>)</li>
+<li><a href='#unregisterChild' title='null'>unregisterChild</a> (inherited from <a href='class-Part.html' title='null'>Part</a>)</li>
+<li><a href='#bind' title='null'>bind</a> (inherited from <a href='class-Observable.html' title='null'>Observable</a>)</li>
+<li><a href='#bound' title='null'>bound</a> (inherited from <a href='class-Observable.html' title='null'>Observable</a>)</li>
+<li><a href='#changed' title='null'>changed</a> (inherited from <a href='class-Observable.html' title='null'>Observable</a>)</li>
+<li><a href='#declareProp' title='null'>declareProp</a> (inherited from <a href='class-Observable.html' title='null'>Observable</a>)</li>
+<li><a href='#dispose' title='null'>dispose</a> (inherited from <a href='class-Observable.html' title='null'>Observable</a>)</li>
+<li><a href='#get' title='null'>get</a> (inherited from <a href='class-Observable.html' title='null'>Observable</a>)</li>
+<li><a href='#set' title='null'>set</a> (inherited from <a href='class-Observable.html' title='null'>Observable</a>)</li>
+<li><a href='#subscribe' title='null'>subscribe</a> (inherited from <a href='class-Observable.html' title='null'>Observable</a>)</li>
+<li><a href='#trigger' title='null'>trigger</a> (inherited from <a href='class-Observable.html' title='null'>Observable</a>)</li>
+<li><a href='#unbind' title='null'>unbind</a> (inherited from <a href='class-Observable.html' title='null'>Observable</a>)</li>
+</ul>
+<p><a id="activateGridRow"></a></p>
+<h3 id="activategridrow">activateGridRow</h3>
+<pre><code class="lang-js">activateGridRow()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="affixAdd"></a></p>
+<h3 id="affixadd">affixAdd</h3>
+<pre><code class="lang-js">affixAdd()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="affixRefresh"></a></p>
+<h3 id="affixrefresh">affixRefresh</h3>
+<pre><code class="lang-js">affixRefresh()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="affixRemove"></a></p>
+<h3 id="affixremove">affixRemove</h3>
+<pre><code class="lang-js">affixRemove()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="afterRender"></a></p>
+<h3 id="afterrender">afterRender</h3>
+<pre><code class="lang-js">afterRender()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="createGrid"></a></p>
+<h3 id="creategrid">createGrid</h3>
+<pre><code class="lang-js">createGrid()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="createGridAsync"></a></p>
+<h3 id="creategridasync">createGridAsync</h3>
+<pre><code class="lang-js">createGridAsync()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="dataColumnFormatter"></a></p>
+<h3 id="datacolumnformatter">dataColumnFormatter</h3>
+<pre><code class="lang-js">dataColumnFormatter()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="dispose"></a></p>
+<h3 id="dispose">dispose</h3>
+<pre><code class="lang-js">dispose()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="doRender"></a></p>
+<h3 id="dorender">doRender</h3>
+<pre><code class="lang-js">doRender()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="enrichModelColumns"></a></p>
+<h3 id="enrichmodelcolumns">enrichModelColumns</h3>
+<pre><code class="lang-js">enrichModelColumns()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="findDefaultMenuItem"></a></p>
+<h3 id="finddefaultmenuitem">findDefaultMenuItem</h3>
+<pre><code class="lang-js">findDefaultMenuItem()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="getItemMetadata"></a></p>
+<h3 id="getitemmetadata">getItemMetadata</h3>
+<pre><code class="lang-js">getItemMetadata()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="getItemMetadata"></a></p>
+<h3 id="getitemmetadata">getItemMetadata</h3>
+<pre><code class="lang-js">getItemMetadata()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="isLayoutReady"></a></p>
+<h3 id="islayoutready">isLayoutReady</h3>
+<pre><code class="lang-js">isLayoutReady()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="onGridActiveCellChanged"></a></p>
+<h3 id="ongridactivecellchanged">onGridActiveCellChanged</h3>
+<pre><code class="lang-js">onGridActiveCellChanged()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="onGridBeforeMoveRows"></a></p>
+<h3 id="ongridbeforemoverows">onGridBeforeMoveRows</h3>
+<pre><code class="lang-js">onGridBeforeMoveRows()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="onGridClick"></a></p>
+<h3 id="ongridclick">onGridClick</h3>
+<pre><code class="lang-js">onGridClick()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="onGridColumnsChanged"></a></p>
+<h3 id="ongridcolumnschanged">onGridColumnsChanged</h3>
+<pre><code class="lang-js">onGridColumnsChanged()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="onGridDblClick"></a></p>
+<h3 id="ongriddblclick">onGridDblClick</h3>
+<pre><code class="lang-js">onGridDblClick()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="onGridInitialized"></a></p>
+<h3 id="ongridinitialized">onGridInitialized</h3>
+<pre><code class="lang-js">onGridInitialized(args)
+</code></pre>
+<p>UNDOCUMENTED</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>args</td>
+<td>Object</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>args.grid</td>
+<td>Slick.Grid</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a id="onGridInitializing"></a></p>
+<h3 id="ongridinitializing">onGridInitializing</h3>
+<pre><code class="lang-js">onGridInitializing(args)
+</code></pre>
+<p>UNDOCUMENTED</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>args</td>
+<td>Object</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>args.grid</td>
+<td>Slick.Grid</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a id="onGridKeyDown"></a></p>
+<h3 id="ongridkeydown">onGridKeyDown</h3>
+<pre><code class="lang-js">onGridKeyDown()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="onGridMoveRows"></a></p>
+<h3 id="ongridmoverows">onGridMoveRows</h3>
+<pre><code class="lang-js">onGridMoveRows()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="onGridSelectedRowsChanged"></a></p>
+<h3 id="ongridselectedrowschanged">onGridSelectedRowsChanged</h3>
+<pre><code class="lang-js">onGridSelectedRowsChanged()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="onGridSort"></a></p>
+<h3 id="ongridsort">onGridSort</h3>
+<pre><code class="lang-js">onGridSort()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="onModelActiveItemChange"></a></p>
+<h3 id="onmodelactiveitemchange">onModelActiveItemChange</h3>
+<pre><code class="lang-js">onModelActiveItemChange()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="onModelColumnsChange"></a></p>
+<h3 id="onmodelcolumnschange">onModelColumnsChange</h3>
+<pre><code class="lang-js">onModelColumnsChange()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="onModelSelectionChange"></a></p>
+<h3 id="onmodelselectionchange">onModelSelectionChange</h3>
+<pre><code class="lang-js">onModelSelectionChange()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="renderGrid"></a></p>
+<h3 id="rendergrid">renderGrid</h3>
+<pre><code class="lang-js">renderGrid([options], forceSync)
+</code></pre>
+<p>Refresh grid with specified options.
+Refreshing is asynchronous by default, you can set forceSync argument to change this.</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>options</td>
+<td>Object</td>
+<td></td>
+<td>optional</td>
+<td></td>
+</tr>
+<tr>
+<td>options.scroll</td>
+<td>Boolean</td>
+<td></td>
+<td>optional</td>
+<td></td>
+</tr>
+<tr>
+<td>options.selection</td>
+<td>Boolean</td>
+<td></td>
+<td>optional</td>
+<td></td>
+</tr>
+<tr>
+<td>options.active</td>
+<td>Boolean</td>
+<td></td>
+<td>optional</td>
+<td></td>
+</tr>
+<tr>
+<td>options.rows</td>
+<td>Object</td>
+<td></td>
+<td>optional</td>
+<td>Keys are row indexes or &#39;all&#39;, values are always &#39;true&#39; (e.g. {all:true} or {1:true,5:true,...,n:true})</td>
+</tr>
+<tr>
+<td>forceSync</td>
+<td>Boolean</td>
+<td></td>
+<td></td>
+<td>Refresh gird synchronously.</td>
+</tr>
+</tbody>
+</table>
+<p><a id="renderGrid"></a></p>
+<h3 id="rendergrid">renderGrid</h3>
+<pre><code class="lang-js">renderGrid([options])
+</code></pre>
+<p>UNDOCUMENTED</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>options</td>
+<td>Object</td>
+<td></td>
+<td>optional</td>
+<td></td>
+</tr>
+<tr>
+<td>options.scroll</td>
+<td>Boolean</td>
+<td></td>
+<td>optional</td>
+<td></td>
+</tr>
+<tr>
+<td>options.selection</td>
+<td>Boolean</td>
+<td></td>
+<td>optional</td>
+<td></td>
+</tr>
+<tr>
+<td>options.active</td>
+<td>Boolean</td>
+<td></td>
+<td>optional</td>
+<td></td>
+</tr>
+<tr>
+<td>options.columns</td>
+<td>Boolean</td>
+<td></td>
+<td>optional</td>
+<td></td>
+</tr>
+<tr>
+<td>options.rows</td>
+<td>Object</td>
+<td></td>
+<td>optional</td>
+<td>Keys are row indexes or &#39;all&#39;, values are always &#39;true&#39; (e.g. {all:true} or {1:true,5:true,...,n:true})</td>
+</tr>
+</tbody>
+</table>
+<p><a id="renderGridAsync"></a></p>
+<h3 id="rendergridasync">renderGridAsync</h3>
+<pre><code class="lang-js">renderGridAsync()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="scrollToSelf"></a></p>
+<h3 id="scrolltoself">scrollToSelf</h3>
+<pre><code class="lang-js">scrollToSelf()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="selectGridRows"></a></p>
+<h3 id="selectgridrows">selectGridRows</h3>
+<pre><code class="lang-js">selectGridRows()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="setViewModel"></a></p>
+<h3 id="setviewmodel">setViewModel</h3>
+<pre><code class="lang-js">setViewModel()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="setupGridColumns"></a></p>
+<h3 id="setupgridcolumns">setupGridColumns</h3>
+<pre><code class="lang-js">setupGridColumns()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="unload"></a></p>
+<h3 id="unload">unload</h3>
+<pre><code class="lang-js">unload()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="updateHScroller"></a></p>
+<h3 id="updatehscroller">updateHScroller</h3>
+<pre><code class="lang-js">updateHScroller()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="afterRender"></a></p>
+<h3 id="afterrender-inherited-from-part-class-part-html-">afterRender (inherited from <a href='class-Part.html' title='null'>Part</a>)</h3>
+<pre><code class="lang-js">afterRender()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="beforeRender"></a></p>
+<h3 id="beforerender-inherited-from-part-class-part-html-">beforeRender (inherited from <a href='class-Part.html' title='null'>Part</a>)</h3>
+<pre><code class="lang-js">beforeRender()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="dispose"></a></p>
+<h3 id="dispose-inherited-from-part-class-part-html-">dispose (inherited from <a href='class-Part.html' title='null'>Part</a>)</h3>
+<pre><code class="lang-js">dispose()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="doRender"></a></p>
+<h3 id="dorender-inherited-from-part-class-part-html-">doRender (inherited from <a href='class-Part.html' title='null'>Part</a>)</h3>
+<pre><code class="lang-js">doRender()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="getChild"></a></p>
+<h3 id="getchild-inherited-from-part-class-part-html-">getChild (inherited from <a href='class-Part.html' title='null'>Part</a>)</h3>
+<pre><code class="lang-js">getChild()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="getCommandOptions"></a></p>
+<h3 id="getcommandoptions-inherited-from-part-class-part-html-">getCommandOptions (inherited from <a href='class-Part.html' title='null'>Part</a>)</h3>
+<pre><code class="lang-js">getCommandOptions()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="mixOptions"></a></p>
+<h3 id="mixoptions-inherited-from-part-class-part-html-">mixOptions (inherited from <a href='class-Part.html' title='null'>Part</a>)</h3>
+<pre><code class="lang-js">mixOptions(options, defaultOptions) : *
+</code></pre>
+<p>Формирует опции парта. Вызывать в конструкторе парта ДО вызова родительского конструктора.
+Если вы используете этот метод, не определяйте поле options в прототипе класса.</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>options</td>
+<td>Object</td>
+<td></td>
+<td></td>
+<td>Опции, переданные в конструктор</td>
+</tr>
+<tr>
+<td>defaultOptions</td>
+<td>Object</td>
+<td></td>
+<td></td>
+<td>Опции по умолчанию. Если определены в прототипе, то передавать как поле прототипа,</td>
+</tr>
+</tbody>
+</table>
+<p>не используя this (иначе возможно некорректное поведение при наследовании). |</p>
+<h4 id="returns-">Returns:</h4>
+<p>Type: *
+<a id="notifyDOMChanged"></a></p>
+<h3 id="notifydomchanged-inherited-from-part-class-part-html-">notifyDOMChanged (inherited from <a href='class-Part.html' title='null'>Part</a>)</h3>
+<pre><code class="lang-js">notifyDOMChanged()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="onReady"></a></p>
+<h3 id="onready-inherited-from-part-class-part-html-">onReady (inherited from <a href='class-Part.html' title='null'>Part</a>)</h3>
+<pre><code class="lang-js">onReady()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="onUnready"></a></p>
+<h3 id="onunready-inherited-from-part-class-part-html-">onUnready (inherited from <a href='class-Part.html' title='null'>Part</a>)</h3>
+<pre><code class="lang-js">onUnready()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="openPart"></a></p>
+<h3 id="openpart-inherited-from-part-class-part-html-">openPart (inherited from <a href='class-Part.html' title='null'>Part</a>)</h3>
+<pre><code class="lang-js">openPart(part, [partOptions], [onReturn]) : *
+</code></pre>
+<p>Helper method to open specified part via current navigationService (in the region of the current part).</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>part</td>
+<td>String</td>
+<td>Object</td>
+<td></td>
+<td></td>
+<td>Part instance or part name</td>
+</tr>
+<tr>
+<td>partOptions</td>
+<td>Object</td>
+<td></td>
+<td>optional</td>
+<td>Options that will be passed into part&#39;s constructor (if part is String) (see NavigationService.navigate)</td>
+</tr>
+<tr>
+<td>onReturn</td>
+<td>function</td>
+<td></td>
+<td>optional</td>
+<td>Callback to be called when user returns from opened part (see NavigationService.navigate)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns-">Returns:</h4>
+<p>Type: *
+<a id="registerChild"></a></p>
+<h3 id="registerchild-inherited-from-part-class-part-html-">registerChild (inherited from <a href='class-Part.html' title='null'>Part</a>)</h3>
+<pre><code class="lang-js">registerChild(part, [options])
+</code></pre>
+<p>UNDOCUMENTED</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>part</td>
+<td><a href='class-Part.html' title='null'>Part</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>options</td>
+<td>Object</td>
+<td>Boolean</td>
+<td></td>
+<td>optional</td>
+<td></td>
+</tr>
+<tr>
+<td>options.disposeOnUnload</td>
+<td>Boolean</td>
+<td></td>
+<td>optional</td>
+<td></td>
+</tr>
+<tr>
+<td>options.keepOnUnload</td>
+<td>Boolean</td>
+<td></td>
+<td>optional</td>
+<td></td>
+</tr>
+<tr>
+<td>options.trackStatus</td>
+<td>Boolean</td>
+<td></td>
+<td>optional</td>
+<td></td>
+</tr>
+<tr>
+<td>options.name</td>
+<td>Boolean</td>
+<td></td>
+<td>optional</td>
+</tr>
+</tbody>
+</table>
+<p><a id="render"></a></p>
+<h3 id="render-inherited-from-part-class-part-html-">render (inherited from <a href='class-Part.html' title='null'>Part</a>)</h3>
+<pre><code class="lang-js">render(domElement)
+</code></pre>
+<p>Render the part into DOM element.</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>domElement</td>
+<td>HTMLElement</td>
+<td>jQuery</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a id="rerender"></a></p>
+<h3 id="rerender-inherited-from-part-class-part-html-">rerender (inherited from <a href='class-Part.html' title='null'>Part</a>)</h3>
+<pre><code class="lang-js">rerender()
+</code></pre>
+<p>Unload the part and render again in the same DOM element.</p>
+<p><a id="setNavigationService"></a></p>
+<h3 id="setnavigationservice-inherited-from-part-class-part-html-">setNavigationService (inherited from <a href='class-Part.html' title='null'>Part</a>)</h3>
+<pre><code class="lang-js">setNavigationService(navigationService)
+</code></pre>
+<p>Bind the part with NavigationService.</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>navigationService</td>
+<td><a href='class-NavigationService.html' title='null'>NavigationService</a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a id="setViewModel"></a></p>
+<h3 id="setviewmodel-inherited-from-part-class-part-html-">setViewModel (inherited from <a href='class-Part.html' title='null'>Part</a>)</h3>
+<pre><code class="lang-js">setViewModel(viewModel)
+</code></pre>
+<p>Bind the part with a view model.</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>viewModel</td>
+<td>Object</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a id="unload"></a></p>
+<h3 id="unload-inherited-from-part-class-part-html-">unload (inherited from <a href='class-Part.html' title='null'>Part</a>)</h3>
+<pre><code class="lang-js">unload()
+</code></pre>
+<p>Unload the part.</p>
+<p><a id="unregisterChild"></a></p>
+<h3 id="unregisterchild-inherited-from-part-class-part-html-">unregisterChild (inherited from <a href='class-Part.html' title='null'>Part</a>)</h3>
+<pre><code class="lang-js">unregisterChild()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="bind"></a></p>
+<h3 id="bind-inherited-from-observable-class-observable-html-">bind (inherited from <a href='class-Observable.html' title='null'>Observable</a>)</h3>
+<pre><code class="lang-js">bind(eventName, callback, [context]) : *
+</code></pre>
+<p>Подписывает обработчик callback на событие eventName. Если задан параметр context, то обработчик
+будет вызван в контексте этого объекта (т.е. context будет выступать в качестве this). Если context
+не задан, то обрабочик будет вызываться в контексте текущего observable-объекта.</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>eventName</td>
+<td>String</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>callback</td>
+<td>function</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>context</td>
+<td>Object</td>
+<td></td>
+<td>optional</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns-">Returns:</h4>
+<p>Type: *
+<a id="bound"></a></p>
+<h3 id="bound-inherited-from-observable-class-observable-html-">bound (inherited from <a href='class-Observable.html' title='null'>Observable</a>)</h3>
+<pre><code class="lang-js">bound(eventName) : Boolean
+</code></pre>
+<p>Проверяет, что на событие eventName подписан хотя бы один обработчик.
+Если имя события не задано, то проверяет, что хотя бы один обработчик подписан на любое событие.</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>eventName</td>
+<td>String</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns-">Returns:</h4>
+<p>Type: Boolean
+<a id="changed"></a></p>
+<h3 id="changed-inherited-from-observable-class-observable-html-">changed (inherited from <a href='class-Observable.html' title='null'>Observable</a>)</h3>
+<pre><code class="lang-js">changed(name)
+</code></pre>
+<p>Trigger &#39;change&#39; and &#39;change:prop&#39; events to notify that the property was previously changed</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>name</td>
+<td>String</td>
+<td></td>
+<td></td>
+<td>the name of the changed property</td>
+</tr>
+</tbody>
+</table>
+<p><a id="declareProp"></a></p>
+<h3 id="declareprop-inherited-from-observable-class-observable-html-">declareProp (inherited from <a href='class-Observable.html' title='null'>Observable</a>)</h3>
+<pre><code class="lang-js">declareProp()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="dispose"></a></p>
+<h3 id="dispose-inherited-from-observable-class-observable-html-">dispose (inherited from <a href='class-Observable.html' title='null'>Observable</a>)</h3>
+<pre><code class="lang-js">dispose()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="get"></a></p>
+<h3 id="get-inherited-from-observable-class-observable-html-">get (inherited from <a href='class-Observable.html' title='null'>Observable</a>)</h3>
+<pre><code class="lang-js">get()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="set"></a></p>
+<h3 id="set-inherited-from-observable-class-observable-html-">set (inherited from <a href='class-Observable.html' title='null'>Observable</a>)</h3>
+<pre><code class="lang-js">set()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="subscribe"></a></p>
+<h3 id="subscribe-inherited-from-observable-class-observable-html-">subscribe (inherited from <a href='class-Observable.html' title='null'>Observable</a>)</h3>
+<pre><code class="lang-js">subscribe(eventName, callback, [context]) : Object
+</code></pre>
+<p>Подписывает обработчик callback на событие eventName и возвращает disposable объект, который
+отписывает этот обработчик в методе dispose.
+Метод аналогичен методу bind, но возвращает disposable объект, который выполняет unbind.</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>eventName</td>
+<td>String</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>callback</td>
+<td>function</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>context</td>
+<td>Object</td>
+<td></td>
+<td>optional</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns-">Returns:</h4>
+<p>Disposable объект, в методе dispose которого выполняется отписка
+обработчика (unbind).
+Type: Object
+<a id="trigger"></a></p>
+<h3 id="trigger-inherited-from-observable-class-observable-html-">trigger (inherited from <a href='class-Observable.html' title='null'>Observable</a>)</h3>
+<pre><code class="lang-js">trigger(eventName) : *
+</code></pre>
+<p>Возбуждает событие eventName, вызывая все подписанные на него обработчики.
+Все аргументы метода, кроме первого (eventName), передаются в обработчики.</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>eventName</td>
+<td>String</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns-">Returns:</h4>
+<p>Type: *
+<a id="unbind"></a></p>
+<h3 id="unbind-inherited-from-observable-class-observable-html-">unbind (inherited from <a href='class-Observable.html' title='null'>Observable</a>)</h3>
+<pre><code class="lang-js">unbind(eventName, [callback], [context]) : *
+</code></pre>
+<p>Отписывает обработчик callback от события eventName. Обработчик отписывается, только если он был подписан
+с тем же значением параметра context.
+Если задано только eventName, то от события eventName отписываются все подписанные обработчики.
+Если не заданы eventName, callback и context, то все подписанные обработчики отписываются от всех событий.
+Если заданы eventName и context, то от события eventName отписываются все обработчики контекста.
+Если задан только context, то отписываются все обработчики контекста от всех событий.</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>eventName</td>
+<td>String</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>callback</td>
+<td>function</td>
+<td></td>
+<td>optional</td>
+<td></td>
+</tr>
+<tr>
+<td>context</td>
+<td>Object</td>
+<td></td>
+<td>optional</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns-">Returns:</h4>
+<p>Type: *</p>
+
+        
+        <hr>
+
+        
+
+        <div class="well">
+  <p>Find an error? <a class="alert-link" href="https://track.rnd.croc.ru/newIssue?project=WC&clearDraft=true&c=Type+Bug&c=State+Open&c=Subsystem+documentation">Let us know →</a></p>
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+
+	<div class="site-footer">
+  <p>Built on 31.9.2014 at 21:39. Power by <a href="http://assemble.io">Assemble</a>, <a href="http://gruntjs.com">Grunt</a>, <a href="http://code.rnd.croc.ru/projects/RND/repos/jsdoc2markdown">jsdoc2markdown</a>.
+</p></div>
+
+    <script src="../../assets/js/jquery.js"></script>
+<script src="../../assets/js/bootstrap.min.js"></script>
+<script src="../../assets/js/highlight.js"></script>
+  </body>
+</html>

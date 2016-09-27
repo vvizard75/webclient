@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Class ReportApplication | WebClient documentation</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="../../assets/css/root.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body style="background: white;" data-spy="scroll" data-target=".bs-sidebar">
+
+    <div class="root">
+    
+<div class="navbar navbar-inverse" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../../index.html">WebClient documentation</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      
+        <ul class="nav navbar-nav">
+          <li><a href="../docs/index.html">Docs</a></li>
+          <li class="active"><a href="index.html">API Client</a></li>
+        </ul>
+      
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">CROC R&D<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://track.rnd.croc.ru">Bug tracker (YouTrack)</a></li>
+            <li><a href="https://code.croc.ru">Source code (Git Server)</a></li>
+            <li><a href="https://wiki.rnd.croc.ru">Wiki</a></li>
+            <li><a href="https://build.rnd.croc.ru">Build server (TeamCity)</a></li>
+            <li><a href="https://qa.rnd.croc.ru">Q&A</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-header">Other</li>
+            <li><a href="https://github.com/CrocInc">CROC on Github</a></li>
+            
+          </ul>
+        </li>
+      </ul>
+
+    </nav>
+  </div>
+</div>
+
+    
+<div class="container" role="main">
+  <div class="row">
+
+    
+    <div class="col col-lg-3">
+      <div class="sidebar">
+
+      </div>
+    </div>
+
+
+    
+    <div class="col col-lg-9">
+      <div class="panel panel-docs">
+        <ol class='breadcrumb'><li><a href='index.html'>API-Client</a></li><li><a href='classes.html'>Classes</a></li><li class='active'>Class ReportApplication</li></ol>
+        <h1>Class ReportApplication</h1>
+          <blockquote>
+<p>Source file: modules\reporting\module-reporting-app.js</p>
+</blockquote>
+<h2 id="constructor">Constructor</h2>
+<pre><code class="lang-js">constructor(xconfig, reportModel)
+</code></pre>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>xconfig</td>
+<td>XConfig</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>reportModel</td>
+<td>Object</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="extends">Extends</h2>
+<ul>
+<li><a href='class-Application.html' title='null'>Application</a></li>
+</ul>
+<h2 id="members-properties-fields-">Members (properties/fields)</h2>
+<ul>
+<li><a href='#breadcrumbsConfig' title='null'>breadcrumbsConfig</a> </li>
+</ul>
+<p><a id="breadcrumbsConfig"></a></p>
+<h3 id="field-breadcrumbsconfig">Field breadcrumbsConfig</h3>
+<pre><code class="lang-js">breadcrumbsConfig: ?
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p>Type: ?</p>
+<h2 id="methods">Methods</h2>
+<ul>
+<li><a href='#initialize' title='null'>initialize</a> </li>
+<li><a href='#createPart' title='null'>createPart</a> (inherited from <a href='class-Application.html' title='null'>Application</a>)</li>
+<li><a href='#createUnitOfWork' title='null'>createUnitOfWork</a> (inherited from <a href='class-Application.html' title='null'>Application</a>)</li>
+<li><a href='#getAllPartNames' title='null'>getAllPartNames</a> (inherited from <a href='class-Application.html' title='null'>Application</a>)</li>
+<li><a href='#initialize' title='null'>initialize</a> (inherited from <a href='class-Application.html' title='null'>Application</a>)</li>
+<li><a href='#onAppStateChanged' title='null'>onAppStateChanged</a> (inherited from <a href='class-Application.html' title='null'>Application</a>)</li>
+<li><a href='#onFailed' title='null'>onFailed</a> (inherited from <a href='class-Application.html' title='null'>Application</a>)</li>
+<li><a href='#onInitialized' title='null'>onInitialized</a> (inherited from <a href='class-Application.html' title='null'>Application</a>)</li>
+<li><a href='#onLoading' title='null'>onLoading</a> (inherited from <a href='class-Application.html' title='null'>Application</a>)</li>
+<li><a href='#onStarted' title='null'>onStarted</a> (inherited from <a href='class-Application.html' title='null'>Application</a>)</li>
+<li><a href='#postinitialize' title='null'>postinitialize</a> (inherited from <a href='class-Application.html' title='null'>Application</a>)</li>
+<li><a href='#preinitialize' title='null'>preinitialize</a> (inherited from <a href='class-Application.html' title='null'>Application</a>)</li>
+<li><a href='#registerPart' title='null'>registerPart</a> (inherited from <a href='class-Application.html' title='null'>Application</a>)</li>
+<li><a href='#run' title='null'>run</a> (inherited from <a href='class-Application.html' title='null'>Application</a>)</li>
+<li><a href='#updateAppVersion' title='null'>updateAppVersion</a> (inherited from <a href='class-Application.html' title='null'>Application</a>)</li>
+</ul>
+<p><a id="initialize"></a></p>
+<h3 id="initialize">initialize</h3>
+<pre><code class="lang-js">initialize()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="createPart"></a></p>
+<h3 id="createpart-inherited-from-application-class-application-html-">createPart (inherited from <a href='class-Application.html' title='null'>Application</a>)</h3>
+<pre><code class="lang-js">createPart(partName, [options]) : [Part](class-Part.html)
+</code></pre>
+<p>Create a part instance.</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>partName</td>
+<td>String</td>
+<td></td>
+<td></td>
+<td>Name of the part</td>
+</tr>
+<tr>
+<td>options</td>
+<td>Object</td>
+<td></td>
+<td>optional</td>
+<td>Options to pass to part&#39;s constructor</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns-">Returns:</h4>
+<p>Type: <a href='class-Part.html' title='null'>Part</a>
+<a id="createUnitOfWork"></a></p>
+<h3 id="createunitofwork-inherited-from-application-class-application-html-">createUnitOfWork (inherited from <a href='class-Application.html' title='null'>Application</a>)</h3>
+<pre><code class="lang-js">createUnitOfWork()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="getAllPartNames"></a></p>
+<h3 id="getallpartnames-inherited-from-application-class-application-html-">getAllPartNames (inherited from <a href='class-Application.html' title='null'>Application</a>)</h3>
+<pre><code class="lang-js">getAllPartNames()
+</code></pre>
+<p>Return all registered parts names.</p>
+<p><a id="initialize"></a></p>
+<h3 id="initialize-inherited-from-application-class-application-html-">initialize (inherited from <a href='class-Application.html' title='null'>Application</a>)</h3>
+<pre><code class="lang-js">initialize()
+</code></pre>
+<p>Initialization state. It happens after all modules initialized.</p>
+<p><a id="onAppStateChanged"></a></p>
+<h3 id="onappstatechanged-inherited-from-application-class-application-html-">onAppStateChanged (inherited from <a href='class-Application.html' title='null'>Application</a>)</h3>
+<pre><code class="lang-js">onAppStateChanged()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="onFailed"></a></p>
+<h3 id="onfailed-inherited-from-application-class-application-html-">onFailed (inherited from <a href='class-Application.html' title='null'>Application</a>)</h3>
+<pre><code class="lang-js">onFailed()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="onInitialized"></a></p>
+<h3 id="oninitialized-inherited-from-application-class-application-html-">onInitialized (inherited from <a href='class-Application.html' title='null'>Application</a>)</h3>
+<pre><code class="lang-js">onInitialized()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="onLoading"></a></p>
+<h3 id="onloading-inherited-from-application-class-application-html-">onLoading (inherited from <a href='class-Application.html' title='null'>Application</a>)</h3>
+<pre><code class="lang-js">onLoading()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="onStarted"></a></p>
+<h3 id="onstarted-inherited-from-application-class-application-html-">onStarted (inherited from <a href='class-Application.html' title='null'>Application</a>)</h3>
+<pre><code class="lang-js">onStarted()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="postinitialize"></a></p>
+<h3 id="postinitialize-inherited-from-application-class-application-html-">postinitialize (inherited from <a href='class-Application.html' title='null'>Application</a>)</h3>
+<pre><code class="lang-js">postinitialize()
+</code></pre>
+<p>Post-initialization stage (latest). It happens after AppStateManager applied current state from url.
+Publishes pub/sub &quot;app.state&quot; event.</p>
+<p><a id="preinitialize"></a></p>
+<h3 id="preinitialize-inherited-from-application-class-application-html-">preinitialize (inherited from <a href='class-Application.html' title='null'>Application</a>)</h3>
+<pre><code class="lang-js">preinitialize()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="registerPart"></a></p>
+<h3 id="registerpart-inherited-from-application-class-application-html-">registerPart (inherited from <a href='class-Application.html' title='null'>Application</a>)</h3>
+<pre><code class="lang-js">registerPart(partName, creator)
+</code></pre>
+<p>Register part factory.</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>partName</td>
+<td>String</td>
+<td></td>
+<td></td>
+<td>Name of the part. It will be used to create part via createPart method.</td>
+</tr>
+<tr>
+<td>creator</td>
+<td>function</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a id="run"></a></p>
+<h3 id="run-inherited-from-application-class-application-html-">run (inherited from <a href='class-Application.html' title='null'>Application</a>)</h3>
+<pre><code class="lang-js">run(rootElement)
+</code></pre>
+<p>Initialize the application: initialize areas and its regions from markup, initialize modules, start AppStateManager</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>rootElement</td>
+<td>?</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a id="updateAppVersion"></a></p>
+<h3 id="updateappversion-inherited-from-application-class-application-html-">updateAppVersion (inherited from <a href='class-Application.html' title='null'>Application</a>)</h3>
+<pre><code class="lang-js">updateAppVersion()
+</code></pre>
+<p>UNDOCUMENTED</p>
+
+        
+        <hr>
+
+        
+
+        <div class="well">
+  <p>Find an error? <a class="alert-link" href="https://track.rnd.croc.ru/newIssue?project=WC&clearDraft=true&c=Type+Bug&c=State+Open&c=Subsystem+documentation">Let us know →</a></p>
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+
+	<div class="site-footer">
+  <p>Built on 31.9.2014 at 19:52. Power by <a href="http://assemble.io">Assemble</a>, <a href="http://gruntjs.com">Grunt</a>, <a href="http://code.rnd.croc.ru/projects/RND/repos/jsdoc2markdown">jsdoc2markdown</a>.
+</p></div>
+
+    <script src="../../assets/js/jquery.js"></script>
+<script src="../../assets/js/bootstrap.min.js"></script>
+<script src="../../assets/js/highlight.js"></script>
+  </body>
+</html>

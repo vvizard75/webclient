@@ -1,0 +1,1 @@
+$(document).ready(function(){var a,b;if(location.search){var c=location.search.substring(1).split("=");c.length>=2&&(a=decodeURIComponent(c[1]),b=$("#"+a),b.length?b.show():$(".tag-not-found").text("Tag '"+a+"' not found"))}});

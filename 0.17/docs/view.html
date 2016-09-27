@@ -1,0 +1,3581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>View | WebClient documentation</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="../../assets/css/root.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body style="background: white;" data-spy="scroll" data-target=".bs-sidebar">
+
+    <div class="root">
+    
+<div class="navbar navbar-inverse" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../../index.html">WebClient documentation</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Docs</a></li>
+          <li><a href="../api-client/index.html">API Client</a></li>
+        </ul>
+      
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">CROC R&D<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://track.rnd.croc.ru">Bug tracker (YouTrack)</a></li>
+            <li><a href="https://code.croc.ru">Source code (Git Server)</a></li>
+            <li><a href="https://wiki.rnd.croc.ru">Wiki</a></li>
+            <li><a href="https://build.rnd.croc.ru">Build server (TeamCity)</a></li>
+            <li><a href="https://qa.rnd.croc.ru">Q&A</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-header">Other</li>
+            <li><a href="https://github.com/CrocInc">CROC on Github</a></li>
+            
+          </ul>
+        </li>
+      </ul>
+
+    </nav>
+  </div>
+</div>
+
+    
+<div class="container" role="main">
+  <div class="row">
+
+    
+    <div class="col col-lg-3">
+      <div class="sidebar">
+        <ul class="nav nav-pills nav-stacked">
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+          <li><a href="structure.html">Structure</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+          <li><a href="browser-support.html">Browser support</a></li>
+    
+  
+    
+  
+    
+  
+    
+          <li><a href="distribution.html">Distribution</a></li>
+    
+  
+    
+  
+    
+  
+    
+          <li><a href="setup-developer-environment.html">Setup Developer Environment</a></li>
+    
+  
+    
+  
+    
+  
+    
+          <li><a href="project-structure.html">Project Structure</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+          <li><a href="key-features.html">Key Features</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+</ul>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="getting-started-tutorial.html">Getting Started Tutorial</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="getting-started-tutorial-0_12.html">Getting Started Tutorial 0.12</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="base.html">Base</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="ecmascript-5-emulation.html">EcmaScript 5 emulation</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="module-system.html">Module System</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="core.html">Core</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="class-system.html">Class System</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="presentation-model.html">Presentation Model</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="composition-&amp;-navigation.html">Composition &amp; Navigation</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="переопределение-компонентов.html">Переопределение компонентов</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="templating.html">Templating</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="data-binding.html">Data-binding</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="eventpublisher.html">EventPublisher</a></li>
+        
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="application.html">Application</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+         
+
+          <li><a href="app-module.html">App-module</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="datasource.html">DataSource</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="domain-model.html">Domain Model</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="domain-objects.html">Domain Objects</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="validation.html">Validation</a></li>
+        
+        
+       
+        
+       
+        
+         
+
+          <li><a href="formatters.html">Formatters</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="interop.html">Interop</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="main_js.html">main.js</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="ui-ux.html">UI-UX</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="app-starting-ux.html">App starting UX</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="appnavbar.html">AppNavBar</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="css-styles-and-less.html">CSS Styles and LESS</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="tree.html">Tree</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="icons.html">Icons</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="menu.html">Menu</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="objecteditor.html">ObjectEditor</a></li>
+        
+        
+       
+        
+       
+        
+         
+
+          <li><a href="objectlist.html">ObjectList</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="objectviewer.html">ObjectViewer</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="objectwizard.html">ObjectWizard</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="onlinebeacon.html">OnlineBeacon</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="property-editors.html">Property Editors</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="objectfilter.html">ObjectFilter</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="appservices.html">AppServices</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+         
+
+          <li><a href="affix.html">Affix</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="app-navigation.html">App Navigation</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="breadcrumbs.html">Breadcrumbs</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="client-update-notification.html">Client update notification</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="debug-module.html">Debug module</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="drafts.html">Drafts</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="i18n.html">i18n</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="notifications.html">Notifications</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="security.html">Security</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="scroll-accelerators.html">Scroll accelerators</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="reporting.html">Reporting</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="server.html">Server</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="server-architecture.html">Server Architecture</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="page-layout.html">Page Layout</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="filecontroller.html">FileController</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="bootloader.html">Bootloader</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="main_config_json.html">main.config.json</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="hosting.html">Hosting</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="knowledge-base.html">Knowledge Base</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="client-debugging.html">Client Debugging</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="кеширование-контента.html">Кеширование контента</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="webstorm-live-templates.html">WebStorm Live Templates</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="efficient-css.html">Efficient CSS</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="elmah.html">Elmah</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="devtools.html">DevTools</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="archived-build-0_10.html">Archived-Build 0.10</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="настройка-teamcity-билд-конфигурации-для-работы-с-bower-и-grunt.html">Настройка TeamCity билд конфигурации для работы с bower и grunt</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="yeoman-generator.html">Yeoman Generator</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="grunt-croc-qunit.html">grunt-croc-qunit</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="grunt-croc-requirejs.html">grunt-croc-requirejs</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="resxtojson.html">ResxToJson</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+      </ul>
+
+    
+  
+
+
+      </div>
+    </div>
+
+
+    
+    <div class="col col-lg-9">
+      <div class="panel panel-docs">
+        <ol class='breadcrumb'><li><a href='index.html'>Docs</a></li><li><a href='core.html'>Core</a></li><li><a href='presentation-model.html'>Presentation Model</a></li><li class='active'>View</li></ol>
+        <h1>View</h1>
+          
+
+<p>View - это <a href='part.html' title='null'>парт</a>, который для рендеринга использует некоторый шаблон. В качестве движка шаблонов используется <a href='http://handlebarsjs.com/' title='null'>Handlebars</a>.</p>
+<h2 id="-toc-">{toc}</h2>
+<h3 id="-">Опции</h3>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Наименование</th>
+<th>Тип</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>template</td>
+<td>String&#124;Function</td>
+<td>Handlebars шаблон. Может быть уже скомпилирован (Function) или представлен в виде текста (String). В последнем случае шаблон сначала компилируется в функцию. Шаблон также можно задать с помощью метода <code>setTemplate</code> (см. далее раздел <a href='#Компиляция и production' title='null'>#Компиляция и production</a>)</td>
+</tr>
+<tr>
+<td>viewModel</td>
+<td>Object</td>
+<td>ViewModel, которая используется в качестве контекста функции-шаблона. Модель также можно задать с помощью метода <code>setViewModel</code>. Если viewModel не задана до вызова метода <code>render</code>, то в качестве viewModel выступает сам View</td>
+</tr>
+<tr>
+<td>unbound</td>
+<td>Boolean</td>
+<td>По умолчанию шаблон оборачивается в <em>observable expression</em>, что позволяет автоматически отслеживать изменения во viewModel. При изменении viewModel вызывается повторный рендеринг (<code>rerender</code>), функция-шаблон при этом вычисляется заново.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-production">Компиляция и production</h3>
+<p>При формировании production версии (с помощью таска rjs из grunt-croc-requirejs) Handlebars-шаблоны, импортируемые с помощью RequireJS-плагина xhtmpl компилируются в js-код. Кроме того, сам плагин xhtmpl оптимизируется т.о. чтобы не использовать полную версию Handlebars. По умолчанию, плагин xhtmpl - это единственный компонент который использует полную версию Handlebars. Остальные компонент (фактически View) зависят от runtime-версии - облегченной версии без компилятора. 
+Переключение версии Handlebars происходит при билде с помощью rjs из grunt-croc-requirejs - если для таска задан параметр:</p>
+<pre><code class="lang-js">requireConfigOutput: {
+        paths: {
+            handlebars: &quot;vendor/handlebars/handlebars.runtime&quot;
+        }
+    }
+</code></pre>
+<p>Т.о. если для production-версии в require.config.json для модуля &quot;handlebars&quot; задано отображение на &quot;handlebars.runtime&quot;, то динамическая компиляция шаблона (заданного через View.setTemplate) работать не будет.
+Рекомендуется хранить шаблоны в отдельных hbs-файлах и импортировать их с помощью плагина xhtmpl. 
+Если же в приложении требуется использовать динамическую генерацию шаблона, то необходимо использовать полную версию Handlebars.
+В версии 0.15 стандартная компиляция Handlebars дополнена фичей удаления лишних пробелов и переносов строк. Если между окончанием тега (&gt;) или хелпера (}}) и начало другого тега (&lt;) или хелпера ({ {) содержатся только переносы строки и пробельные символы, то они удаляются (с помощью регулярного выражения). Это позволяет писать форматированные шаблоны с отступами и переносами строк, не боясь за качество выходного HTML. Однако, иногда бывает нужно сохранить разметку без изменений. Для этого введен хелпер <code>pre</code>: все, что внутри него, останется без изменении. Пример:</p>
+<pre><code class="lang-html">&lt;div&gt;
+
+    &lt;span&gt;Переносы строк будут вырезаны&lt;span&gt;
+
+&lt;/div&gt;
+{{#pre}}&lt;pre&gt;
+
+    &lt;span&gt;Переносы строк останутся без изменений&lt;span&gt;
+
+&lt;/pre&gt;{{/pre}}
+</code></pre>
+<h3 id="-handlebars">Модификация Handlebars</h3>
+<p>В стандартной поставке Handlebars умеет использовать только поля JavaScript-объектов или их свойства, объявленные через defineProperty (или подобными способами). Однако, в WebClient свойства объектов (доменных и не только) реализованы через методы. Чтобы задействовать такие свойства, Handlebars был кастомизирован. А именно изменен метод <code>Handlebars.JavaScriptCompiler.prototype.nameLookup</code>: в нашей версии он сводится к вызову <code>core.lang.Observable.get</code>. Таким образом, если в шаблоне используется метод, то он будет автоматически вызван (без аргументов), как если бы это было простое поле. Синтаксис в шаблоне один и тот же как для полей, так и для методов (без дополнительных скобок).
+Однако, иногда не нужно сразу вызывать метод в шаблоне. Например, это может потребоваться, чтобы передать функцию внутрь хелпера как опцию. Рассмотрим на примере хелпера <a href='#format' title='null'>format</a>. Он принимается опцию <code>formatter</code> - функцию, возвращающую строковое представление объекта. Если в шаблоне вызывать этот хелпер следующим образом:</p>
+<pre><code class="lang-html">{{format value formatter=options.formatter}}
+</code></pre>
+<p>то функция <code>options.fomatter</code> будет сразу же вызвана и в хелпер попадет уже ее результат - скорее всего все упадет. Чтобы этого избежать предлагается использовать следующий синтаксис:</p>
+<pre><code class="lang-html">{{format value formatter=options.[&#39;formatter&#39;]}}
+</code></pre>
+<p>Вместо одинарных можно использовать двойные кавычки.</p>
+<h3 id="helpers">Helpers</h3>
+<p>Вместе со View поставляется набор Handlebars-хелперов, облегчающих написание шаблонов:</p>
+<p><a id='data-bind'></a></p>
+<h4 id="data-bind">data-bind</h4>
+<p>Выполняет <em>data binding</em> свойства <code>viewModel</code> и DOM-элемента. <strong>arguments:</strong> нет <strong>block:</strong> нет
+<em>hash</em>:
+| target | Целевой элемент (<a href='helper-target.html#target-attr' title='null'>подробнее</a>) | Не обязательно. Добавлен в версии 0.10. |
+| Прочие опции | Остальные опции рассматриваются как словарь устанавливаемых binding-ов. Ключ - наименование html-байдинга (например, <code>text</code>, <code>value</code>, <code>valueLive</code> и т.д.). Значение - observable expression (см. <a href='http://wiki.rnd.croc.ru/display/xfwajax//2012/05/10/Универсальный+data-binding' title='null'>xfwajax:/2012/05/10/Универсальный data-binding</a>). | Должна быть хотя бы одна такая опция | <strong>Примеры:</strong> </p>
+<pre><code class="lang-html">&lt;input type=&quot;text&quot; {{data-bind value=&quot;lastName&quot;}} /&gt;
+</code></pre>
+<pre><code class="lang-html">&lt;input type=&quot;text&quot; {{data-bind value=&quot;this.organizer().firstName() + &#39; &#39; + this.organizer().lastName()&quot; hidden=&quot;!this.organizer()&quot;}} /&gt;
+</code></pre>
+<p><a id='command-bind'></a></p>
+<h4 id="command-bind">command-bind</h4>
+<p>Выполняет <em>command binding</em> <a href='commands.html' title='null'>команды</a> и DOM-элемента. <strong>argument:</strong> экземпляр <a href='commands.html' title='null'>команды</a> <strong>block:</strong> нет
+<em>hash</em>:
+| target | Целевой элемент (<a href='helper-target.html#target-attr' title='null'>подробнее</a>) | Не обязательно. Добавлен в версии 0.10. |
+| canBeEmpty | true/false | по умолчанию, если аргумент не возвращает объект команды, возникает исключение, чтобы это не происходило можно задать опцию canBeEmpty=true - в этом случае для пустого поля байндинг будет игнорироваться |
+| Прочие опции | Параметры, передавемые к команду | Не обязательно | <strong>Пример:</strong> </p>
+<pre><code class="lang-html">&lt;button {{command-bind cmdSave item=currentItem}}&gt;Save&lt;/button&gt;
+</code></pre>
+<p><a id='render'></a></p>
+<h4 id="render">render</h4>
+<p>Отображает уже существующий <a href='part.html' title='null'>парт</a>. <strong>argument:</strong> экземпляр парта <strong>block:</strong> нет <strong>hash:</strong> | target | Целевой элемент (<a href='helper-target.html#target-attr' title='null'>подробнее</a>) | Не обязательно. Добавлен в версии 0.10. |
+| tag | Тег обрамляющего элемента | Не обязательно, по умолчанию span |
+| cssClass | Css-класс обрамляющего элемента | Не обязательно |
+<em>Пример</em>:</p>
+<pre><code class="lang-html">{{render body}}
+</code></pre>
+<p><a id='observe'></a></p>
+<h4 id="observe">observe</h4>
+<p>Создает независимую область отслеживания изменений. Если изменения во viewModel коснулись только части DOM внутри хелпера <code>observe</code>, то будет перерисована только часть, а не весь View.</p>
+<blockquote>
+<p>На самом деле просто создается дочерний View
+ <strong>argument:</strong> дочерняя viewModel <strong>block:</strong> шаблон, изменения в котором будут отслеживаться отдельно <strong>hash:</strong> | target | Целевой элемент (<a href='helper-target.html#target-attr' title='null'>подробнее</a>) | Не обязательно. Добавлен в версии 0.10. |
+| tag | Тег обрамляющего элемента | Не обязательно, по умолчанию span |
+| cssClass | Css-класс обрамляющего элемента | Не обязательно | <strong>Пример:</strong> </p>
+<pre><code class="lang-html">&lt;div style=&quot;height:200px&quot;&gt;
+{{#observe this}}
+    &lt;span&gt;{{description}}&lt;span&gt;
+{{/observe}
+&lt;div&gt;
+</code></pre>
+</blockquote>
+<p><a id='unbound'></a></p>
+<h4 id="unbound">unbound</h4>
+<p>Создает область без отслеживания изменений. Таким образом, если изменения коснулись только части DOM внутри хелпера <code>unbound</code>, то перерисовка View не будет выполняться. </p>
+<blockquote>
+<p>На самом деле просто создается дочерний View с опцией <code>unbound: true</code>. В остальном аналогичен хелперу <code>observe</code>.</p>
+</blockquote>
+<p><a id='each'></a></p>
+<h4 id="each">each</h4>
+<p>Переопределяет стандартный Handlebars-хелпер <code>each</code>, добавляя поддержку <code>ObservableCollection</code>.</p>
+<p><a id='observe-each'></a></p>
+<h4 id="observe-each">observe-each</h4>
+<p>Вызывает хелпер <code>observe</code> для каждого элемента коллекции. В отличие от <code>each</code> при изменении одного элемента коллекции будет перерисован только этот элемент, а не весь View. <strong>argument:</strong> дочерняя viewModel <strong>block:</strong> шаблон для элемента коллекции <strong>hash:</strong> | target | Целевой элемент (<a href='helper-target.html#target-attr' title='null'>подробнее</a>) | Не обязательно. Добавлен в версии 0.10. |
+| tag | Тег обрамляющего элемента | Не обязательно, по умолчанию span |
+| cssClass | Css-класс обрамляющего элемента | Не обязательно | <strong>Пример:</strong> </p>
+<pre><code class="lang-html">&lt;div&gt;
+{{#observe-each comments}}
+    &lt;p&gt;{{text}}&lt;p&gt;
+{{/observe}
+&lt;div&gt;
+</code></pre>
+<p><a id='expr'></a></p>
+<h4 id="expr">expr</h4>
+<p>Подставляет результат выражения. <strong>argument:</strong> текст javascript выражения (указывается) <strong>block:</strong> нет <strong>hash:</strong> нет <strong>Пример:</strong> </p>
+<pre><code class="lang-js">&lt;span&gt;{{expr &quot;this.getFormatted(&#39;created&#39;)&quot;}}&lt;/span&gt;
+</code></pre>
+<p><a id='if-not-last'></a></p>
+<h4 id="if-not-last">if-not-last</h4>
+<p>Подставляет блок, если текущий элемент не последний в коллекции. Должен применяться внутри хелперов, итерирующих коллекции (например, <code>each</code>). <strong>arguments:</strong> нет <strong>block:</strong> подставляемый шаблон <strong>hash:</strong> | total | Число элементов в коллекции | Обязательно | <strong>Пример:</strong> </p>
+<pre><code class="lang-html">{{#if-not-last total=../pages.count}}
+&lt;span class=&quot;wizard-arrow&quot;&gt;&lt;/span&gt;
+{{/if-not-last}}
+</code></pre>
+<p><a id='compare'></a></p>
+<h4 id="compare">compare</h4>
+<p>Подставляет блок, если операция сравнения возвращает true. <strong>arg1:</strong> левый операнд для сравнения <strong>arg2:</strong> строка с оператором сравнения. Может иметь одно из следующих значений: ==, ===, !=, !==, &lt;, &gt;, &lt;=, &gt;= или typeof <strong>arg3:</strong> правый операнд для сравнения</p>
+<blockquote>
+<p>Может быть задано только два аргумента. В этом случае они сравниваются оператором ===.
+ <strong>block:</strong> подставляемый шаблон <strong>hash:</strong> нет <strong>Пример:</strong> </p>
+<pre><code class="lang-html">{{#compare pages.count &quot;&gt;&quot; 1}}
+    &lt;div class=&#39;x-editor-root x-editor-root-tabbed&#39;&gt;&lt;/div&gt;
+{{else}}
+    &lt;div class=&#39;x-editor-root x-editor-root-single&#39;&gt;&lt;/div&gt;
+{{/compare}}
+</code></pre>
+</blockquote>
+<p><a id='push-id'></a></p>
+<h4 id="push-id">push-id</h4>
+<p>Хэлпер создает уникальный id элемента, сохраняет и выводит его. <a href='helper-target.html#push-id' title='null'>Подробнее</a> <strong>Пример:</strong> </p>
+<pre><code class="lang-html">&lt;label for=&quot;{{push-id}}&quot;&gt;
+    &lt;input type=&#39;checkbox&#39; id=&quot;{{pop-id}}&quot; /&gt;
+&lt;/label&gt;
+</code></pre>
+<p><a id='peek-id'></a></p>
+<h4 id="peek-id">peek-id</h4>
+<p>Хэлпер выводит уникальный id элемента, созданный ранее с помощью <a href='#push-id' title='null'>push-id</a>. <a href='helper-target.html#push-id' title='null'>Подробнее</a> <strong>Пример:</strong> </p>
+<pre><code class="lang-html">&lt;label for=&quot;{{push-id}}&quot;&gt;
+    &lt;input type=&#39;checkbox&#39; id=&quot;{{peek-id}}&quot; {{data-bind checked=&quot;someProp&quot; target=&quot;:pop-id&quot;}} /&gt;
+&lt;/label&gt;
+</code></pre>
+<p><a id='pop-id'></a></p>
+<h4 id="pop-id">pop-id</h4>
+<p>Хэлпер выводит уникальный id элемента, созданный ранее с помощью <a href='#push-id' title='null'>push-id</a> (аналогично <a href='#peek-id' title='null'>peek-id</a>), но после этого очищает сохраненный id. <a href='helper-target.html#push-id' title='null'>Подробнее</a> <strong>Пример:</strong> </p>
+<pre><code class="lang-html">&lt;label for=&quot;{push-id}&quot;&gt;
+    &lt;input type=&#39;checkbox&#39; id=&quot;{pop-id}&quot; /&gt;
+&lt;/label&gt;
+</code></pre>
+<p><a id='toggleClass'></a></p>
+<h4 id="toggleclass">toggleClass</h4>
+<p>Создает binding между наличием у элемента css класса (binding <code>cssClassToggle</code>) и значением observable expression. <strong>argument:</strong> нет  <strong>block:</strong> нет
+<em>hash</em>: задает пары имя-значение, где имя - это имя css класса, наличие которого у dom-элемента ставится в соответствие от истинности observable-выражения, задаваемого значением. <strong>Пример:</strong> </p>
+<pre><code class="lang-html">&lt;span {{toggleClass -disabled=&quot;disabled&quot;}}&gt;&lt;/span&gt;
+</code></pre>
+<p><a id='format'></a></p>
+<h4 id="format">format</h4>
+<p>Выводит форматированное представление объекта <strong>argument:</strong> форматируемый объект (если не задан, то используется текущий контекст) <strong>block:</strong> нет
+<em>hash</em>:
+| formatter | Функция-форматтер или наименование форматтера для доменного объекта. | Необязательно | Если задана функция, то она вызывается без аргументов в this-контексте форматируемого объекта (аргумент хелпера) | <strong>Пример:</strong> </p>
+<pre><code class="lang-html">{{format value formatter=options.[&#39;formatter&#39;]}}
+</code></pre>
+<blockquote>
+<p>Важно использовать именно такой синтаксис с квадратными скобками и кавычками. Подробнее <a href='#Модификация Handlebars' title='null'>выше</a>.</p>
+</blockquote>
+<p><a id='format'></a></p>
+<h4 id="or">or</h4>
+<p>Возвращает логическое OR для переданных аргументов. Удобно использовать как <a href='http://wiki.rnd.croc.ru/display/xfwajax//2014/05/20/Handlebars+subexpressions' title='null'>subexpression</a>. <strong>argument:</strong> два и более аргумента для вычисления логического OR <strong>block:</strong> нет
+<em>hash</em>: нет <strong>Пример:</strong> </p>
+<pre><code class="lang-html">{{#if (or firstProp secondProp thirdProp.nestedProp)}}
+    {{!-- Some block --}}
+{{/if}}
+</code></pre>
+<h4 id="and">and</h4>
+<p>Возвращает логическое AND для переданных аргументов. Удобно использовать как <a href='http://wiki.rnd.croc.ru/display/xfwajax//2014/05/20/Handlebars+subexpressions' title='null'>subexpression</a>. <strong>argument:</strong> два и более аргумента для вычисления логического AND <strong>block:</strong> нет
+<em>hash</em>: нет <strong>Пример:</strong> </p>
+<pre><code class="lang-html">{{#if (and firstProp secondProp thirdProp.nestedProp)}}
+    {{!-- Some block --}}
+{{/if}}
+</code></pre>
+<h3 id="external-helpers">External helpers</h3>
+<p>Вышеперечисленные хелперы являются наиболее общими и регистрируются непосредственно в модуле View. Другие модули также регистрируют некоторые полезные хелперы:</p>
+<h4 id="core-helpers">Core helpers</h4>
+<p><a id='part'></a></p>
+<h5 id="part">part</h5>
+<p>Создает <a href='part.html' title='null'>парт</a> и отображает его. <strong>arguments:</strong> нет <strong>block:</strong> нет <strong>hash:</strong> | target | Целевой элемент (<a href='helper-target.html#target-attr' title='null'>подробнее</a>) | Не обязательно. Добавлен в версии 0.10. |
+| tag | Тег обрамляющего элемента | Не обязательно, по умолчанию span |
+| cssClass | Css-класс обрамляющего элемента | Не обязательно |
+| class | Класс парта в неймспейсе core | Должна быть задана одна из опций class или name |
+| name | Имя зарегистрированного парта | Должна быть задана одна из опций class или name |
+| viewModel | ViewModel для установки созданному парту | Не обязательно, по умолчанию используется текущий контекст |
+| Прочие опции | Опции, передаваемые в конструктор парта | Не обязательно | <strong>Пример:</strong> </p>
+<pre><code class="lang-html">{{part class=&quot;ui.MenuButtonsPresenter&quot; viewModel=menuList}}
+</code></pre>
+<p><a id='xconfig'></a></p>
+<h5 id="xconfig">xconfig</h5>
+<p>Подставляет значение конфигурационного параметра из объекта <code>core.Application.current.config</code>. <strong>argument:</strong> имя параметра <strong>block:</strong> нет <strong>hash:</strong> нет <strong>Пример:</strong> </p>
+<pre><code class="lang-html">&lt;a href=&quot;#&quot;&gt;{{xconfig &quot;appName&quot;}}&lt;/a&gt;
+</code></pre>
+<p><a id='res'></a></p>
+<h5 id="res">res</h5>
+<p>Подставляет значение локализованной строки из ресурсов (см. <a href='i18n.html' title='null'>i18n</a>). <strong>argument:</strong> ключ в словаре ресурсов <strong>block:</strong> нет <strong>hash:</strong> нет <strong>Пример:</strong> </p>
+<pre><code class="lang-html">&lt;label class=&quot;radio&quot;&gt;{{res &quot;loginDialog.windows_account&quot;}}&lt;/label&gt;
+</code></pre>
+<p><a id='if-feature'></a></p>
+<h5 id="if-feature">if-feature</h5>
+<p>Подставляет блок, если заданная фича поддерживается текущим окружением. <strong>arguments:</strong> наименование фичи <strong>block:</strong> подставляемые шаблон <strong>hash:</strong> нет <strong>Пример:</strong> </p>
+<pre><code class="lang-html">{{#if-feature &quot;cssanimations&quot;}}
+    &lt;div class=&quot;x-icon-sync x-icon-anim-rotating x-icon-48&quot;&gt;&lt;/div&gt;
+{{else}}
+    &lt;div class=&quot;x-img-waiting-48&quot;&gt;&lt;/div&gt;
+{{/if-feature}}
+</code></pre>
+<p><a id='waiting-icon'></a></p>
+<h5 id="waiting-icon">waiting-icon</h5>
+<p>Вывод анимированную иконку, символизирующую ожидание.
+Используется для кросс-браузерной вставки анимации, т.к. IE8 не поддерживает css-анимацию, с помощью которой реализована анимированная иконка по умолчанию. 
+waiting-icon <strong>hash:</strong> 
+| size | размер иконки | Не обязательно. По умолчанию 48px |</p>
+<p><a id='propImageUrl'></a></p>
+<h5 id="propimageurl">propImageUrl</h5>
+<p>Возвращает url для тега IMG с картинкой из бинарного свойства объекта. Контекст хелпера (this) должен быть доменным объектом. <strong>arguments:</strong> имя свойства <strong>block:</strong> нет <strong>hash:</strong> 
+| width | Ширина картинки | Не обязательно. |
+| height | Высота картинки | Не обязательно. | <strong>Пример:</strong> </p>
+<pre><code class="lang-html">&lt;img src=&quot;{{propImageUrl &quot;photo&quot; width=&quot;128&quot; height=&quot;128&quot;}}&quot; width=&quot;128&quot; height=&quot;128&quot; style=&quot;max-width: 128px; max-height: 128px;&quot;&gt;&lt;/img&gt;
+</code></pre>
+<p>Результат:</p>
+<pre><code class="lang-html">&lt;img src=&quot;/droneshop/api/_file/binaryPropValue?entityType=CatalogItem&amp;amp;objectId=6b11ab13-76de-4411-aefc-589c124e35b2&amp;amp;propName=photo&amp;amp;width=128&amp;amp;height=128&quot; width=&quot;128&quot; height=&quot;128&quot; style=&quot;max-width: 128px; max-height: 128px;&quot;&gt;
+</code></pre>
+<p><a id='propImage'></a></p>
+<h5 id="propimage">propImage</h5>
+<p>Возвращает тег IMG с url&#39;ом для загрузки картинки из бинарного свойства объекта. Контекст хелпера (this) должен быть доменным объектом. <strong>arguments:</strong> имя свойства <strong>block:</strong> нет <strong>hash:</strong> 
+| lazy | true для поддержки lazy load | Не обязательно. По умолчанию false. |
+| width | Ширина картинки | Не обязательно. |
+| height | Высота картинки | Не обязательно. | <strong>Пример:</strong> </p>
+<pre><code class="lang-html">{{propImage &quot;photo&quot; width=&quot;128&quot; height=&quot;128&quot;}}
+</code></pre>
+<p>Результат аналогичен примеру для propImageUrl.
+ <strong>Пример:</strong> lazy load</p>
+<pre><code class="lang-html">{{propImage &quot;photo&quot; lazy=&quot;true&quot; width=&quot;128&quot; height=&quot;128&quot;}}
+</code></pre>
+<p>Результат:</p>
+<pre><code class="lang-html">&lt;img src=&quot;data:image/png;base64,...&quot; data-original=&quot;/droneshop/api/_file/binaryPropValue?entityType=CatalogItem&amp;amp;objectId=6b11ab13-76de-4411-aefc-589c124e35b2&amp;amp;propName=photo&amp;amp;width=128&amp;amp;height=128&quot; width=&quot;128&quot; height=&quot;128&quot; style=&quot;max-width: 128px; max-height: 128px;&quot;&gt;
+</code></pre>
+<p>Как только картинка попадет во вьюпорт окна, т.е. станет видимой, url из атрибута data-original будет скопирован в src. Для lazy-load используется плагин <a href='https://github.com/tuupola/jquery_lazyload/' title='null'>jquery.lazyload</a></p>
+<h4 id="iconprovider-helpers">IconProvider helpers</h4>
+<p><a id='icon'></a></p>
+<h5 id="icon">icon</h5>
+<p>Отображает иконку. <strong>arguments:</strong> нет <strong>block:</strong> нет <strong>hash:</strong> | name | Наименование иконки, зарегистрированной в <a href='http://wiki.rnd.croc.ru/display/xfwajax//2012/12/28/IconProvider' title='null'>xfwajax:/2012/12/28/IconProvider</a> | Обязательно | <strong>Пример:</strong> </p>
+<pre><code class="lang-html">&lt;a href=&quot;#&quot;&gt;{{icon name=&quot;remove&quot;}}&lt;/a&gt;
+</code></pre>
+<h4 id="editorpagepresenter-helpers">EditorPagePresenter helpers</h4>
+<p><a id='pe'></a></p>
+<h5 id="pe">pe</h5>
+<p>Отображает <a href='property-editors.html' title='null'>редактор свойства</a>. Если нужного редактора свойства нет на странице, то он создается. <strong>arguments:</strong> нет <strong>block:</strong> нет <strong>hash:</strong> | target | Целевой элемент (<a href='helper-target.html#target-attr' title='null'>подробнее</a>) | Не обязательно. Добавлен в версии 0.10. |
+| tag | Тег обрамляющего элемента | Не обязательно, по умолчанию span |
+| cssClass | Css-класс обрамляющего элемента | Не обязательно |
+| name | Имя свойства из viewModel, для которого отображется PE | Обязательно |
+| viewModel | Дочерняя viewModel | Не обязательно, по умолчанию используется текущий контекст |
+| keyPrefix | Префикс, который добавляется к ключу, под которым объект редактора свойства помещается в словарь EditorPage.editors | Не обязательно, по умолчанию используется имя свойства |
+| Прочие опции | Метаданные создаваемого PE | Не обязательно | <strong>Пример:</strong> </p>
+<pre><code class="lang-html">&lt;div class=&quot;span4&quot;&gt;&lt;label&gt;Текст вопроса:&lt;/label&gt;&lt;/div&gt;
+&lt;div class=&quot;span8&quot;&gt;{{pe name=&quot;text&quot;}}&lt;/div&gt;
+</code></pre>
+<p><a id='>peContainer'></a></p>
+<h5 id="-pecontainer">&gt;peContainer</h5>
+<p>Отображает разметку для уже существующего <a href='property-editors.html' title='null'>редактора свойства</a>. Разметка включает сам <a href='property-editors.html' title='null'>редактор свойства</a>, <code>label</code> для него (с css-классом <code>x-pe-label</code>) и обрамляющий их контейнерный элемент (css-класс <code>x-pe-container</code>). <strong>arguments:</strong> Экземпляр <a href='property-editors.html' title='null'>редактора свойства</a> <strong>block:</strong> нет <strong>hash:</strong> нет</p>
+<blockquote>
+<p>Это не хелпер, а <a href='http://wiki.rnd.croc.ru/display/xfwajax//2014/04/14/Handlebars+partials' title='null'>patrial шаблон</a>.
+ <strong>Пример:</strong> </p>
+<pre><code class="lang-html">{{&gt; peContainer editors.title}}
+{{&gt; peContainer editors.organizer}}
+</code></pre>
+</blockquote>
+<p><a id='peLayout'></a></p>
+<h5 id="pelayout">peLayout</h5>
+<p>Для всех вложенных partial шаблонов <a href='#&gt;peContainer' title='null'>#&gt;peContainer</a> задает:</p>
+<ul>
+<li>отношение ширины лейбла к ширине <a href='property-editors.html' title='null'>редактора свойства</a></li>
+<li>флаг &quot;не выводить метку&quot;
+<strong>arguments:</strong> нет <strong>block:</strong> шаблон, содержащий один или несколько partial-ов <a href='#&gt;peContainer' title='null'>#&gt;peContainer</a> <strong>hash:</strong> | columnRatio | Отношение ширины лейбла к ширине редактора свойства в виде &quot;N:M&quot; | 
+| noLabel | Флаг &quot;не выводить метку&quot; | </li>
+</ul>
+<blockquote>
+<p>Числитель N и знаменатель M в columnsRatio - это фактически суффиксы для классов колонок в bootstrap-овском гриде. Поэтому в сумме они должны давать 12 (или меньше, тогда строка будет не на всю ширину).
+ <strong>Пример:</strong> </p>
+<pre><code class="lang-html">{{#peLayout columnsRatio=&quot;2:10&quot;}}
+    {{&gt; peContainer editors.title}}
+    {{&gt; peContainer editors.organizer}}
+{{/peLayout}}
+</code></pre>
+<p><a href='#&gt;peContainer' title='null'>#&gt;peContainer</a> берет ширину лейбла и редактора свойства из обрамляющего хелпера <code>peLayout</code>, если он есть, или из полей <code>labelColumnRatio</code> и <code>peColumnRatio</code> страницы.</p>
+</blockquote>
+<p><a id='peContainer'></a></p>
+<h5 id="pecontainer">peContainer</h5>
+<p>Является короткой формой записи для <a href='#peLayout' title='null'>#peLayout</a> и вложенного <a href='#&gt;peContainer' title='null'>#&gt;peContainer</a>. <strong>arguments:</strong> Экземпляр <a href='property-editors.html' title='null'>редактора свойства</a> <strong>block:</strong> нет <strong>hash:</strong> | columnRatio | Отношение ширины лейбла к ширине редактора свойства в виде &quot;N:M&quot; | 
+| noLabel | Флаг &quot;не выводить метку&quot; |  <strong>Пример:</strong> </p>
+<pre><code class="lang-html">{{peContainer editors.title columnsRatio=&quot;2:10&quot; noLabel=true}}
+</code></pre>
+<p>То же самое:</p>
+<pre><code class="lang-html">{{#peLayout columnsRatio=&quot;2:10&quot; noLabel=true}}
+    {{&gt; peContainer editors.title}}
+{{/peLayout}}
+</code></pre>
+<blockquote>
+<p>См. также <a href='objecteditor.html#customPageTemplate' title='null'>Кастомный шаблон страницы</a></p>
+</blockquote>
+
+ 
+        
+        <hr>
+
+        
+
+        <div class="well">
+  <p>Find an error? <a class="alert-link" href="https://track.rnd.croc.ru/newIssue?project=WC&clearDraft=true&c=Type+Bug&c=State+Open&c=Subsystem+documentation">Let us know →</a></p>
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+
+	<div class="site-footer">
+  <p>Built on 31.9.2014 at 21:39. Power by <a href="http://assemble.io">Assemble</a>, <a href="http://gruntjs.com">Grunt</a>, <a href="http://code.rnd.croc.ru/projects/RND/repos/jsdoc2markdown">jsdoc2markdown</a>.
+</p></div>
+
+    <script src="../../assets/js/jquery.js"></script>
+<script src="../../assets/js/bootstrap.min.js"></script>
+<script src="../../assets/js/highlight.js"></script>
+  </body>
+</html>

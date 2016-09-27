@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Class RegionManager | WebClient documentation</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="../../assets/css/root.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body style="background: white;" data-spy="scroll" data-target=".bs-sidebar">
+
+    <div class="root">
+    
+<div class="navbar navbar-inverse" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../../index.html">WebClient documentation</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      
+        <ul class="nav navbar-nav">
+          <li><a href="../docs/index.html">Docs</a></li>
+          <li class="active"><a href="index.html">API Client</a></li>
+        </ul>
+      
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">CROC R&D<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://track.rnd.croc.ru">Bug tracker (YouTrack)</a></li>
+            <li><a href="https://code.croc.ru">Source code (Git Server)</a></li>
+            <li><a href="https://wiki.rnd.croc.ru">Wiki</a></li>
+            <li><a href="https://build.rnd.croc.ru">Build server (TeamCity)</a></li>
+            <li><a href="https://qa.rnd.croc.ru">Q&A</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-header">Other</li>
+            <li><a href="https://github.com/CrocInc">CROC on Github</a></li>
+            
+          </ul>
+        </li>
+      </ul>
+
+    </nav>
+  </div>
+</div>
+
+    
+<div class="container" role="main">
+  <div class="row">
+
+    
+    <div class="col col-lg-3">
+      <div class="sidebar">
+
+      </div>
+    </div>
+
+
+    
+    <div class="col col-lg-9">
+      <div class="panel panel-docs">
+        <ol class='breadcrumb'><li><a href='index.html'>API-Client</a></li><li><a href='classes.html'>Classes</a></li><li class='active'>Class RegionManager</li></ol>
+        <h1>Class RegionManager</h1>
+          <blockquote>
+<p>Source file: lib\core.composition.js</p>
+</blockquote>
+<h2 id="constructor">Constructor</h2>
+<pre><code class="lang-js">constructor(partRegistry)
+</code></pre>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>partRegistry</td>
+<td>?</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="extends">Extends</h2>
+<ul>
+<li><a href='class-Observable.html' title='null'>Observable</a></li>
+</ul>
+<h2 id="members-properties-fields-">Members (properties/fields)</h2>
+<ul>
+<li><a href='#area' title='null'>area</a> </li>
+<li><a href='#partRegistry' title='null'>partRegistry</a> </li>
+<li><a href='#regions' title='null'>regions</a> </li>
+</ul>
+<p><a id="area"></a></p>
+<h3 id="field-area">Field area</h3>
+<pre><code class="lang-js">area: ?
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p>Type: ?
+<a id="partRegistry"></a></p>
+<h3 id="field-partregistry">Field partRegistry</h3>
+<pre><code class="lang-js">partRegistry: ?
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p>Type: ?
+<a id="regions"></a></p>
+<h3 id="field-regions">Field regions</h3>
+<pre><code class="lang-js">regions: ?
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p>Type: ?</p>
+<h2 id="methods">Methods</h2>
+<ul>
+<li><a href='#addRegion' title='null'>addRegion</a> </li>
+<li><a href='#createRegion' title='null'>createRegion</a> </li>
+<li><a href='#getNavigableRegion' title='null'>getNavigableRegion</a> </li>
+<li><a href='#getRegion' title='null'>getRegion</a> </li>
+<li><a href='#removeRegion' title='null'>removeRegion</a> </li>
+<li><a href='#unloadAll' title='null'>unloadAll</a> </li>
+<li><a href='#bind' title='null'>bind</a> (inherited from <a href='class-Observable.html' title='null'>Observable</a>)</li>
+<li><a href='#bound' title='null'>bound</a> (inherited from <a href='class-Observable.html' title='null'>Observable</a>)</li>
+<li><a href='#changed' title='null'>changed</a> (inherited from <a href='class-Observable.html' title='null'>Observable</a>)</li>
+<li><a href='#declareProp' title='null'>declareProp</a> (inherited from <a href='class-Observable.html' title='null'>Observable</a>)</li>
+<li><a href='#dispose' title='null'>dispose</a> (inherited from <a href='class-Observable.html' title='null'>Observable</a>)</li>
+<li><a href='#get' title='null'>get</a> (inherited from <a href='class-Observable.html' title='null'>Observable</a>)</li>
+<li><a href='#set' title='null'>set</a> (inherited from <a href='class-Observable.html' title='null'>Observable</a>)</li>
+<li><a href='#subscribe' title='null'>subscribe</a> (inherited from <a href='class-Observable.html' title='null'>Observable</a>)</li>
+<li><a href='#trigger' title='null'>trigger</a> (inherited from <a href='class-Observable.html' title='null'>Observable</a>)</li>
+<li><a href='#unbind' title='null'>unbind</a> (inherited from <a href='class-Observable.html' title='null'>Observable</a>)</li>
+</ul>
+<p><a id="addRegion"></a></p>
+<h3 id="addregion">addRegion</h3>
+<pre><code class="lang-js">addRegion(region) : [Region](class-Region.html)
+</code></pre>
+<p>Add region</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>region</td>
+<td><a href='class-Region.html' title='null'>Region</a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns-">Returns:</h4>
+<p>Type: <a href='class-Region.html' title='null'>Region</a>
+<a id="createRegion"></a></p>
+<h3 id="createregion">createRegion</h3>
+<pre><code class="lang-js">createRegion()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="getNavigableRegion"></a></p>
+<h3 id="getnavigableregion">getNavigableRegion</h3>
+<pre><code class="lang-js">getNavigableRegion()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="getRegion"></a></p>
+<h3 id="getregion">getRegion</h3>
+<pre><code class="lang-js">getRegion(name) : [Region](class-Region.html)
+</code></pre>
+<p>Return a region by its name.</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>name</td>
+<td>String</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns-">Returns:</h4>
+<p>Type: <a href='class-Region.html' title='null'>Region</a>
+<a id="removeRegion"></a></p>
+<h3 id="removeregion">removeRegion</h3>
+<pre><code class="lang-js">removeRegion()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="unloadAll"></a></p>
+<h3 id="unloadall">unloadAll</h3>
+<pre><code class="lang-js">unloadAll([options])
+</code></pre>
+<p>Unload all regions.</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>options</td>
+<td>Object</td>
+<td></td>
+<td>optional</td>
+</tr>
+</tbody>
+</table>
+<p><a id="bind"></a></p>
+<h3 id="bind-inherited-from-observable-class-observable-html-">bind (inherited from <a href='class-Observable.html' title='null'>Observable</a>)</h3>
+<pre><code class="lang-js">bind(eventName, callback, [context]) : *
+</code></pre>
+<p>Подписывает обработчик callback на событие eventName. Если задан параметр context, то обработчик
+будет вызван в контексте этого объекта (т.е. context будет выступать в качестве this). Если context
+не задан, то обрабочик будет вызываться в контексте текущего observable-объекта.</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>eventName</td>
+<td>String</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>callback</td>
+<td>function</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>context</td>
+<td>Object</td>
+<td></td>
+<td>optional</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns-">Returns:</h4>
+<p>Type: *
+<a id="bound"></a></p>
+<h3 id="bound-inherited-from-observable-class-observable-html-">bound (inherited from <a href='class-Observable.html' title='null'>Observable</a>)</h3>
+<pre><code class="lang-js">bound(eventName) : Boolean
+</code></pre>
+<p>Проверяет, что на событие eventName подписан хотя бы один обработчик.
+Если имя события не задано, то проверяет, что хотя бы один обработчик подписан на любое событие.</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>eventName</td>
+<td>String</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns-">Returns:</h4>
+<p>Type: Boolean
+<a id="changed"></a></p>
+<h3 id="changed-inherited-from-observable-class-observable-html-">changed (inherited from <a href='class-Observable.html' title='null'>Observable</a>)</h3>
+<pre><code class="lang-js">changed(name)
+</code></pre>
+<p>Trigger &#39;change&#39; and &#39;change:prop&#39; events to notify that the property was previously changed</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>name</td>
+<td>String</td>
+<td></td>
+<td></td>
+<td>the name of the changed property</td>
+</tr>
+</tbody>
+</table>
+<p><a id="declareProp"></a></p>
+<h3 id="declareprop-inherited-from-observable-class-observable-html-">declareProp (inherited from <a href='class-Observable.html' title='null'>Observable</a>)</h3>
+<pre><code class="lang-js">declareProp()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="dispose"></a></p>
+<h3 id="dispose-inherited-from-observable-class-observable-html-">dispose (inherited from <a href='class-Observable.html' title='null'>Observable</a>)</h3>
+<pre><code class="lang-js">dispose()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="get"></a></p>
+<h3 id="get-inherited-from-observable-class-observable-html-">get (inherited from <a href='class-Observable.html' title='null'>Observable</a>)</h3>
+<pre><code class="lang-js">get()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="set"></a></p>
+<h3 id="set-inherited-from-observable-class-observable-html-">set (inherited from <a href='class-Observable.html' title='null'>Observable</a>)</h3>
+<pre><code class="lang-js">set()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="subscribe"></a></p>
+<h3 id="subscribe-inherited-from-observable-class-observable-html-">subscribe (inherited from <a href='class-Observable.html' title='null'>Observable</a>)</h3>
+<pre><code class="lang-js">subscribe(eventName, callback, [context]) : Object
+</code></pre>
+<p>Подписывает обработчик callback на событие eventName и возвращает disposable объект, который
+отписывает этот обработчик в методе dispose.
+Метод аналогичен методу bind, но возвращает disposable объект, который выполняет unbind.</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>eventName</td>
+<td>String</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>callback</td>
+<td>function</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>context</td>
+<td>Object</td>
+<td></td>
+<td>optional</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns-">Returns:</h4>
+<p>Disposable объект, в методе dispose которого выполняется отписка
+обработчика (unbind).
+Type: Object
+<a id="trigger"></a></p>
+<h3 id="trigger-inherited-from-observable-class-observable-html-">trigger (inherited from <a href='class-Observable.html' title='null'>Observable</a>)</h3>
+<pre><code class="lang-js">trigger(eventName) : *
+</code></pre>
+<p>Возбуждает событие eventName, вызывая все подписанные на него обработчики.
+Все аргументы метода, кроме первого (eventName), передаются в обработчики.</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>eventName</td>
+<td>String</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns-">Returns:</h4>
+<p>Type: *
+<a id="unbind"></a></p>
+<h3 id="unbind-inherited-from-observable-class-observable-html-">unbind (inherited from <a href='class-Observable.html' title='null'>Observable</a>)</h3>
+<pre><code class="lang-js">unbind(eventName, [callback], [context]) : *
+</code></pre>
+<p>Отписывает обработчик callback от события eventName. Обработчик отписывается, только если он был подписан
+с тем же значением параметра context.
+Если задано только eventName, то от события eventName отписываются все подписанные обработчики.
+Если не заданы eventName, callback и context, то все подписанные обработчики отписываются от всех событий.
+Если заданы eventName и context, то от события eventName отписываются все обработчики контекста.
+Если задан только context, то отписываются все обработчики контекста от всех событий.</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>eventName</td>
+<td>String</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>callback</td>
+<td>function</td>
+<td></td>
+<td>optional</td>
+<td></td>
+</tr>
+<tr>
+<td>context</td>
+<td>Object</td>
+<td></td>
+<td>optional</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns-">Returns:</h4>
+<p>Type: *</p>
+
+        
+        <hr>
+
+        
+
+        <div class="well">
+  <p>Find an error? <a class="alert-link" href="https://track.rnd.croc.ru/newIssue?project=WC&clearDraft=true&c=Type+Bug&c=State+Open&c=Subsystem+documentation">Let us know →</a></p>
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+
+	<div class="site-footer">
+  <p>Built on 31.9.2014 at 21:39. Power by <a href="http://assemble.io">Assemble</a>, <a href="http://gruntjs.com">Grunt</a>, <a href="http://code.rnd.croc.ru/projects/RND/repos/jsdoc2markdown">jsdoc2markdown</a>.
+</p></div>
+
+    <script src="../../assets/js/jquery.js"></script>
+<script src="../../assets/js/bootstrap.min.js"></script>
+<script src="../../assets/js/highlight.js"></script>
+  </body>
+</html>

@@ -1,0 +1,3787 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SlickObjectListPresenter | WebClient documentation</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="../../assets/css/root.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body style="background: white;" data-spy="scroll" data-target=".bs-sidebar">
+
+    <div class="root">
+    
+<div class="navbar navbar-inverse" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../../index.html">WebClient documentation</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Docs</a></li>
+          <li><a href="../api-client/index.html">API Client</a></li>
+        </ul>
+      
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">CROC R&D<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://track.rnd.croc.ru">Bug tracker (YouTrack)</a></li>
+            <li><a href="https://code.croc.ru">Source code (Git Server)</a></li>
+            <li><a href="https://wiki.rnd.croc.ru">Wiki</a></li>
+            <li><a href="https://build.rnd.croc.ru">Build server (TeamCity)</a></li>
+            <li><a href="https://qa.rnd.croc.ru">Q&A</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-header">Other</li>
+            <li><a href="https://github.com/CrocInc">CROC on Github</a></li>
+            
+          </ul>
+        </li>
+      </ul>
+
+    </nav>
+  </div>
+</div>
+
+    
+<div class="container" role="main">
+  <div class="row">
+
+    
+    <div class="col col-lg-3">
+      <div class="sidebar">
+        <ul class="nav nav-pills nav-stacked">
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+          <li><a href="structure.html">Structure</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+          <li><a href="browser-support.html">Browser support</a></li>
+    
+  
+    
+  
+    
+  
+    
+          <li><a href="distribution.html">Distribution</a></li>
+    
+  
+    
+  
+    
+  
+    
+          <li><a href="setup-developer-environment.html">Setup Developer Environment</a></li>
+    
+  
+    
+  
+    
+  
+    
+          <li><a href="project-structure.html">Project Structure</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+          <li><a href="key-features.html">Key Features</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+</ul>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="getting-started-tutorial.html">Getting Started Tutorial</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="getting-started-tutorial-0_12.html">Getting Started Tutorial 0.12</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="base.html">Base</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="ecmascript-5-emulation.html">EcmaScript 5 emulation</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="module-system.html">Module System</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="core.html">Core</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="class-system.html">Class System</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="presentation-model.html">Presentation Model</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="composition-&amp;-navigation.html">Composition &amp; Navigation</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="переопределение-компонентов.html">Переопределение компонентов</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="templating.html">Templating</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="data-binding.html">Data-binding</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="eventpublisher.html">EventPublisher</a></li>
+        
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="application.html">Application</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+         
+
+          <li><a href="app-module.html">App-module</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="datasource.html">DataSource</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="domain-model.html">Domain Model</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="domain-objects.html">Domain Objects</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="validation.html">Validation</a></li>
+        
+        
+       
+        
+       
+        
+         
+
+          <li><a href="formatters.html">Formatters</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="interop.html">Interop</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="main_js.html">main.js</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="ui-ux.html">UI-UX</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="app-starting-ux.html">App starting UX</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="appnavbar.html">AppNavBar</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="css-styles-and-less.html">CSS Styles and LESS</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="tree.html">Tree</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="icons.html">Icons</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="menu.html">Menu</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="objecteditor.html">ObjectEditor</a></li>
+        
+        
+       
+        
+       
+        
+         
+
+          <li><a href="objectlist.html">ObjectList</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="objectviewer.html">ObjectViewer</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="objectwizard.html">ObjectWizard</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="onlinebeacon.html">OnlineBeacon</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="property-editors.html">Property Editors</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="objectfilter.html">ObjectFilter</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="appservices.html">AppServices</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+         
+
+          <li><a href="affix.html">Affix</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="app-navigation.html">App Navigation</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="breadcrumbs.html">Breadcrumbs</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="client-update-notification.html">Client update notification</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="debug-module.html">Debug module</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="drafts.html">Drafts</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="i18n.html">i18n</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="notifications.html">Notifications</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="security.html">Security</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="scroll-accelerators.html">Scroll accelerators</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="reporting.html">Reporting</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="server.html">Server</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="server-architecture.html">Server Architecture</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="page-layout.html">Page Layout</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="filecontroller.html">FileController</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="bootloader.html">Bootloader</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="main_config_json.html">main.config.json</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="hosting.html">Hosting</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="knowledge-base.html">Knowledge Base</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="client-debugging.html">Client Debugging</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="кеширование-контента.html">Кеширование контента</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="webstorm-live-templates.html">WebStorm Live Templates</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="efficient-css.html">Efficient CSS</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="elmah.html">Elmah</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="devtools.html">DevTools</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="archived-build-0_10.html">Archived-Build 0.10</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="настройка-teamcity-билд-конфигурации-для-работы-с-bower-и-grunt.html">Настройка TeamCity билд конфигурации для работы с bower и grunt</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="yeoman-generator.html">Yeoman Generator</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="grunt-croc-qunit.html">grunt-croc-qunit</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="grunt-croc-requirejs.html">grunt-croc-requirejs</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="resxtojson.html">ResxToJson</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+      </ul>
+
+    
+  
+
+
+      </div>
+    </div>
+
+
+    
+    <div class="col col-lg-9">
+      <div class="panel panel-docs">
+        <ol class='breadcrumb'><li><a href='index.html'>Docs</a></li><li><a href='ui-ux.html'>UI-UX</a></li><li><a href='objectlist.html'>ObjectList</a></li><li class='active'>SlickObjectListPresenter</li></ol>
+        <h1>SlickObjectListPresenter</h1>
+          
+
+<h3 id="-">Параметры презентера</h3>
+<p>По умолчанию список использует <code>SlickObjectListPresenter</code> - презентер на основе <a href='https://github.com/mleibman/SlickGrid' title='null'>SlickGrid</a>. При конструировании списка через presenterOptions в него можно передать дополнительные опции для презентера:
+<a id='options'></a></p>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Наименование</th>
+<th>Тип</th>
+<th>Значение по умолчанию</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>canMoveRows</td>
+<td>Boolean</td>
+<td>false</td>
+<td>Добавляет в начало столбец с ролью reorder, если он не задан явно</td>
+</tr>
+<tr>
+<td>hasRowNum</td>
+<td>Boolean</td>
+<td>false</td>
+<td>Добавляет в начало столбец с ролью number, если он не задан явно</td>
+</tr>
+<tr>
+<td>hasCheckboxes</td>
+<td>Boolean</td>
+<td>false</td>
+<td>Добавляет в начало столбец с ролью checkbox, если он не задан явно</td>
+</tr>
+<tr>
+<td>canSort</td>
+<td>Boolean</td>
+<td>true</td>
+<td>Можно ли сортировать строки, кликая по заголовкам</td>
+</tr>
+<tr>
+<td>affixHeader</td>
+<td>Boolean</td>
+<td>true для ObjectList, false для peObjectList</td>
+<td><a href='affix.html' title='null'>&quot;Прилипание&quot;</a> заголовка к верху viewport</td>
+</tr>
+<tr>
+<td>affixMenu</td>
+<td>Boolean</td>
+<td>true для ObjectList, false для peObjectList</td>
+<td><a href='affix.html' title='null'>&quot;Прилипание&quot;</a> строки меню к низу viewport</td>
+</tr>
+<tr>
+<td>itemMetadata</td>
+<td>Object&#124;Function</td>
+<td>undefined</td>
+<td>Метаданные для строки в формате <code>SlickGrid</code> (подробнее ниже)</td>
+</tr>
+<tr>
+<td>loadingHtml</td>
+<td>String</td>
+<td>&quot;<i class='text-muted'>&quot; + resources[&quot;loading&quot;](&quot;loading&quot;.html) + &quot;</i>&quot;</td>
+<td>HTML, который отображается внутри ячейки, если ее значение загружается. Может перебиваться одноименной опцией для отдельных столбцов</td>
+</tr>
+<tr>
+<td>gridCssClass</td>
+<td>String</td>
+<td>&quot;&quot;</td>
+<td>Наименование css-класса, который будет добавлен DOM-элементу грида</td>
+</tr>
+<tr>
+<td>gridOptions</td>
+<td>Object</td>
+<td>См. ниже</td>
+<td>Опции создания грида в формате <code>SlickGrid</code> (подробнее ниже)</td>
+</tr>
+<tr>
+<td>columnRoles</td>
+<td>Object</td>
+<td>См. ниже</td>
+<td>Задает опции по умолчанию для колонок с разными ролями (подробнее ниже)</td>
+</tr>
+<tr>
+<td>grouping</td>
+<td>Object</td>
+<td>См. ниже</td>
+<td>Задает опции для группировки колонок (подробнее <a href='#grouping' title='null'>ниже</a>)</td>
+</tr>
+<tr>
+<td>GroupItemMetadataProvider</td>
+<td>Object</td>
+<td>Slick.Data.GroupItemMetadataProvider</td>
+<td>Класс провайдера метаданных для строк заголовков и подитогов</td>
+</tr>
+<tr>
+<td>virtualHScroll</td>
+<td>Boolean</td>
+<td>undefined</td>
+<td>Включает режим виртуального горизонтально скроллинга - горизонтальный скролбар (если есть) прилипает вместе с меню строки к низу экрана и, таким образом, всегда виден. По умолчанию режим отключен. Опция связана с опцией &#39;forceFitColumns&#39; SlickGrid: если опция <code>virtualHScroll</code> явно не задана (по умолчанию), но опции SlickGrid <code>forceFitColumns=false</code> и <code>autoHeight=true</code>, то <code>virtualHScroll</code> устанавливается в true (т.к. при forceFitColumns=false велика вероятность горизонтального скроллинга)  </td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Опция добавлена в <a href='http://wiki.rnd.croc.ru/display/xfwajax/Release+0.16' title='null'>xfwajax:Release 0.16</a>
+ |
+| selectionModel | &quot;row&quot; &#124; &quot;cell&quot; | &quot;row&quot; | Режим выбора:</p>
+<ul>
+<li>row - выбираются строки: shift+стрелки выбирает строки так же, как если устанавливать чекбоксы;</li>
+<li>cell - выбираются ячейки: shift+стрелки и выбор мышью позволяет выбрать диапазон ячеек (при этом selection списка по-прежнему содержит объекты строк), который можно скопировать по Ctrl-C и вставить как таблицу. При выборе ячеек для их строк устанавливаются чекбоксы (если они есть). </li>
+</ul>
+<p>Опция добавлена в <a href='http://wiki.rnd.croc.ru/display/xfwajax/Release+0.17' title='null'>xfwajax:Release 0.17</a>
+ |</p>
+</blockquote>
+<h3 id="-">Роли колонок</h3>
+<p>В <a href='objectlist.html#Описание колонки' title='null'>описании колонки</a> для списка можно задать опцию role - так называемыю <em>роль</em> колонки. В зависимости от роли колонка может нести различную смысловую нагрузку и отображаться по-разному.
+Значением опции является строка. Возможные значения</p>
+<ul>
+<li>data - колонка c данными. Эта роль присваивается по умолчанию.</li>
+<li>command - в колонке отображается команда. Для этой роли также должна быть задана опция command. И наоборот: если для колонки не задана опция role, но задана command, то назначается роль command.</li>
+<li>reorder - колокна содержит специальную иконку, с помощью которой можно перемещать строки drag&amp;drop-ом. Если задана опция canMoveRows, то колонка с ролью reorder автоматически добавляется в начало.</li>
+<li>number - в колонке отображается порядковый номер строки. Если задана опция hasRowNum, то колонка с ролью number автоматически добавляется в начало.</li>
+<li>checkbox - колонка с чекбоксами для выбора строк. Если задана опция hasCheckboxes, то колонка с ролью checkbox автоматически добавляется в начало.</li>
+</ul>
+<p>Роль определяет параметры отображения по умолчанию для колонки. Они задаются опцией columnRoles (внутри presenterOptions). Значением этой опции является plain объект; наименования свойств задают роли, значения - опции по умолчанию для соответствующих ролей.
+Пример:</p>
+<pre><code class="lang-js">var list = core.ui.ObjectList.create(app, {
+                /* other options */
+                columns: [
+                    { role: &quot;number&quot;, title: &quot;№&quot;, resizable: true, width: 15, minWidth: null },
+                    { title: &quot;Наименование&quot;, name: &quot;title&quot;, width: 50 }
+                ],
+                presenterOptions: {
+                    columnRoles: {
+                        checkbox: { resizable: true, width: 10, minWidth: null }
+                    }
+                }
+            });
+</code></pre>
+<p>Здесь мы переопределяем опции для номеров строк (в columns наряду с другими столбцами) и чекбоксов (в presenterOptions.columnRoles).</p>
+<h3 id="-">Опции колонок</h3>
+<p>Колонки описываются <a href='objectlist.html#Описание колонки' title='null'>для списка</a>, а не для презентера. Однако в списке помимо стандартных можно задать произвольные опции, которые затем будут использованы презентером.
+<code>SlickObjectListPresenter</code> по описанию колонки в метаданных списка, а так же по роли колонки создает описание колонки, специфичное для <code>SlickGrid</code>. Все дополнительные опции из колонки копируются в колонку для <code>SlickGrid</code>. При этом может возникнуть ситуация, когда опции в метаданных списка конфликтуют с опциями колонок в <code>SlickGrid</code>. Чтобы избежать подобных конфликтов можно задавать специфичные для <code>Slick</code> опции в специальном поле <code>gridOptions</code>: свойства этого объекта будут скопированы в опции <code>Slick</code>-колонки (с высоким приоритетом). Например, в метаданных списка можно задать <code>formatter</code> для колонки (в терминах <a href='objectlist.html' title='null'>ObjectList</a>). Однако, если мы хотим задать <code>formatter</code> в терминах <code>SlickGrid</code>, то во избежание конфликта задавать его нужно в <code>gridOptions</code>:</p>
+<pre><code class="lang-js">var list = core.ui.ObjectList.create(app, {
+                /* other options */
+                columns: [
+                    {
+                        name: &quot;title&quot;,
+                        gridOptions: {
+                            formatter: mySlickGridFormatter
+                        }
+                    }
+                ]
+            });
+</code></pre>
+<p>Исходные метаданные колонки помещаются в поле <code>source</code> описания колонки для <code>SlickGrid</code> и могут быть использованы позднее при работе с гридом. Например:</p>
+<pre><code class="lang-js">var slickColumn = grid.getColumns()[0],
+    slickFormatter = slickColumn.formatter,
+    objectListColumn = slickColumn.source,
+    objectListFormatter = objectListColumn.formatter;
+</code></pre>
+<p><a id='columnWidth'></a></p>
+<h3 id="-">Работа с шириной колонок</h3>
+<h6 id="-">Общее описание</h6>
+<p>Итак, важным моментом в работе с гридом является управление шириной колонок. Для этой цели используются следующие опции колонки:</p>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Наименование</th>
+<th>Значение по умолчанию</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>width</td>
+<td>Значение опции грида defaultColumnWidth (см <a href='#gridOptions' title='null'>gridOptions</a></td>
+<td>Ширина колонки по умолчанию в пикселях. В случае forceFitColumns:true - относительная ширина колонки (см. ниже)</td>
+</tr>
+<tr>
+<td>maxWidth</td>
+<td>undefined</td>
+<td>Максимальная ширина колонки</td>
+</tr>
+<tr>
+<td>mimWidth</td>
+<td>undefined</td>
+<td>Минимальная ширина колонки</td>
+</tr>
+<tr>
+<td>resizable</td>
+<td>true</td>
+<td>Если true, то ширина колонки может быть изменена пользователем либо гридом (см forceFitColumns в <a href='#gridOptions' title='null'>gridOptions</a>) и объяснение ниже</td>
+</tr>
+</tbody>
+</table>
+<p>Крайне важным также является <a href='#gridOptions' title='null'>параметр грида</a>:</p>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Наименование</th>
+<th>Значение по умолчанию</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>forceFitColumns</td>
+<td>true</td>
+<td>Приводить суммарную ширину колонок к ширине viewport (т.е. ширине всего грида)</td>
+</tr>
+</tbody>
+</table>
+<p>Параметр forceFitColumns коренным образом меняет поведение параметра width. Рассмотрим поведение грида при обоих значениях параметра:</p>
+<h6 id="forcefitcolumns-false">forceFitColumns:false</h6>
+<p>В этом режиме параметр width означает фактическую ширину колонки (если width не задан, то используется defaultColumnWidth) в пикселях. Колонки располагаются одна за другой, прижимаясь к левой стороне. Если суммарная ширина колонок будет меньше чем ширина viewport, то справа от колонок останется свободное место. Если больше то в гриде появится горизонтальный скролл.</p>
+<p>По ряду причин такое отображение грида редко используется.</p>
+<h6 id="forcefitcolumns-true">forceFitColumns:true</h6>
+<p>В этом режиме грид масштабирует колонки таким образом, что бы их суммарная ширина была равна ширине viewport.</p>
+<p>Пример:
+есть три колонки, со значениями ширины width:20, widht:30 и width:50. При отображении на мониторе пользователя ширина грида оказалась равна 1000px. Значит ширина первой колонки будет: 1000(20+30+50)<em>20=200px, второй 1000/(20+30+50)</em>30=300px, а третьей 1000/(20+30+50)*50=500px.</p>
+<p>Есть несколько исключений из этого правила:</p>
+<ol>
+<li>Если колонка имеет значение параметра resizable:false, то для неё ширина widht остается абсолютной, т.е. она не будет масштабироваться. В примере выше если первая колонка будет иметь resizable:false, то её ширина так и останется 20px, ширина второй колонки будет (1000-20)/(30+50)<em>30=368px, а третьей (1000-20)/(30+50)</em>50=612px.</li>
+<li>Ширина колонки не может быть меньше minWidth и больше maxWidth. При масштабировании колонок значения этих параметров будут учтены</li>
+</ol>
+<p>Задание ширины колонок в этом режиме можно сравнить с использованием * в wpf.</p>
+<h3 id="-">Метаданные для строк</h3>
+<p>Через опцию <code>itemMetadata</code> можно задать некоторые метаданные для строк. Значением опции должен быть объект метаданных в <a href='https://github.com/mleibman/SlickGrid/wiki/Providing-data-to-the-grid' title='null'>формате SlickGrid</a> либо функция, возвращающая такой объект. Если задана функция, то в качестве аргумента ей передается элемент списка, для которого вычисляются метаданные.
+В качестве одного из основных применений <code>itemMetadata</code> видится задание css-классов для строк списка. Например, в списке пользователей мы хотим применить специальный стиль к строке, соответствующей текущему пользователю:</p>
+<pre><code class="lang-js">var list = core.ui.ObjectList.create(app, {
+        entityType: &quot;User&quot;,
+        ...,
+        presenterOptions: {
+            itemMetadata: function (item) {
+                var currentUser = item.uow &amp;&amp; item.uow.getCurrentUser &amp;&amp; core.lang.resolvedValue(item.uow.getCurrentUser());
+                if (currentUser === item) {
+                    return {
+                        cssClasses: &quot;app-current-user-row&quot;
+                    };
+                }
+            }
+        }
+    });
+</code></pre>
+<p>Допустим, мы хотим выделить текущего пользователя жирным шрифтом. Тогда в css-файле определяем следующий стиль:</p>
+<pre><code class="lang-css">.x-grid .app-current-user-row {
+    font-weight: bold;
+}
+</code></pre>
+<p><a id='gridOptions'></a></p>
+<h3 id="-">Опции создания грида</h3>
+<p>Объект gridOptions задает опции создания грида и передается в конструктор <code>Slick.Grid</code>. Формат описан <a href='https://github.com/mleibman/SlickGrid/wiki/Grid-Options' title='null'>здесь</a>.</p>
+<blockquote>
+<p>На сайте описание немного некорректное/неполное (например, указано rowHeight = 140, в реальности - 25). Полный список опций и их значений по умолчанию можно посмотреть в исходниках:) (см. начало файла <code>client\vendor\slick\slick.grid.js</code>).</p>
+</blockquote>
+<p>По умолчанию <code>SlickObjectListPresenter</code> использует следующие значения опций:</p>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Опция</th>
+<th>Значение</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>enableCellNavigation</td>
+<td>true</td>
+</tr>
+<tr>
+<td>enableColumnReorder</td>
+<td>true</td>
+</tr>
+<tr>
+<td>enableTextSelectionOnCells</td>
+<td>true</td>
+</tr>
+<tr>
+<td>autoHeight</td>
+<td>true</td>
+</tr>
+<tr>
+<td>rowHeight</td>
+<td>32</td>
+</tr>
+<tr>
+<td>defaultColumnWidth</td>
+<td>100</td>
+</tr>
+<tr>
+<td>fullWidthRows</td>
+<td>true</td>
+</tr>
+<tr>
+<td>forceFitColumns</td>
+<td>true</td>
+</tr>
+<tr>
+<td>multiColumnSort</td>
+<td>true</td>
+</tr>
+<tr>
+<td>dataItemColumnValueExtractor</td>
+<td>function (item, col) { return item.get(col.id); } \</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Не переопределяйте
+ |
+Все значения (кроме <code>dataItemColumnValueExtractor</code>) можно переопределять при создании списка через <code>presenterOptions.gridOptions</code>.</p>
+</blockquote>
+<p><a id='grouping'></a></p>
+<h3 id="-">Параметры группировки строк</h3>
+<h6 id="-">Базовые параметры</h6>
+<p>SlickGrid <a href='http://mleibman.github.io/SlickGrid/examples/example-grouping' title='null'>поддерживает</a>, с помощью специальных функций дата-адаптера, группировку (в том числе многоуровневую) строк по некоторым заданным критериям. На основе кода SlickGrid в SlickObjectListPresenter также был реализован аналогичный функционал.</p>
+<p>Настройка группировки выполняется с помощью параметра <code>grouping</code>. Параметр <code>grouping</code> может содержать объект-описатель группировки, либо массив таких объектов, в случае использования многоуровневой группировки. Описатель группировки может иметь следующие параметры:</p>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Параметр</th>
+<th>Значение по умолчанию</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>getter</td>
+<td>нет</td>
+<td>Может принимать на вход одно из следующих значений:</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>Наименование свойства в доменном объекте, соответствующем строке</li>
+<li>Функцию, принимающую доменный объект, соответствующий строке
+Строки группируются на основании равенства результата, возвращаемого геттером, приведенного к строке.
+Если геттер возвращает объект, содержащий свойство &#39;id&#39; (доменный объект), то для группировки используется значение свойства &#39;id&#39;.
+| formatter | нет | Функция, принимающая на вход описатель группы, и возвращающая html код, для заголовка группы. (описатель группы см ниже) |
+| comparer | function(a, b) { return (a.value == b.value?0:(a.value &gt; b.value?1:-1));}; | Функция, принимающая на вход два описателя группы и сравнивающая их. Группы сортируются, на основании значения, возвращаемого данной функцией. (описатель группы см ниже) |
+| predefinedValues | пустой массив |Массив значений, аналогичных тем, что возвращает геттер. В процессе группировки, будут созданы группы соответствующие этим значениям. Таким образом, можно гарантировать, что какая либо группа всегда будет присутствовать в гриде, даже если нет соответствующих строк. |
+| aggregators | пустой массив | Массив аггрегаторов. (описание аггрегатора см ниже) |
+| aggregateEmpty | false | Показывать строку аггрегаторов в пустой группе |
+| aggregateCollapsed | false | Показывать строку аггрегаторов в свернутой группе
+| aggregateChildGroups | false | Если true, то функции аггрегатора передается массив дочерних групп, а не всех строк группы (актуально для многоуровневой группировки). Зачем это нужно не понятно, т.к. аггрегаторы, которые есть &quot;из коробки&quot; такой режим работы не поддерживают.
+| collapsed | false | Начальное положение группы (свернута\развернута) |
+| displayTotalsRow | true | Если false, строка аггрегатов никогда не будет показана. |</li>
+</ol>
+<p>Описатель группы (поступает в качестве параметра в функции comparer и formatter):</p>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Параметр</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>collapsed</td>
+<td>Свернута ли группа</td>
+</tr>
+<tr>
+<td>count</td>
+<td>Количество элементов в группе</td>
+</tr>
+<tr>
+<td>groupingKey</td>
+<td>Ключ, по которому группируются значения (значения возвращаемого геттером, приведенное к строке либо, при наличии, значение свойства &#39;id&#39; в объекте, возвращаемом геттером). При многоуровневой группировке, объединяются ключи группировки вышестоящих групп и текущей, через служебный разделитель &#39;:&#124;:&#39;.</td>
+</tr>
+<tr>
+<td>groups</td>
+<td>Массив описателей дочерних групп</td>
+</tr>
+<tr>
+<td>level</td>
+<td>Уровень группы (при многоуровневой группировке), начиная от 0</td>
+</tr>
+<tr>
+<td>rows</td>
+<td>Массив описателей строк группы. Доменный объект, соответствующий строке, находится в поле item описателя строки.</td>
+</tr>
+<tr>
+<td>title</td>
+<td>Заголовок группы</td>
+</tr>
+<tr>
+<td>totals</td>
+<td>Описатель результатов аггрегации (см ниже объект GroupTotals)</td>
+</tr>
+<tr>
+<td>value</td>
+<td>Значение, возвращаемое геттером</td>
+</tr>
+</tbody>
+</table>
+<h6 id="-">Аггрегаторы</h6>
+<p>Аггрегаты в результате своей работы формируют для каждой объект GroupTotals (описание см. ниже)
+Из коробки поставляются четыре аггрегатора, доступных при подключении через require &quot;plugin/gridgroup/SlickAggregators&quot;. Для включения, необходимо передать нужные аггрегаторы в массиве aggregators, например:</p>
+<pre><code>new SlickAggregators.Avg(&quot;someNum&quot;)
+</code></pre><p>Для использования стандартных аггрегаторов, их необходимо подключить используя механизмы requrejs: <code>&quot;lib/ui/slick/SlickAggregators&quot;</code>. Перечень стандартных аггрегаторов:</p>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Конструктор</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>new SlickAggregators.Sum(&quot;prop&quot;)</td>
+<td>Считает сумму значений свойства prop</td>
+</tr>
+<tr>
+<td>new SlickAggregators.Min(&quot;prop&quot;)</td>
+<td>Вычисляет минимальное значение свойства prop</td>
+</tr>
+<tr>
+<td>new SlickAggregators.Max(&quot;prop&quot;)</td>
+<td>Вычисляет максимальное значение свойства prop</td>
+</tr>
+<tr>
+<td>new SlickAggregators.Avg(&quot;prop&quot;)</td>
+<td>Вычисляет среднее значение свойства prop (считая только те строки, где свойство prop не null, не &quot;&quot; и не NaN)</td>
+</tr>
+<tr>
+<td>new SlickAggregators.Count()</td>
+<td>Считает количество строк в группе</td>
+</tr>
+<tr>
+<td>new SlickAggregators.CountNotNull(&quot;prop&quot;)</td>
+<td>Считает количество строк в группе, где свойство prop не null, не &quot;&quot; и не NaN</td>
+</tr>
+</tbody>
+</table>
+<p>Для вывода результата аггрегата необходимо в описании колонки задать специальный форматтер, в параметре groupTotalsFormatter. По умолчанию форматтер не задан. На вход форматтеру подаются два параметра:</p>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Наименование</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>totals</td>
+<td>Объект, содержащий описание результата аггрегации GroupTotals(см ниже)</td>
+</tr>
+<tr>
+<td>columnDef</td>
+<td>Объект, содержащий описание колонки</td>
+</tr>
+</tbody>
+</table>
+<p>Объект GroupTotals имеет следующие поля:</p>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Наименование</th>
+<th>Наличие</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>group</td>
+<td>всегда</td>
+<td>Ссылка на описатель группы</td>
+</tr>
+<tr>
+<td>avg</td>
+<td>только если есть хотябы один аггрегатор SlickAggregators.Avg</td>
+<td>Словарь, в котором ключем является наименование колонки, а значением - результат аггрегации</td>
+</tr>
+<tr>
+<td>min</td>
+<td>только если есть хотябы один аггрегатор SlickAggregators.Min</td>
+<td>аналогично avg</td>
+</tr>
+<tr>
+<td>max</td>
+<td>только если есть хотябы один аггрегатор SlickAggregators.Max</td>
+<td>аналогично avg</td>
+</tr>
+<tr>
+<td>sum</td>
+<td>только если есть хотябы один аггрегатор SlickAggregators.Sum</td>
+<td>аналогично avg</td>
+</tr>
+<tr>
+<td>countNotNull</td>
+<td>только если есть хотябы один аггрегатор CountNotNullAggregator.Sum</td>
+<td>аналогично avg</td>
+</tr>
+<tr>
+<td>count</td>
+<td>только если есть хотябы один аггрегатор CountNotNullAggregator.Count</td>
+<td>Количество строк в группе</td>
+</tr>
+<tr>
+<td><em>другое наименование</em></td>
+<td><em>если используется кастомный аггрегатор</em></td>
+<td><em>самописные аггрегаторы могут заполнять объект GroupTotals по своему усмотрению</em></td>
+</tr>
+</tbody>
+</table>
+<p>Таким образом groupTotalsFormatter каждой колонки получает всю информацию о результатах аггрегации в группе и в ячейке результатов аггрегации могут быть ведены не только значения по данному столбцу. Можно выводить значения нескольких аггрегатов (например сумму и среднее) или значения аггрегатов других колонок.</p>
+<p>Пример конфигурации группировки:</p>
+<pre><code>presenterOptions:{
+    grouping:[
+        {
+            getter: &quot;task&quot;,
+            collapsed: true,
+            comparer: function(a, b){
+                a = a.value;
+                b = b.value;
+                if(a.priority() != b.priority())
+                    return a.priority() &gt; b.priority() ? 1 : -1;
+                if(a.deadLine() != b.deadLine())
+                {
+                    if(a.deadLine()==null) return 1;
+                    if(b.deadLine()==null) return -1;
+                    return a.deadLine() &gt; b.deadLine() ? 1 : -1;
+                }
+                if(a.creationDate() != b.creationDate())
+                {
+                    return a.creationDate() &gt; b.creationDate() ? 1 : -1;
+                }
+
+                return a.value.name() == b.value.name() ? 0 : a.value.name() &gt; b.value.name() ? 1 : -1;
+            },
+            formatter: function(g) {
+                var t = g.value;
+                return (
+                    &quot;&lt;div class=&#39;pull-right&#39;&gt;&quot;
+                        + &quot;&lt;a title=&#39;Подробная информация о задаче&#39; href=&#39;#&#39; tabIndex=&#39;-1&#39; class=&#39;x-cmd-link open-task&#39; data-cmd-name=&#39;OpenTask&#39;&gt;&lt;span&gt;&lt;/span&gt;&lt;/a&gt;&quot;
+                    +&quot;&lt;/div&gt;&quot;
+                    +&quot;&lt;div class=&#39;pull-right&#39;&gt;&quot;
+                        + model.TaskStatus.meta.formatValue(t.status())
+                    +&quot;&lt;/div&gt;&quot;
+                    + &quot;&lt;div class=&#39;pull-right task-progress&#39;&gt;&quot;
+                        + t.progress()
+                    +&quot;&lt;/div&gt;&quot;
+                    + &quot;&lt;div class=&#39;task-title&#39;&gt;&quot;
+                        + &quot;&lt;span class=&#39;slick-group-toggle&#39;&gt;&quot;
+                            + t.name()
+                        + &quot;&lt;/span&gt;&quot;
+                    + &quot;&lt;/div&gt;&quot; );
+            }
+        }
+    ]
+}
+</code></pre><blockquote>
+<p>Элемент с классом <code>slick-group-toggle</code> в заголовке группы будет сворачивать\разворачивать группу при клике на него.</p>
+</blockquote>
+<p>Пример списка с группировкой:
+<img src="attachments/listexample.png|border=0" alt="listexample.png|border=0"> </p>
+
+ 
+        
+        <hr>
+
+        
+
+        <div class="well">
+  <p>Find an error? <a class="alert-link" href="https://track.rnd.croc.ru/newIssue?project=WC&clearDraft=true&c=Type+Bug&c=State+Open&c=Subsystem+documentation">Let us know →</a></p>
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+
+	<div class="site-footer">
+  <p>Built on 31.9.2014 at 21:39. Power by <a href="http://assemble.io">Assemble</a>, <a href="http://gruntjs.com">Grunt</a>, <a href="http://code.rnd.croc.ru/projects/RND/repos/jsdoc2markdown">jsdoc2markdown</a>.
+</p></div>
+
+    <script src="../../assets/js/jquery.js"></script>
+<script src="../../assets/js/bootstrap.min.js"></script>
+<script src="../../assets/js/highlight.js"></script>
+  </body>
+</html>

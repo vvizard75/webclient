@@ -1,0 +1,3514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Server Architecture | WebClient documentation</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="../../assets/css/root.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body style="background: white;" data-spy="scroll" data-target=".bs-sidebar">
+
+    <div class="root">
+    
+<div class="navbar navbar-inverse" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../../index.html">WebClient documentation</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Docs</a></li>
+          <li><a href="../api-client/index.html">API Client</a></li>
+        </ul>
+      
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">CROC R&D<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://track.rnd.croc.ru">Bug tracker (YouTrack)</a></li>
+            <li><a href="https://code.croc.ru">Source code (Git Server)</a></li>
+            <li><a href="https://wiki.rnd.croc.ru">Wiki</a></li>
+            <li><a href="https://build.rnd.croc.ru">Build server (TeamCity)</a></li>
+            <li><a href="https://qa.rnd.croc.ru">Q&A</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-header">Other</li>
+            <li><a href="https://github.com/CrocInc">CROC on Github</a></li>
+            
+          </ul>
+        </li>
+      </ul>
+
+    </nav>
+  </div>
+</div>
+
+    
+<div class="container" role="main">
+  <div class="row">
+
+    
+    <div class="col col-lg-3">
+      <div class="sidebar">
+        <ul class="nav nav-pills nav-stacked">
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+          <li><a href="structure.html">Structure</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+          <li><a href="browser-support.html">Browser support</a></li>
+    
+  
+    
+  
+    
+  
+    
+          <li><a href="distribution.html">Distribution</a></li>
+    
+  
+    
+  
+    
+  
+    
+          <li><a href="setup-developer-environment.html">Setup Developer Environment</a></li>
+    
+  
+    
+  
+    
+  
+    
+          <li><a href="project-structure.html">Project Structure</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+          <li><a href="key-features.html">Key Features</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+</ul>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="getting-started-tutorial.html">Getting Started Tutorial</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="getting-started-tutorial-0_12.html">Getting Started Tutorial 0.12</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="base.html">Base</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="ecmascript-5-emulation.html">EcmaScript 5 emulation</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="module-system.html">Module System</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="core.html">Core</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="class-system.html">Class System</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="presentation-model.html">Presentation Model</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="composition-&amp;-navigation.html">Composition &amp; Navigation</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="переопределение-компонентов.html">Переопределение компонентов</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="templating.html">Templating</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="data-binding.html">Data-binding</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="eventpublisher.html">EventPublisher</a></li>
+        
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="application.html">Application</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+         
+
+          <li><a href="app-module.html">App-module</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="datasource.html">DataSource</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="domain-model.html">Domain Model</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="domain-objects.html">Domain Objects</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="validation.html">Validation</a></li>
+        
+        
+       
+        
+       
+        
+         
+
+          <li><a href="formatters.html">Formatters</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="interop.html">Interop</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="main_js.html">main.js</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="ui-ux.html">UI-UX</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="app-starting-ux.html">App starting UX</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="appnavbar.html">AppNavBar</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="css-styles-and-less.html">CSS Styles and LESS</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="tree.html">Tree</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="icons.html">Icons</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="menu.html">Menu</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="objecteditor.html">ObjectEditor</a></li>
+        
+        
+       
+        
+       
+        
+         
+
+          <li><a href="objectlist.html">ObjectList</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="objectviewer.html">ObjectViewer</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="objectwizard.html">ObjectWizard</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="onlinebeacon.html">OnlineBeacon</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="property-editors.html">Property Editors</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="objectfilter.html">ObjectFilter</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="appservices.html">AppServices</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+         
+
+          <li><a href="affix.html">Affix</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="app-navigation.html">App Navigation</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="breadcrumbs.html">Breadcrumbs</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="client-update-notification.html">Client update notification</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="debug-module.html">Debug module</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="drafts.html">Drafts</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="i18n.html">i18n</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="notifications.html">Notifications</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="security.html">Security</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="scroll-accelerators.html">Scroll accelerators</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="reporting.html">Reporting</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="server.html">Server</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li class="active"><a href="server-architecture.html">Server Architecture</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="page-layout.html">Page Layout</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="filecontroller.html">FileController</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="bootloader.html">Bootloader</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="main_config_json.html">main.config.json</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="hosting.html">Hosting</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="knowledge-base.html">Knowledge Base</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="client-debugging.html">Client Debugging</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="кеширование-контента.html">Кеширование контента</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="webstorm-live-templates.html">WebStorm Live Templates</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="efficient-css.html">Efficient CSS</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="elmah.html">Elmah</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+        
+       
+      </ul>
+
+    
+  
+
+  
+    
+      <span class="nav-section-title">
+        <a href="devtools.html">DevTools</a> 
+      </span>
+
+      <ul class="nav nav-pills nav-stacked">
+      
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="archived-build-0_10.html">Archived-Build 0.10</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="настройка-teamcity-билд-конфигурации-для-работы-с-bower-и-grunt.html">Настройка TeamCity билд конфигурации для работы с bower и grunt</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="yeoman-generator.html">Yeoman Generator</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="grunt-croc-qunit.html">grunt-croc-qunit</a></li>
+        
+        
+       
+        
+         
+
+          <li><a href="grunt-croc-requirejs.html">grunt-croc-requirejs</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+         
+
+          <li><a href="resxtojson.html">ResxToJson</a></li>
+        
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+       
+        
+        
+        
+       
+      </ul>
+
+    
+  
+
+
+      </div>
+    </div>
+
+
+    
+    <div class="col col-lg-9">
+      <div class="panel panel-docs">
+        <ol class='breadcrumb'><li><a href='index.html'>Docs</a></li><li><a href='server.html'>Server</a></li><li class='active'>Server Architecture</li></ol>
+        <h1>Server Architecture</h1>
+          
+
+<h2 id="-toc-maxlevel-3-">{toc:maxLevel=3}</h2>
+<h3 id="overview">Overview</h3>
+<p>Серверная часть webClient-приложения основана на ASP.NET MVC и ASP.NET WebApi. Не смотря на то, что MVC и Web API входят в один большой стек &quot;ASP.NET&quot; это разные библиотеки, не связанные друг с другом. MVC часть отвечает за возврат представления - страниц. Т.к. WebClient - это Single Page Application (SPA), то страница фактически одна. Подробней про формирование разметки страницы см. в <a href='page-layout.html' title='null'>Page Layout</a>. WebApi часть - это слой REST сервисов, используемых клиентским js-кодом. Но, в принципе, сервисы могут использоваться кем угодно. Фактически это альтернативный слой сервисов относительно SOAP-сервисов (WCF), которые существуют в XFW3 (используемые WPF SmartClient).</p>
+<blockquote>
+<p>Архитектура WebApi такова, что конвейер обработки запросов (message handler pipeline и controller handling) отделены от хостинга. В качестве хостинга может выступать ASP.NET (т.н. <em>web hosting</em>) и self-hosting - та же инфраструктура, используемая в WCF для self-hosted сервисов. Подробней про архитектуру ASP.NET Web API <a href='https://pfelix.wordpress.com/2012/03/05/asp-net-web-api-processing-architecture/' title='null'>тут</a>.</p>
+</blockquote>
+<p>Настройка приложения на xfw3.webClient, как и любого Mvc/WebApi приложения, включает в себя:</p>
+<ul>
+<li>регистрацию Mvc-фильтров: <code>HandleErrorAttribute</code></li>
+<li>регистрацию WebApi-фильтров: <code>XExceptionFilter</code> (используя реализацию <code>IExceptionHandler</code> устанавливает http-статус ответа на основе типа исключения)</li>
+<li>регистрацию WebApi message handlers:<ul>
+<li><code>XApplicationInitializerMessageHandler</code> - устанавливает в каждый объект <code>HttpRequestMessage</code> ссылку на IXCoreApplication (объект приложения становится доступен в WebApi-контроллерах через extension-метод GetApplication для HttpRequestMessage)</li>
+<li><code>XConfigInitializerMessageHandler</code> - устанавливает в каждый объект <code>HttpRequestMessage</code> ссылку на XConfig (см. ниже), аналогично IXCoreApplication объект XConfig доступен через exntension-метод HttpRequestMessage.GetConfig</li>
+</ul>
+</li>
+<li>регистрацию сериализатора (json-форматтера) - используется форматтер по умолчанию (JsonSerializer, библиотека Newtonsoft.Json) (использует по умолчанию начиная с MVC4 RC) с определенными настройками</li>
+</ul>
+<p>Все перечисленное выполняет специальный http-модуль - <code>XWebApplicationInitializationModule</code>. Все свои зависимости модуль получает в конструкторе:</p>
+<ul>
+<li>Func<IXCoreApplication> - фабрика IXCoreApplication</li>
+<li>XConfig - синглетон-экземпляр конфигурации приложения (см. далее)</li>
+<li>JsonSerializerSettings - настройки JsonSerializer&#39;a</li>
+</ul>
+<p>Следующий этап настройки приложения - регистрация маршрутов (routes). Маршруты описываются в глобальной коллекции <code>System.Web.Routing.RouteTable.Routes</code>. Стандартные маршруты описываются в http-модуле <code>RoutesConfig</code>. См. <a href='#Routes' title='null'>ниже</a> полный перечень маршрутов. В прикладном проекте для расширения маршрутов необходимо расширить данный класс (или полностью заменить).</p>
+<blockquote>
+<p>Обратите внимание, что маршруты для MVC и WebAPI описываются по-разному: routes.MapRoute и routes.MapHttpRoute соответственно.</p>
+</blockquote>
+<h3 id="bootstrapper-di">Bootstrapper &amp; DI</h3>
+<p>Традиционно инициализация ASP.NET приложения выполняется в методе Application_Start из global.asax. Однако, xfw3.webClient использует подход на основе Microsoft.Web.Infrastructure, позволяющий зарегистрировать колбэки, которые будут вызваны при старте приложения. При установке NuGet-пакета в папке App_Start создает файл BootstrapperConfig.cs, который содержит код инициализации приложения.</p>
+<blockquote>
+<p>Т.к. в .NET 4.0 атрибут System.Web.PreApplicationStartMethod объявлен как AllowMultiple=False (в 4.5 уже как AllowMultiple=True), то в одной сборке можно зарегистрировать только один колбэк, который будет вызван при инициализации приложения. Для обхода данной проблемы и для расширения возможностей PreApplicationStartMethod существует библиотека <a href='https://github.com/davidebbo/WebActivator' title='null'>WebActivator</a>. Однако, она распространяется только в неподписанном (unsigned) виде, поэтому напрямую использована быть не может (сборки webClient подписаны). По этой причине функциональность WebActivator полностью включена в состав сборки Croc.XFW3.WebServer, в пространство имен Croc.XFW3.WebServer.WebActivator.</p>
+</blockquote>
+<p>Используя возможности WebActivator/PreApplicationStartMethod код в BootstrapperConfig.cs регистрирует колбэк-метод:</p>
+<pre><code class="lang-c#">[assembly: Croc.XFW3.WebServer.WebActivator.PreApplicationStartMethod(typeof(Croc.Samples.AjaxDemo.App_Start.BootstrapperConfig), &quot;Start&quot;)]
+</code></pre>
+<p>В методе Start экземпляром <code>IKernel</code> инициализируется статическое свойство <code>Kernel</code> статического класса <code>Croc.XFW3.WebServer.Bootstrapper</code>:</p>
+<pre><code class="lang-c#">public static class BootstrapperConfig 
+    {
+        /// &lt;summary&gt;cr
+        /// Starts the application
+        /// &lt;/summary&gt;
+        public static void Start() 
+        {
+            Bootstrapper.Kernel = CreateKernel();
+            // инициализировать зарегистрированные модули (см. ниже)
+            Bootstrapper.InitializeAllModules();
+            Bootstrapper.Initialize();
+
+        }
+        private static IKernel CreateKernel()
+        {
+        }
+    }
+</code></pre>
+<p>IKernel - это DI (Dependency Injection) контейнер из библиотеки <a href='http://ninject.org' title='null'>Ninject</a>. Использование DI позволяет добиться слабой связанности и тестируемости. 
+Библиотеки ASP.NET Mvc/WebApi имеют поддержку Dependency Injection в виде интерфейсов IDependencyResolver (это два одноименных интерфейса: System.Web.Http.Dependencies.IDependencyResolver для WebApi и System.Web.Mvc.IDependencyResolver для Mvc, с одинаковым набором методов). 
+Mvc/WebApi используют свои DependencyResolver во всех случаях когда они создают компоненты самостоятельно. Например, при создании экземпляров контроллеров. Использование полноценного DI-контейнера позволяет в конструкторе контроллера использовать компоненты зарегистрированные в DI-контейнере - они будут автоматически подставлены в конструктор. Например, Mvc-контроллер XHomeController содержит конструктор, принимающий XConfig и JsonSerializerSettings :</p>
+<pre><code class="lang-c#">public XHomeController(XConfig config, JsonSerializerSettings serializerSettings)
+</code></pre>
+<p>Т.к. экземпляр контроллера создается Mvc, а она использует свой DependencyResolver, в качестве которого мы задаем реализацию, использующую Ninject-контейнер, то в конструктор будут переданы объекты XConfig и JsonSerializerSettings. Но чтобы XConfig и JsonSerializerSettings были известны контейнеру, их надо зарегистрировать.</p>
+<p>Рассмотрим стандартную реализацию метода CreateKernel, в котором создается и инициализируется контейнер:</p>
+<pre><code class="lang-c#">private static IKernel CreateKernel()
+        {
+            var kernel = new StandardKernel(
+                new XApplicationFactoryModule(),
+                new XConfigModule(),
+                new XCancellableOperationsMobule(),
+                new JsonSerializationSettingsModule()
+                );
+            kernel.Bind&lt;IXExceptionHandler&gt;().To&lt;XExceptionHandler&gt;();
+
+            // MVC/WebApi DI registrations:
+            XWebApplicationInitializationModule.SetupDependencyResolver(kernel);
+            // All MVC/WebApi stuff registrations:
+            kernel.Bind&lt;IHttpModule&gt;().To&lt;XWebApplicationInitializationModule&gt;();
+            // Routes
+            kernel.Bind&lt;IHttpModule&gt;().To&lt;SurveyRoutesConfig&gt;();
+
+            return kernel;
+        }
+</code></pre>
+<p>При создании контейнера ему передается список т.н. модулей. Ninject-модули выполняются регистрацию компонентов. Пример регистрации:</p>
+<pre><code class="lang-c#">kernel.Bind&lt;IHttpModule&gt;().To&lt;XWebApplicationInitializationModule&gt;(); // в качестве реализации интерфейса IHttpModule регистрируется тип XWebApplicationInitializationModule
+kernel.Bind&lt;XConfig&gt;().ToConstant(config); // в качестве типа XConfig регистрируется экземпляр
+</code></pre>
+<p>В стандартной реализации <code>BootstrapperConfig</code> используются следующие модули:</p>
+<ul>
+<li>XApplicationFactoryModule - регистрирует Func<IXCoreApplication>, для получения IXCoreApplication использует {t:XConfigurationManagerSigletonHelper};</li>
+<li>XConfigModule - регистрирует XConfig (конфигурацию приложения);</li>
+<li>XCancellableOperationsMobule - модуль поддержки отменяемых запросов к источникам данных;</li>
+<li>JsonSerializationSettingsModule - регистрирует JsonSerializerSettings</li>
+</ul>
+<p>Модули <code>XConfigModule</code> и <code>JsonSerializationSettingsModule</code> регистрируют синглетон-экземпляры объектов, которые сами и создают (XConfig и JsonSerializerSettings соответственно). Для кастомизации XConfig/JsonSerializationSettings необходимо расширить или заменить данные модули.</p>
+<p>После регистрации компонентов стандартная реализация <code>BootstrapperConfig.CreateKernel</code>: </p>
+<ul>
+<li>регистрирует Ninject-контейнер в качестве DI-контейнера Mvc\WebApi:</li>
+</ul>
+<pre><code class="lang-c#">XWebApplicationInitializationModule.SetupDependencyResolver(kernel);
+</code></pre>
+<ul>
+<li>настраивает Mvc\WebApi приложение (см. выше), для этого регистрирует http-модуль XWebApplicationInitializationModule:</li>
+</ul>
+<pre><code class="lang-c#">kernel.Bind&lt;IHttpModule&gt;().To&lt;XWebApplicationInitializationModule&gt;();
+</code></pre>
+<ul>
+<li>регистрирует маршруты:</li>
+</ul>
+<pre><code class="lang-c#">kernel.Bind&lt;IHttpModule&gt;().To&lt;RoutesConfig&gt;();
+</code></pre>
+<p>Регистрация реализаций IHttpModule в Ninject-контейнере используется специальным http-модулем <code>NinjectHttpModule</code>, который регистрируется в конвейере asp.net в методе <code>Bootstrapper.Initialize</code>.</p>
+<p>Далее в методе <code>Start</code> выполняется инициализация подключаемых модулей (см. ниже) и инициализация собственно загрузчика приложения, статического <code>Croc.XFW3.WebServer.Bootstrapper</code>.</p>
+<h3 id="-">Подключаемые модули</h3>
+<p>Подключаемый модуль (например <code>Croc.XFW3.WebServer.Reporting</code>) представляет собой сборку, помеченную атрибутом <code>Croc.XFW3.WebServer.WebActivator.ModuleAssembly</code>. Модуль может содержать свою конфигурацию и регистрацию маршрутов. Аналогично основному модулю приложения, подключаемый модуль может регистрировать код инициализации с помощью атрибута <code>Croc.XFW3.WebServer.WebActivator.PreApplicationStartMethod</code>. Но в отличии от освновной сборки, модуль не может сразу инциализировать себя в Start-методе. Поэтому он используется статический метод <code>Bootstrapper.AddModule</code>, чтобы зарегистрировать колбэк, который будет выполнен в рамках инциализации приложения.</p>
+<pre><code class="lang-c#">[assembly: Croc.XFW3.WebServer.WebActivator.ModuleAssembly]
+[assembly: Croc.XFW3.WebServer.WebActivator.PreApplicationStartMethod(typeof(Croc.XFW3.WebServer.Reporting.ModuleBootstrapper), &quot;Start&quot;)]
+
+namespace Croc.XFW3.WebServer.Reporting
+{
+    /// &lt;summary&gt;
+    /// загрузчик модуля
+    /// &lt;/summary&gt;
+    public static class ModuleBootstrapper
+    {
+        public static void Start()
+        {
+            // регистрация callback для инициализации модуля
+            Bootstrapper.AddModule(&quot;reporting&quot;, onInitialize);
+        }
+
+        private static void onInitialize(IKernel kernel)
+        {
+            // Routes:
+            kernel.Bind&lt;IHttpModule&gt;().To&lt;ReportingRoutesConfig&gt;();
+        }
+    }
+}
+</code></pre>
+<p>Здесь, в методе Start загрузчика модуля регистрируется код инициализации <code>onInitialize</code>. Данный метод будет вызван при инициализации модулей </p>
+<pre><code>Bootstrapper.InitializeAllModules();
+``` в `BootstrapperConfig.Start`. В данном примере, выполняется регистрация маршрутов.
+
+### Конфигурация (XConfig)
+Важным объектом является `XConfig` - конфигурация приложения. Экземпляр `XConfig` должен существовать в единственном экземпляре. Его созданием  по умолчанию занимается Ninject-модуль `XConfigModule`, но в прикладном приложении это может быть изменено как угодно, главное чтобы экземпляр XConfig был зарегистрирован в Ninject-контейнере:
+
+```c#
+Bind&lt;XConfig&gt;().ToConstant(config);
+</code></pre><p>Помимо создания и регистрации в DI-контейнер для <code>XConfig</code> еще выполняется процедура инициализации при первом запросе к приложению. Делается это в http-модуле <code>XWebApplicationInitializationModule</code>.</p>
+<p>Процедура следующая:</p>
+<ul>
+<li>определяется корень приложения и присваивается в свойство XConfig.Root: он отличается для сайта (&quot;/&quot;) и веб-приложения (&quot;/survey&quot;)</li>
+<li>считывается файл client/main.config.json (размещение и наименование файла могут быть заданы через конфигурационные параметры - см. ниже) и десериализируется в JSON (JObject)</li>
+<li>обходя рекурсивно объект Json-конфигурации, в <code>XConfig</code> копируются все одноименные свойства (т.е. выполняется слияние &quot;json в XConfig&quot;)</li>
+<li>объект <code>XConfig</code> сериализуется в Json и объединяется в Json-объектом из <a href='main_config_json.html' title='null'>main.config.json</a> (т.е. выполняется слияние &quot;XConfig в json&quot;)</li>
+<li>результирующий Json-объект присваивается в свойство <code>XConfig.ClientJson</code> - данный Json-объект будет оправлен на клиент (см. описание контроллера <code>XHomeController</code> в <a href='page-layout.html' title='null'>Page Layout</a>)</li>
+</ul>
+<blockquote>
+<p>Несколько замечаний:</p>
+<ul>
+<li>значения в main.config.json имеют больший приоритет;</li>
+<li>сериализация и десериализация .NET/Json производится в camelCase, поиск свойств в XConfig из json производится без учета регистра</li>
+<li>при сериализации .NET в json учитывается атрибут JsonIgnore</li>
+</ul>
+</blockquote>
+<p>В процессе инициализации XConfig используются конфигурационные параметры, задаваемые в секции appSettings web.config (все параметры опциональны):</p>
+<ul>
+<li>croc.mainConfigFile - наименование файла json-конфигурации (по умолчанию &quot;main.config.json&quot;);</li>
+<li>croc.requireConfigFile - наименование файла с конфигурацией RequireJS (по умолчанию &quot;require.config.json&quot;)</li>
+<li>croc.debug - признак отладочного режима, &quot;true&quot; (по умолчанию не задан) (переопределяет значение в XConfig и main.config.json);</li>
+<li>croc.clientBase - Базовый относительный путь каталога со всеми клиентскими скриптами (по умолчанию &quot;client&quot;).</li>
+</ul>
+<h3 id="-">Конфигурация подключаемых модулей</h3>
+<p>Каждый подключаемый модуль может иметь свою конфигурацию. Эти конфигурационные параметры будут добавлены в <code>XConfig</code> и в последствии переданы в клиентское приложении. Конфигурация модуля - это класс, потомок абстрактного класса <code>ModuleConfig</code>.
+Пример:</p>
+<pre><code>/// &lt;summary&gt;
+    /// конфигурация mock модуля
+    /// &lt;/summary&gt;
+    public class FubarModuleConfig: ModuleConfig
+    {
+        public string Param1 { get; set; }
+        public string Param2 { get; set; }
+
+        public MockModuleConfig()
+        {
+            Param1 = &quot;42&quot;;
+            Param2 = &quot;No rest for the wicked&quot;;
+        }
+    }
+</code></pre><p>Для того, что бы конфигурация модуля стала известна приложению, её нужно зарегистрировать в загрузчике приложения. Выполняется это в коде инициализации подключаемого модуля с помощью метода <code>Bootstrapper.AddModuleConfig</code>:</p>
+<pre><code>public static class ModuleBootstrapper
+    {
+        public static void Start()
+        {
+            // регистрация callback для инициализации модуля
+            Bootstrapper.AddModule(&quot;FubarModuleName&quot;, onInitialize);
+        }
+
+        private static void onInitialize(IKernel kernel)
+        {
+            // Routes:
+            kernel.Bind&lt;IHttpModule&gt;().To&lt;ToFubarRoutesConfig&gt;();
+            // register module config
+            Bootstrapper.AddModuleConfig&lt;FubarModuleConfig&gt;(&quot;FubarModuleName&quot;);
+        }
+    }
+</code></pre><p>Конфигурации модулей добавляются в словарь в свойстве <code>XConfig.Modules</code> и последствии, на этапе слияния с конфигурацией из main.config.json, сериализуются в словарь конфигураций модулей:</p>
+<pre><code>var xconfig = {
+// skiped
+, &quot;modules&quot;: {
+    &quot;reporting&quot;: {
+        &quot;formats&quot;: [ //skiped 
+        ]
+    },
+    &quot;fubarModuleName&quot;:{
+        &quot;param1&quot;: &quot;42&quot;,
+        &quot;param2&quot;: &quot;No rest for the wicked&quot;,
+    }
+}}
+</code></pre><blockquote>
+<p>Если необходимо различать параметры в конфигурации модуля для сервера и для клиента, то делается это примерно так:</p>
+</blockquote>
+<pre><code>public class FubarModuleConfig: ModuleConfig
+    {
+        [JsonIgnore]
+        public string ParamWithSecret { get; set; }
+        [JsonProperty(&quot;paramWithSecret&quot;)]
+        public string ParamWithSecretForClient { get; set; }
+
+        public MockModuleConfig()
+        {
+            ParamWithSecret = &quot;42&quot;;
+            ParamWithSecretForClient = ParamWithSecret.Replace(&quot;42&quot;, &quot;&quot;);
+        }
+    }
+</code></pre><p>Конфигурация модуля, заданная в json-файле main.config.json имеет больший приоритет, чем .net объект конфигурации.</p>
+<h3 id="routes">Routes</h3>
+<p>Маршруты регистрируются в http-модуле <code>RoutesConfig</code>.</p>
+<h6 id="mvc-routes">MVC routes</h6>
+<ul>
+<li>корень сайта</li>
+<li>&quot;display/*&quot;</li>
+<li>&quot;go/*&quot;</li>
+</ul>
+<p>Все MVC-маршруты ведут в метод Index контроллера XHomeController. Маршруты, начинающиеся с &quot;display/&quot;, нужны для поддержки History API на клиенте.</p>
+<h6 id="webapi-routes">WebAPI routes</h6>
+<p>Слой служб предоставляет следующий API для клиента (все эндпоинты ожидают GET-запросы, если не сказано другое):</p>
+<ul>
+<li>Domain - контроллер DomainApiController:<ul>
+<li>&quot;api/_store&quot; (POST) - сохранение датаграммы, в этот эндпоинт POST&#39;ятся данные при сохранении единицы работы (unitOfWork.save)</li>
+<li>&quot;api/{type}({id})&quot; - загрузка объекта по идентификатору</li>
+<li>&quot;api/{type}({id})/{prop}&quot; - загрузка свойства объекта, заданного идентификатором</li>
+<li>&quot;api/{type}&quot; - загрузка всех объектов типа, или выполнение источника данных</li>
+</ul>
+</li>
+</ul>
+<p>Для поддержки аутентификации и авторизации используется SecurityController. SecurityController должен быть определен в прикладном проекте и наследовать от базовой реализации <code>XSecurityControllerBase</code>), подробней см. <a href='security.html' title='null'>Security</a>. Для SecurityController маршруты определяются на основании объект <code>XSecurityConfig</code> из свойства <code>XConfig.Security</code>. Ниже приведены значения по умолчанию:</p>
+<ul>
+<li>&quot;api/_security/logout&quot; - выход/logout, очистка cookie</li>
+<li>&quot;api/_security/login&quot; - вход c логином/паролем для Forms-аутентификации</li>
+<li>&quot;auth/login&quot; - вход для Windows-аутенттификации (подразумевается, что в веб-приложении существует папка &quot;auth&quot;, для которой задана только Windows-аутенттификация)</li>
+<li>&quot;api/_security/currentUser&quot; - возврат json&#39;a объекта текущего пользователя </li>
+</ul>
+
+ 
+        
+        <hr>
+
+        
+
+        <div class="well">
+  <p>Find an error? <a class="alert-link" href="https://track.rnd.croc.ru/newIssue?project=WC&clearDraft=true&c=Type+Bug&c=State+Open&c=Subsystem+documentation">Let us know →</a></p>
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+
+	<div class="site-footer">
+  <p>Built on 31.9.2014 at 21:39. Power by <a href="http://assemble.io">Assemble</a>, <a href="http://gruntjs.com">Grunt</a>, <a href="http://code.rnd.croc.ru/projects/RND/repos/jsdoc2markdown">jsdoc2markdown</a>.
+</p></div>
+
+    <script src="../../assets/js/jquery.js"></script>
+<script src="../../assets/js/bootstrap.min.js"></script>
+<script src="../../assets/js/highlight.js"></script>
+  </body>
+</html>

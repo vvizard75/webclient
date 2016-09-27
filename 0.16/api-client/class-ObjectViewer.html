@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Class ObjectViewer | WebClient documentation</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="../../assets/css/root.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body style="background: white;" data-spy="scroll" data-target=".bs-sidebar">
+
+    <div class="root">
+    
+<div class="navbar navbar-inverse" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../../index.html">WebClient documentation</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      
+        <ul class="nav navbar-nav">
+          <li><a href="../docs/index.html">Docs</a></li>
+          <li class="active"><a href="index.html">API Client</a></li>
+        </ul>
+      
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">CROC R&D<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://track.rnd.croc.ru">Bug tracker (YouTrack)</a></li>
+            <li><a href="https://code.croc.ru">Source code (Git Server)</a></li>
+            <li><a href="https://wiki.rnd.croc.ru">Wiki</a></li>
+            <li><a href="https://build.rnd.croc.ru">Build server (TeamCity)</a></li>
+            <li><a href="https://qa.rnd.croc.ru">Q&A</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-header">Other</li>
+            <li><a href="https://github.com/CrocInc">CROC on Github</a></li>
+            
+          </ul>
+        </li>
+      </ul>
+
+    </nav>
+  </div>
+</div>
+
+    
+<div class="container" role="main">
+  <div class="row">
+
+    
+    <div class="col col-lg-3">
+      <div class="sidebar">
+
+      </div>
+    </div>
+
+
+    
+    <div class="col col-lg-9">
+      <div class="panel panel-docs">
+        <ol class='breadcrumb'><li><a href='index.html'>API-Client</a></li><li><a href='classes.html'>Classes</a></li><li class='active'>Class ObjectViewer</li></ol>
+        <h1>Class ObjectViewer</h1>
+          <blockquote>
+<p>Source file: lib\ui\editor\ObjectViewer.js</p>
+</blockquote>
+<h2 id="constructor">Constructor</h2>
+<pre><code class="lang-js">constructor(options)
+</code></pre>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>options</td>
+<td>Object</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="extends">Extends</h2>
+<ul>
+<li><a href='class-ObjectEditor.html' title='null'>ObjectEditor</a></li>
+<li><a href='class-Component.html' title='null'>Component</a></li>
+<li><a href='class-StatefulPart.html' title='null'>StatefulPart</a></li>
+<li><a href='class-Part.html' title='null'>Part</a></li>
+<li><a href='class-Observable.html' title='null'>Observable</a></li>
+</ul>
+<h2 id="members-properties-fields-">Members (properties/fields)</h2>
+<ul>
+<li><a href='#contextName' title='null'>contextName</a> </li>
+<li><a href='#defaultMenus' title='null'>defaultMenus</a> </li>
+<li><a href='#defaultOptions' title='null'>defaultOptions</a> </li>
+<li><a href='#contextDefaultOptions' title='null'>contextDefaultOptions</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#contextPartSeverities' title='null'>contextPartSeverities</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#contextPartsPinned' title='null'>contextPartsPinned</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#currentPage' title='null'>currentPage</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#defaultMenus' title='null'>defaultMenus</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#defaultOptions' title='null'>defaultOptions</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#error' title='null'>error</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#events' title='null'>events</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#isBusy' title='null'>isBusy</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+</ul>
+<p><a id="contextName"></a></p>
+<h3 id="field-contextname">Field contextName</h3>
+<pre><code class="lang-js">contextName: ?
+</code></pre>
+<p>context name for property editors</p>
+<p>Type: ?
+<a id="defaultMenus"></a></p>
+<h3 id="field-defaultmenus">Field defaultMenus</h3>
+<pre><code class="lang-js">defaultMenus: ?
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p>Type: ?
+<a id="defaultOptions"></a></p>
+<h3 id="field-defaultoptions">Field defaultOptions</h3>
+<pre><code class="lang-js">defaultOptions: ?
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p>Type: ?
+<a id="contextDefaultOptions"></a></p>
+<h3 id="field-contextdefaultoptions-inherited-from-objecteditor-class-objecteditor-html-">Field contextDefaultOptions (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">contextDefaultOptions: ?
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p>Type: ?
+<a id="contextPartSeverities"></a></p>
+<h3 id="field-contextpartseverities-inherited-from-objecteditor-class-objecteditor-html-">Field contextPartSeverities (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">contextPartSeverities: Object
+</code></pre>
+<p>editor&#39;s context parts severity enum</p>
+<p>Type: Object
+<a id="contextPartsPinned"></a></p>
+<h3 id="field-contextpartspinned-inherited-from-objecteditor-class-objecteditor-html-">Field contextPartsPinned (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">contextPartsPinned: ?
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p>Type: ?
+<a id="currentPage"></a></p>
+<h3 id="field-currentpage-inherited-from-objecteditor-class-objecteditor-html-">Field currentPage (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">currentPage: ?
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p>Type: ?
+<a id="defaultMenus"></a></p>
+<h3 id="field-defaultmenus-inherited-from-objecteditor-class-objecteditor-html-">Field defaultMenus (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">defaultMenus: ?
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p>Type: ?
+<a id="defaultOptions"></a></p>
+<h3 id="field-defaultoptions-inherited-from-objecteditor-class-objecteditor-html-">Field defaultOptions (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">defaultOptions: ?
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p>Type: ?
+<a id="error"></a></p>
+<h3 id="field-error-inherited-from-objecteditor-class-objecteditor-html-">Field error (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">error: ?
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p>Type: ?
+<a id="events"></a></p>
+<h3 id="field-events-inherited-from-objecteditor-class-objecteditor-html-">Field events (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">events: ?
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p>Type: ?
+<a id="isBusy"></a></p>
+<h3 id="field-isbusy-inherited-from-objecteditor-class-objecteditor-html-">Field isBusy (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">isBusy: ?
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p>Type: ?</p>
+<h2 id="methods">Methods</h2>
+<ul>
+<li><a href='#onRollbackState' title='null'>onRollbackState</a> </li>
+<li><a href='#onSaveState' title='null'>onSaveState</a> </li>
+<li><a href='#activated' title='null'>activated</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#cancel' title='null'>cancel</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#closeContextPart' title='null'>closeContextPart</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#createAsyncSaveErrorEvent' title='null'>createAsyncSaveErrorEvent</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#createAsyncSaveErrorEvent' title='null'>createAsyncSaveErrorEvent</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#createCommands' title='null'>createCommands</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#createCommands' title='null'>createCommands</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#createMenu' title='null'>createMenu</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#createMenuDefaults' title='null'>createMenuDefaults</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#detachDraft' title='null'>detachDraft</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#dispose' title='null'>dispose</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#doSave' title='null'>doSave</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#findPropertyEditor' title='null'>findPropertyEditor</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#findPropertyEditorPage' title='null'>findPropertyEditorPage</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#finish' title='null'>finish</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#forEachPE' title='null'>forEachPE</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#getCloseResult' title='null'>getCloseResult</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#getPageByName' title='null'>getPageByName</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#getState' title='null'>getState</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#mixOptions' title='null'>mixOptions</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#onAcceptState' title='null'>onAcceptState</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#onDisposed' title='null'>onDisposed</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#onDisposed' title='null'>onDisposed</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#onFinished' title='null'>onFinished</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#onFinishing' title='null'>onFinishing</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#onInitialized' title='null'>onInitialized</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#onPageCreated' title='null'>onPageCreated</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#onPageStarted' title='null'>onPageStarted</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#onPageStarting' title='null'>onPageStarting</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#onPageSwitching' title='null'>onPageSwitching</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#onPageUnloaded' title='null'>onPageUnloaded</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#onPageUnloading' title='null'>onPageUnloading</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#onQueryUnload' title='null'>onQueryUnload</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#onQueryUnloadWithChanges' title='null'>onQueryUnloadWithChanges</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#onQueryUnloadWithChanges' title='null'>onQueryUnloadWithChanges</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#onRollbackState' title='null'>onRollbackState</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#onSaveState' title='null'>onSaveState</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#onSaved' title='null'>onSaved</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#onSaving' title='null'>onSaving</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#onUnloaded' title='null'>onUnloaded</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#onValidated' title='null'>onValidated</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#onValidating' title='null'>onValidating</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#queryUnload' title='null'>queryUnload</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#render' title='null'>render</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#runValidation' title='null'>runValidation</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#save' title='null'>save</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#setCurrentPage' title='null'>setCurrentPage</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#setViewModel' title='null'>setViewModel</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#switchToPage' title='null'>switchToPage</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+<li><a href='#unload' title='null'>unload</a> (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</li>
+</ul>
+<p><a id="onRollbackState"></a></p>
+<h3 id="onrollbackstate">onRollbackState</h3>
+<pre><code class="lang-js">onRollbackState()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="onSaveState"></a></p>
+<h3 id="onsavestate">onSaveState</h3>
+<pre><code class="lang-js">onSaveState()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="activated"></a></p>
+<h3 id="activated-inherited-from-objecteditor-class-objecteditor-html-">activated (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">activated()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="cancel"></a></p>
+<h3 id="cancel-inherited-from-objecteditor-class-objecteditor-html-">cancel (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">cancel()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="closeContextPart"></a></p>
+<h3 id="closecontextpart-inherited-from-objecteditor-class-objecteditor-html-">closeContextPart (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">closeContextPart(part)
+</code></pre>
+<p>Remove context part from editor and dispose it</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>part</td>
+<td>Object</td>
+<td></td>
+<td></td>
+<td>part to close</td>
+</tr>
+</tbody>
+</table>
+<p><a id="createAsyncSaveErrorEvent"></a></p>
+<h3 id="createasyncsaveerrorevent-inherited-from-objecteditor-class-objecteditor-html-">createAsyncSaveErrorEvent (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">createAsyncSaveErrorEvent()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="createAsyncSaveErrorEvent"></a></p>
+<h3 id="createasyncsaveerrorevent-inherited-from-objecteditor-class-objecteditor-html-">createAsyncSaveErrorEvent (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">createAsyncSaveErrorEvent(args) : Object
+</code></pre>
+<p>Create an event object for publishing via EventPublisher.</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>args</td>
+<td>Object</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>args.error</td>
+<td>Object</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>args.options</td>
+<td>Object</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>args.objects</td>
+<td>Object</td>
+<td></td>
+<td></td>
+<td>Json object which were passed in dataFacade.save from UnitOfWork.save</td>
+</tr>
+<tr>
+<td>args.states</td>
+<td>Object</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>args.deferred</td>
+<td>Object</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>args.complete</td>
+<td>function</td>
+<td></td>
+<td></td>
+<td>Function to call for completion of save operation. This will signal (resolve/reject) on promise returned by UnitOfWork.save</td>
+</tr>
+<tr>
+<td>args.resolve</td>
+<td>function</td>
+<td></td>
+<td></td>
+<td>UnitOfWork&#39;s success handler</td>
+</tr>
+<tr>
+<td>args.reject</td>
+<td>function</td>
+<td></td>
+<td></td>
+<td>UnitOfWork&#39;s error handler</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns-">Returns:</h4>
+<p>Event object
+Type: Object
+<a id="createCommands"></a></p>
+<h3 id="createcommands-inherited-from-objecteditor-class-objecteditor-html-">createCommands (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">createCommands()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="createCommands"></a></p>
+<h3 id="createcommands-inherited-from-objecteditor-class-objecteditor-html-">createCommands (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">createCommands()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="createMenu"></a></p>
+<h3 id="createmenu-inherited-from-objecteditor-class-objecteditor-html-">createMenu (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">createMenu()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="createMenuDefaults"></a></p>
+<h3 id="createmenudefaults-inherited-from-objecteditor-class-objecteditor-html-">createMenuDefaults (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">createMenuDefaults()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="detachDraft"></a></p>
+<h3 id="detachdraft-inherited-from-objecteditor-class-objecteditor-html-">detachDraft (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">detachDraft()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="dispose"></a></p>
+<h3 id="dispose-inherited-from-objecteditor-class-objecteditor-html-">dispose (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">dispose()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="doSave"></a></p>
+<h3 id="dosave-inherited-from-objecteditor-class-objecteditor-html-">doSave (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">doSave()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="findPropertyEditor"></a></p>
+<h3 id="findpropertyeditor-inherited-from-objecteditor-class-objecteditor-html-">findPropertyEditor (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">findPropertyEditor()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="findPropertyEditorPage"></a></p>
+<h3 id="findpropertyeditorpage-inherited-from-objecteditor-class-objecteditor-html-">findPropertyEditorPage (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">findPropertyEditorPage()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="finish"></a></p>
+<h3 id="finish-inherited-from-objecteditor-class-objecteditor-html-">finish (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">finish()
+</code></pre>
+<p>Run validation for object and all pages, then commit all changes (if it&#39;s root editor), then close.</p>
+<p><a id="forEachPE"></a></p>
+<h3 id="foreachpe-inherited-from-objecteditor-class-objecteditor-html-">forEachPE (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">forEachPE(iterator, [context])
+</code></pre>
+<p>Executes &#39;iterator&#39; function for each property editor of each page</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>iterator</td>
+<td>function</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>context</td>
+<td>*</td>
+<td></td>
+<td>optional</td>
+<td>this arguments for iterator</td>
+</tr>
+</tbody>
+</table>
+<p><a id="getCloseResult"></a></p>
+<h3 id="getcloseresult-inherited-from-objecteditor-class-objecteditor-html-">getCloseResult (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">getCloseResult()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="getPageByName"></a></p>
+<h3 id="getpagebyname-inherited-from-objecteditor-class-objecteditor-html-">getPageByName (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">getPageByName()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="getState"></a></p>
+<h3 id="getstate-inherited-from-objecteditor-class-objecteditor-html-">getState (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">getState()
+</code></pre>
+<p>Create an url query for initialization via navigating to a url</p>
+<p><a id="mixOptions"></a></p>
+<h3 id="mixoptions-inherited-from-objecteditor-class-objecteditor-html-">mixOptions (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">mixOptions()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="onAcceptState"></a></p>
+<h3 id="onacceptstate-inherited-from-objecteditor-class-objecteditor-html-">onAcceptState (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">onAcceptState()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="onDisposed"></a></p>
+<h3 id="ondisposed-inherited-from-objecteditor-class-objecteditor-html-">onDisposed (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">onDisposed()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="onDisposed"></a></p>
+<h3 id="ondisposed-inherited-from-objecteditor-class-objecteditor-html-">onDisposed (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">onDisposed()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="onFinished"></a></p>
+<h3 id="onfinished-inherited-from-objecteditor-class-objecteditor-html-">onFinished (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">onFinished()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="onFinishing"></a></p>
+<h3 id="onfinishing-inherited-from-objecteditor-class-objecteditor-html-">onFinishing (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">onFinishing()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="onInitialized"></a></p>
+<h3 id="oninitialized-inherited-from-objecteditor-class-objecteditor-html-">onInitialized (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">onInitialized()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="onPageCreated"></a></p>
+<h3 id="onpagecreated-inherited-from-objecteditor-class-objecteditor-html-">onPageCreated (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">onPageCreated()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="onPageStarted"></a></p>
+<h3 id="onpagestarted-inherited-from-objecteditor-class-objecteditor-html-">onPageStarted (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">onPageStarted()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="onPageStarting"></a></p>
+<h3 id="onpagestarting-inherited-from-objecteditor-class-objecteditor-html-">onPageStarting (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">onPageStarting()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="onPageSwitching"></a></p>
+<h3 id="onpageswitching-inherited-from-objecteditor-class-objecteditor-html-">onPageSwitching (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">onPageSwitching()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="onPageUnloaded"></a></p>
+<h3 id="onpageunloaded-inherited-from-objecteditor-class-objecteditor-html-">onPageUnloaded (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">onPageUnloaded()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="onPageUnloading"></a></p>
+<h3 id="onpageunloading-inherited-from-objecteditor-class-objecteditor-html-">onPageUnloading (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">onPageUnloading()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="onQueryUnload"></a></p>
+<h3 id="onqueryunload-inherited-from-objecteditor-class-objecteditor-html-">onQueryUnload (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">onQueryUnload()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="onQueryUnloadWithChanges"></a></p>
+<h3 id="onqueryunloadwithchanges-inherited-from-objecteditor-class-objecteditor-html-">onQueryUnloadWithChanges (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">onQueryUnloadWithChanges()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="onQueryUnloadWithChanges"></a></p>
+<h3 id="onqueryunloadwithchanges-inherited-from-objecteditor-class-objecteditor-html-">onQueryUnloadWithChanges (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">onQueryUnloadWithChanges()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="onRollbackState"></a></p>
+<h3 id="onrollbackstate-inherited-from-objecteditor-class-objecteditor-html-">onRollbackState (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">onRollbackState()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="onSaveState"></a></p>
+<h3 id="onsavestate-inherited-from-objecteditor-class-objecteditor-html-">onSaveState (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">onSaveState()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="onSaved"></a></p>
+<h3 id="onsaved-inherited-from-objecteditor-class-objecteditor-html-">onSaved (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">onSaved()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="onSaving"></a></p>
+<h3 id="onsaving-inherited-from-objecteditor-class-objecteditor-html-">onSaving (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">onSaving()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="onUnloaded"></a></p>
+<h3 id="onunloaded-inherited-from-objecteditor-class-objecteditor-html-">onUnloaded (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">onUnloaded()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="onValidated"></a></p>
+<h3 id="onvalidated-inherited-from-objecteditor-class-objecteditor-html-">onValidated (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">onValidated()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="onValidating"></a></p>
+<h3 id="onvalidating-inherited-from-objecteditor-class-objecteditor-html-">onValidating (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">onValidating()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="queryUnload"></a></p>
+<h3 id="queryunload-inherited-from-objecteditor-class-objecteditor-html-">queryUnload (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">queryUnload()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="render"></a></p>
+<h3 id="render-inherited-from-objecteditor-class-objecteditor-html-">render (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">render()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="runValidation"></a></p>
+<h3 id="runvalidation-inherited-from-objecteditor-class-objecteditor-html-">runValidation (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">runValidation([page]) : Array
+</code></pre>
+<p>Run validation.</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>page</td>
+<td><a href='class-EditorPage.html' title='null'>EditorPage</a></td>
+<td></td>
+<td>optional</td>
+<td>a page to validate</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns-">Returns:</h4>
+<p>An array with violations
+Type: Array
+<a id="save"></a></p>
+<h3 id="save-inherited-from-objecteditor-class-objecteditor-html-">save (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">save([isAsync]) : jQuery.Promise
+</code></pre>
+<p>Save changes (&quot;Apply&quot;)</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>isAsync</td>
+<td>Boolean</td>
+<td>false</td>
+<td>optional</td>
+<td>&#39;true&#39; for non blocking save</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns-">Returns:</h4>
+<p>Type: jQuery.Promise
+<a id="setCurrentPage"></a></p>
+<h3 id="setcurrentpage-inherited-from-objecteditor-class-objecteditor-html-">setCurrentPage (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">setCurrentPage(page, [skipValidation]) : $.Deferred.promise
+</code></pre>
+<p>Change current page onto a new one</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>page</td>
+<td><a href='class-EditorPage.html' title='null'>EditorPage</a></td>
+<td></td>
+<td></td>
+<td>New page to go to</td>
+</tr>
+<tr>
+<td>skipValidation</td>
+<td>Boolean</td>
+<td>false</td>
+<td>optional</td>
+<td>if true then there will be no validation for the current page</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns-">Returns:</h4>
+<p>resolved - page was changed, otherwise - rejected
+Type: $.Deferred.promise
+<a id="setViewModel"></a></p>
+<h3 id="setviewmodel-inherited-from-objecteditor-class-objecteditor-html-">setViewModel (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">setViewModel()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="switchToPage"></a></p>
+<h3 id="switchtopage-inherited-from-objecteditor-class-objecteditor-html-">switchToPage (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">switchToPage(name) : $.Deferred.promise
+</code></pre>
+<p>Switch to a page with specified name</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>name</td>
+<td>String</td>
+<td></td>
+<td></td>
+<td>a page name</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns-">Returns:</h4>
+<p>Type: $.Deferred.promise
+<a id="unload"></a></p>
+<h3 id="unload-inherited-from-objecteditor-class-objecteditor-html-">unload (inherited from <a href='class-ObjectEditor.html' title='null'>ObjectEditor</a>)</h3>
+<pre><code class="lang-js">unload()
+</code></pre>
+<p>UNDOCUMENTED</p>
+
+        
+        <hr>
+
+        
+
+        <div class="well">
+  <p>Find an error? <a class="alert-link" href="https://track.rnd.croc.ru/newIssue?project=WC&clearDraft=true&c=Type+Bug&c=State+Open&c=Subsystem+documentation">Let us know →</a></p>
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+
+	<div class="site-footer">
+  <p>Built on 31.9.2014 at 19:52. Power by <a href="http://assemble.io">Assemble</a>, <a href="http://gruntjs.com">Grunt</a>, <a href="http://code.rnd.croc.ru/projects/RND/repos/jsdoc2markdown">jsdoc2markdown</a>.
+</p></div>
+
+    <script src="../../assets/js/jquery.js"></script>
+<script src="../../assets/js/bootstrap.min.js"></script>
+<script src="../../assets/js/highlight.js"></script>
+  </body>
+</html>

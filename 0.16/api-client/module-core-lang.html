@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Module core.lang | WebClient documentation</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="../../assets/css/root.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body style="background: white;" data-spy="scroll" data-target=".bs-sidebar">
+
+    <div class="root">
+    
+<div class="navbar navbar-inverse" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../../index.html">WebClient documentation</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      
+        <ul class="nav navbar-nav">
+          <li><a href="../docs/index.html">Docs</a></li>
+          <li class="active"><a href="index.html">API Client</a></li>
+        </ul>
+      
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">CROC R&D<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://track.rnd.croc.ru">Bug tracker (YouTrack)</a></li>
+            <li><a href="https://code.croc.ru">Source code (Git Server)</a></li>
+            <li><a href="https://wiki.rnd.croc.ru">Wiki</a></li>
+            <li><a href="https://build.rnd.croc.ru">Build server (TeamCity)</a></li>
+            <li><a href="https://qa.rnd.croc.ru">Q&A</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-header">Other</li>
+            <li><a href="https://github.com/CrocInc">CROC on Github</a></li>
+            
+          </ul>
+        </li>
+      </ul>
+
+    </nav>
+  </div>
+</div>
+
+    
+<div class="container" role="main">
+  <div class="row">
+
+    
+    <div class="col col-lg-3">
+      <div class="sidebar">
+
+      </div>
+    </div>
+
+
+    
+    <div class="col col-lg-9">
+      <div class="panel panel-docs">
+        <ol class='breadcrumb'><li><a href='index.html'>API-Client</a></li><li><a href='modules.html'>Modules</a></li><li class='active'>Module core.lang</li></ol>
+        <h1>Module core.lang</h1>
+          <blockquote>
+<p>Source file: lib\core.lang.js</p>
+</blockquote>
+<h2 id="classes">Classes</h2>
+<ul>
+<li><a href='class-AsyncIterator.html' title='null'>AsyncIterator</a></li>
+<li><a href='class-CountdownEvent.html' title='null'>CountdownEvent</a></li>
+<li><a href='class-DeferredChain.html' title='null'>DeferredChain</a></li>
+<li><a href='class-Event.html' title='null'>Event</a></li>
+<li><a href='class-EventBinder.html' title='null'>EventBinder</a></li>
+<li><a href='class-Observable.html' title='null'>Observable</a></li>
+<li><a href='class-ObservableCollection.html' title='null'>ObservableCollection</a></li>
+<li><a href='class-ObservableDictionary.html' title='null'>ObservableDictionary</a></li>
+<li><a href='class-ObservableExpression.html' title='null'>ObservableExpression</a></li>
+<li><a href='class-ViewModelExtender.html' title='null'>ViewModelExtender</a></li>
+</ul>
+<h2 id="methods">Methods</h2>
+<blockquote>
+<p>Static methods of the module.</p>
+<ul>
+<li><a href='#noop' title='null'>noop</a></li>
+<li><a href='#forEach' title='null'>forEach</a></li>
+<li><a href='#findIndex' title='null'>findIndex</a></li>
+<li><a href='#traverseObject' title='null'>traverseObject</a></li>
+<li><a href='#cloneEx' title='null'>cloneEx</a></li>
+<li><a href='#extendEx' title='null'>extendEx</a></li>
+<li><a href='#deepExtend' title='null'>deepExtend</a></li>
+<li><a href='#exactExtend' title='null'>exactExtend</a></li>
+<li><a href='#append' title='null'>append</a></li>
+<li><a href='#appendEx' title='null'>appendEx</a></li>
+<li><a href='#deepAppend' title='null'>deepAppend</a></li>
+<li><a href='#setValue' title='null'>setValue</a></li>
+<li><a href='#override' title='null'>override</a></li>
+<li><a href='#select' title='null'>select</a></li>
+<li><a href='#stringStartsWith' title='null'>stringStartsWith</a></li>
+<li><a href='#encodeHtml' title='null'>encodeHtml</a></li>
+<li><a href='#stringFormat' title='null'>stringFormat</a></li>
+<li><a href='#arrayRemove' title='null'>arrayRemove</a></li>
+<li><a href='#arrayFindFirst' title='null'>arrayFindFirst</a></li>
+<li><a href='#stackTop' title='null'>stackTop</a></li>
+<li><a href='#coalesce' title='null'>coalesce</a></li>
+<li><a href='#debounce' title='null'>debounce</a></li>
+<li><a href='#isInteger' title='null'>isInteger</a></li>
+<li><a href='#isPlainObject' title='null'>isPlainObject</a></li>
+<li><a href='#isClonable' title='null'>isClonable</a></li>
+<li><a href='#compare' title='null'>compare</a></li>
+<li><a href='#sort' title='null'>sort</a></li>
+<li><a href='#toInteger' title='null'>toInteger</a></li>
+<li><a href='#whenAll' title='null'>whenAll</a></li>
+<li><a href='#resolved' title='null'>resolved</a></li>
+<li><a href='#rejected' title='null'>rejected</a></li>
+<li><a href='#isPromise' title='null'>isPromise</a></li>
+<li><a href='#resolvedValue' title='null'>resolvedValue</a></li>
+<li><a href='#parseJsonString' title='null'>parseJsonString</a></li>
+<li><a href='#observe' title='null'>observe</a></li>
+<li><a href='#get' title='null'>get</a></li>
+<li><a href='#set' title='null'>set</a></li>
+<li><a href='#property' title='null'>property</a></li>
+<li><a href='#nested' title='null'>nested</a></li>
+<li><a href='#proxy' title='null'>proxy</a></li>
+<li><a href='#observableExpression' title='null'>observableExpression</a></li>
+<li><a href='#loadExpression' title='null'>loadExpression</a></li>
+</ul>
+</blockquote>
+<p><a id="noop"></a></p>
+<h3 id="noop">noop</h3>
+<pre><code class="lang-js">noop()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="forEach"></a></p>
+<h3 id="foreach">forEach</h3>
+<pre><code class="lang-js">forEach()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="findIndex"></a></p>
+<h3 id="findindex">findIndex</h3>
+<pre><code class="lang-js">findIndex()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="traverseObject"></a></p>
+<h3 id="traverseobject">traverseObject</h3>
+<pre><code class="lang-js">traverseObject(object, visitor, [options])
+</code></pre>
+<p>Traverse all object value calling supplied iterator for each value.</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>object</td>
+<td>Object</td>
+<td></td>
+<td></td>
+<td>A simple object to traverse</td>
+</tr>
+<tr>
+<td>visitor</td>
+<td>function</td>
+<td></td>
+<td></td>
+<td>Iterator with signature: function ({String} name, {*} value, {Array} path)</td>
+</tr>
+<tr>
+<td>options</td>
+<td>Object</td>
+<td></td>
+<td>optional</td>
+<td></td>
+</tr>
+<tr>
+<td>options.visitObjects</td>
+<td>Boolean</td>
+<td>false</td>
+<td>optional</td>
+<td></td>
+</tr>
+<tr>
+<td>options.visitValues</td>
+<td>Boolean</td>
+<td>true</td>
+<td>optional</td>
+</tr>
+</tbody>
+</table>
+<p><a id="cloneEx"></a></p>
+<h3 id="cloneex">cloneEx</h3>
+<pre><code class="lang-js">cloneEx(obj, [options]) : Object
+</code></pre>
+<p>Create a copy of an object or an array</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>obj</td>
+<td>Object</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>options</td>
+<td>Object</td>
+<td></td>
+<td>optional</td>
+<td></td>
+</tr>
+<tr>
+<td>options.deep</td>
+<td>Boolean</td>
+<td></td>
+<td>optional</td>
+<td>Clone nested values</td>
+</tr>
+<tr>
+<td>options.exact</td>
+<td>Boolean</td>
+<td></td>
+<td>optional</td>
+<td>Copy undefined values</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns-">Returns:</h4>
+<p>New object or array
+Type: Object
+<a id="extendEx"></a></p>
+<h3 id="extendex">extendEx</h3>
+<pre><code class="lang-js">extendEx(obj, source, options) : Object
+</code></pre>
+<p>Extend an object with all values from one or more source</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>obj</td>
+<td>Object</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>source</td>
+<td>Object</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>options</td>
+<td>Object</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>options.deep</td>
+<td>Boolean</td>
+<td></td>
+<td>optional</td>
+<td>Process nested values</td>
+</tr>
+<tr>
+<td>options.exact</td>
+<td>Boolean</td>
+<td></td>
+<td>optional</td>
+<td>Copy undefined values</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns-">Returns:</h4>
+<p>obj
+Type: Object
+<a id="deepExtend"></a></p>
+<h3 id="deepextend">deepExtend</h3>
+<pre><code class="lang-js">deepExtend()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="exactExtend"></a></p>
+<h3 id="exactextend">exactExtend</h3>
+<pre><code class="lang-js">exactExtend()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="append"></a></p>
+<h3 id="append">append</h3>
+<pre><code class="lang-js">append()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="appendEx"></a></p>
+<h3 id="appendex">appendEx</h3>
+<pre><code class="lang-js">appendEx(obj, source, [options]) : Object
+</code></pre>
+<p>Append values from one or more source to an object</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>obj</td>
+<td>Object</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>source</td>
+<td>Object</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>options</td>
+<td>Object</td>
+<td></td>
+<td>optional</td>
+<td></td>
+</tr>
+<tr>
+<td>options.deep</td>
+<td>Boolean</td>
+<td></td>
+<td>optional</td>
+<td>Process nested values</td>
+</tr>
+<tr>
+<td>options.exact</td>
+<td>Boolean</td>
+<td></td>
+<td>optional</td>
+<td>Append undefined values</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns-">Returns:</h4>
+<p>obj
+Type: Object
+<a id="deepAppend"></a></p>
+<h3 id="deepappend">deepAppend</h3>
+<pre><code class="lang-js">deepAppend()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="setValue"></a></p>
+<h3 id="setvalue">setValue</h3>
+<pre><code class="lang-js">setValue(obj, propName, propValue) : Object
+</code></pre>
+<p>Assign specified field in obj or a new object.</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>obj</td>
+<td>Object</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>propName</td>
+<td>String</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>propValue</td>
+<td>*</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns-">Returns:</h4>
+<p>enriched obj or new object with assigned value
+Type: Object
+<a id="override"></a></p>
+<h3 id="override">override</h3>
+<pre><code class="lang-js">override(obj, overrides) : Object
+</code></pre>
+<p>Overrides some methods of the object.</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>obj</td>
+<td>Object</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>overrides</td>
+<td>Object</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns-">Returns:</h4>
+<p>obj
+Type: Object
+<a id="select"></a></p>
+<h3 id="select">select</h3>
+<pre><code class="lang-js">select(obj, iterator, context)
+</code></pre>
+<p>Return the results of applying the iterator to the object or each item of array.</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>obj</td>
+<td>Array</td>
+<td>Object</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>iterator</td>
+<td>function</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>context</td>
+<td>Object</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a id="stringStartsWith"></a></p>
+<h3 id="stringstartswith">stringStartsWith</h3>
+<pre><code class="lang-js">stringStartsWith(source, search) : Boolean
+</code></pre>
+<p>Checks whether value in &#39;source&#39; argument starts with value in &#39;search&#39; argument.</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>source</td>
+<td>String</td>
+<td></td>
+<td></td>
+<td>Source string to search in</td>
+</tr>
+<tr>
+<td>search</td>
+<td>String</td>
+<td></td>
+<td></td>
+<td>Substring to search for</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns-">Returns:</h4>
+<p>true if source&#39;s value starts with search value.
+Type: Boolean
+<a id="encodeHtml"></a></p>
+<h3 id="encodehtml">encodeHtml</h3>
+<pre><code class="lang-js">encodeHtml()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="stringFormat"></a></p>
+<h3 id="stringformat">stringFormat</h3>
+<pre><code class="lang-js">stringFormat()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="arrayRemove"></a></p>
+<h3 id="arrayremove">arrayRemove</h3>
+<pre><code class="lang-js">arrayRemove()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="arrayFindFirst"></a></p>
+<h3 id="arrayfindfirst">arrayFindFirst</h3>
+<pre><code class="lang-js">arrayFindFirst(array, finder) : *
+</code></pre>
+<p>UNDOCUMENTED</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>array</td>
+<td>?</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>finder</td>
+<td>?</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns-">Returns:</h4>
+<p>Type: *
+<a id="stackTop"></a></p>
+<h3 id="stacktop">stackTop</h3>
+<pre><code class="lang-js">stackTop(stack) : *
+</code></pre>
+<p>UNDOCUMENTED</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>stack</td>
+<td>?</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns-">Returns:</h4>
+<p>Type: *
+<a id="coalesce"></a></p>
+<h3 id="coalesce">coalesce</h3>
+<pre><code class="lang-js">coalesce(source)
+</code></pre>
+<p>Returns the first non-undefined value among arguments.</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>source</td>
+<td>*</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a id="debounce"></a></p>
+<h3 id="debounce">debounce</h3>
+<pre><code class="lang-js">debounce(func, wait, field) : function
+</code></pre>
+<p>Returns a function, that, as long as it continues to be invoked, will not be triggered.
+The function will be called after it stops being called for N milliseconds.</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>func</td>
+<td>function</td>
+<td>String</td>
+<td></td>
+<td></td>
+<td>The original function or the name of original method</td>
+</tr>
+<tr>
+<td>wait</td>
+<td>Number</td>
+<td></td>
+<td></td>
+<td>Timeout in milliseconds</td>
+</tr>
+<tr>
+<td>field</td>
+<td>String</td>
+<td>Boolean</td>
+<td></td>
+<td></td>
+<td>If specified the result function will behave like a method of a caller</td>
+</tr>
+</tbody>
+</table>
+<p>and will be called after it stops being called by the same caller for N milliseconds. In that case
+a timer will be stored in the field of a caller. If &#39;field&#39; is a string it specifies* the name of the field
+to keep a timer; otherwise the name will be generated automatically.
+If &#39;field&#39; argument isn&#39;t specified the result function will be &#39;static&#39; and will be called after it stops
+being called by any caller for N milliseconds. |</p>
+<h4 id="returns-">Returns:</h4>
+<p>Type: function
+<a id="isInteger"></a></p>
+<h3 id="isinteger">isInteger</h3>
+<pre><code class="lang-js">isInteger()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="isPlainObject"></a></p>
+<h3 id="isplainobject">isPlainObject</h3>
+<pre><code class="lang-js">isPlainObject()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="isClonable"></a></p>
+<h3 id="isclonable">isClonable</h3>
+<pre><code class="lang-js">isClonable()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="compare"></a></p>
+<h3 id="compare">compare</h3>
+<pre><code class="lang-js">compare(x, y) : number
+</code></pre>
+<p>Compare two values for sorting. You can pass this method as an argument of Array.prototype.sort().</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>x</td>
+<td>?</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>y</td>
+<td>?</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns-">Returns:</h4>
+<p>Type: number
+<a id="sort"></a></p>
+<h3 id="sort">sort</h3>
+<pre><code class="lang-js">sort(array, [comparer]) : Array
+</code></pre>
+<p>Sorts an array&#39;s element. Unlike Array.prototype.sort(), doesn&#39;t modify an original array.
+Uses stable sorting (unlike Array.prototype.sort()).</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>array</td>
+<td>Array</td>
+<td></td>
+<td></td>
+<td>an array to sort</td>
+</tr>
+<tr>
+<td>comparer</td>
+<td>function</td>
+<td></td>
+<td>optional</td>
+<td>comparison function a-la Array.prototype.sort()</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns-">Returns:</h4>
+<p>new array
+Type: Array
+<a id="toInteger"></a></p>
+<h3 id="tointeger">toInteger</h3>
+<pre><code class="lang-js">toInteger()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="whenAll"></a></p>
+<h3 id="whenall">whenAll</h3>
+<pre><code class="lang-js">whenAll()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="resolved"></a></p>
+<h3 id="resolved">resolved</h3>
+<pre><code class="lang-js">resolved()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="rejected"></a></p>
+<h3 id="rejected">rejected</h3>
+<pre><code class="lang-js">rejected()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="isPromise"></a></p>
+<h3 id="ispromise">isPromise</h3>
+<pre><code class="lang-js">isPromise()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="resolvedValue"></a></p>
+<h3 id="resolvedvalue">resolvedValue</h3>
+<pre><code class="lang-js">resolvedValue(deferred) : *
+</code></pre>
+<p>If the Deferred is already resolved, this method returns the value passed as the first argument of
+Deferred.resolve(). Otherwise it returns undefined.</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>deferred</td>
+<td>?</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns-">Returns:</h4>
+<p>Type: *
+<a id="parseJsonString"></a></p>
+<h3 id="parsejsonstring">parseJsonString</h3>
+<pre><code class="lang-js">parseJsonString()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="observe"></a></p>
+<h3 id="observe">observe</h3>
+<pre><code class="lang-js">observe()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="get"></a></p>
+<h3 id="get">get</h3>
+<pre><code class="lang-js">get(obj, name) : *
+</code></pre>
+<p>Возвращает значение свойства name у объекта obj. Если у объекта obj есть метод с именем name,
+то вернется результат вызова этого метода; иначе вернется поле с именем name.</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>obj</td>
+<td>?</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>name</td>
+<td>?</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns-">Returns:</h4>
+<p>Type: *
+<a id="set"></a></p>
+<h3 id="set">set</h3>
+<pre><code class="lang-js">set()
+</code></pre>
+<p>UNDOCUMENTED</p>
+<p><a id="property"></a></p>
+<h3 id="property">property</h3>
+<pre><code class="lang-js">property(name) : function
+</code></pre>
+<p>Возвращает функцию доступа к свойству с наименованием name. Если у объекта this есть метод с именем name,
+то будет использоваться этот метод; иначе будет использоваться поле с именем name.</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>name</td>
+<td>?</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns-">Returns:</h4>
+<p>Type: function
+<a id="nested"></a></p>
+<h3 id="nested">nested</h3>
+<pre><code class="lang-js">nested(root, path)
+</code></pre>
+<p>Получает вложенное значение по пути от корневого объекта/пространства имен.</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>root</td>
+<td>Object</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>path</td>
+<td>String</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a id="proxy"></a></p>
+<h3 id="proxy">proxy</h3>
+<pre><code class="lang-js">proxy(source) : *
+</code></pre>
+<p>Создает объект-обертку, инкапсулирующий внутри себя исходный объект. Все методы созданной обертки
+перенаправляются в исходные методы, вызываемые в контексте исходного объекта (this === source).
+Чтобы иметь доступ к полям и свойствам исходного объекта, обертка наследуется от него через Object.create.
+ЗАМЕЧАНИЕ. Создание таких прокси-объект достаточно медленная операция из необходимости копировать все методы.</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>source</td>
+<td>?</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns-">Returns:</h4>
+<p>Type: *
+<a id="observableExpression"></a></p>
+<h3 id="observableexpression">observableExpression</h3>
+<pre><code class="lang-js">observableExpression(expr, [options]) : function
+</code></pre>
+<p>Создает функцию, оборачивая expr.
+При первом вызове созданной функции анализируются все затронутые observable объекты. При изменении
+любого из них вызывается callback, заданный в options.onchange. После этого изменения в затронутых объектах
+перестают отслеживаться, для продолжения отслеживания нужно повторно вызвать функцию-результат.</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>expr</td>
+<td>String</td>
+<td>function</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>options</td>
+<td>Object</td>
+<td></td>
+<td>optional</td>
+<td></td>
+</tr>
+<tr>
+<td>options.onchange</td>
+<td>function</td>
+<td></td>
+<td>optional</td>
+<td>callback, который будет вызван при изменении объектов,</td>
+</tr>
+</tbody>
+</table>
+<p>задействованных при вызове функции |
+| options.onreturn | OnReturnCallback |  |  optional | callback, который будет вызыван перед возвратом значения. |
+| options.loadingValue | <em> |  |  optional | значение, возвращаемое функцией, если есть незагруженные объекты |
+| options.errorValue | </em> |  |  optional | значение, возвращаемое функцией в случае ошибки |</p>
+<h4 id="returns-">Returns:</h4>
+<p>Javascript функция, которая может вызываться как обычно. Однако, функция содержит метод
+dispose, который обязательно должен быть вызван, когда созданная функция перестанет быть нужной.
+Type: function
+<a id="loadExpression"></a></p>
+<h3 id="loadexpression">loadExpression</h3>
+<pre><code class="lang-js">loadExpression(expr, ctx, args) : Deferred
+</code></pre>
+<p>Tries to evaluates the expression and loads all unloaded objects, which are used in the expression.</p>
+<h4 id="parameters-">Parameters:</h4>
+<table class='table table-striped table-hover'>
+<thead><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>expr</td>
+<td>String</td>
+<td>function</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ctx</td>
+<td>*</td>
+<td></td>
+<td></td>
+<td>this object for evaluating the expression</td>
+</tr>
+<tr>
+<td>args</td>
+<td>*</td>
+<td></td>
+<td></td>
+<td>arguments for evaluating the expression</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns-">Returns:</h4>
+<p>Deferred with result of evaluating the expression when all used objects are loaded.
+Type: Deferred</p>
+
+        
+        <hr>
+
+        
+
+        <div class="well">
+  <p>Find an error? <a class="alert-link" href="https://track.rnd.croc.ru/newIssue?project=WC&clearDraft=true&c=Type+Bug&c=State+Open&c=Subsystem+documentation">Let us know →</a></p>
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+
+	<div class="site-footer">
+  <p>Built on 31.9.2014 at 19:52. Power by <a href="http://assemble.io">Assemble</a>, <a href="http://gruntjs.com">Grunt</a>, <a href="http://code.rnd.croc.ru/projects/RND/repos/jsdoc2markdown">jsdoc2markdown</a>.
+</p></div>
+
+    <script src="../../assets/js/jquery.js"></script>
+<script src="../../assets/js/bootstrap.min.js"></script>
+<script src="../../assets/js/highlight.js"></script>
+  </body>
+</html>
